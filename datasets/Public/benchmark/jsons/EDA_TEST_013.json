@@ -1,0 +1,195 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        126,
+        98,
+        175,
+        146
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PI Controller"
+        ]
+      }
+    },
+    {
+      "Component": "PI Controller",
+      "Pos": [
+        220,
+        71,
+        378,
+        173
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "sum3",
+      "Pos": [
+        495,
+        373,
+        531,
+        407
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum5"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        446,
+        102,
+        485,
+        143
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Integrator"
+        ]
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        431,
+        429,
+        471,
+        466
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum5"
+        ]
+      }
+    },
+    {
+      "Component": "Sum5",
+      "Pos": [
+        286,
+        428,
+        326,
+        467
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Integrator",
+      "Pos": [
+        546,
+        73,
+        704,
+        175
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sinθc cosθc"
+        ]
+      }
+    },
+    {
+      "Component": "sinθc cosθc",
+      "Pos": [
+        676,
+        207,
+        785,
+        308
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum3",
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "3Φ/2Φ",
+      "Pos": [
+        622,
+        373,
+        727,
+        476
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4",
+          "sum3"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "single_choice",
+      "question": "如图所示的同步坐标系 PLL（SRF-PLL）中，用 PI 控制器（增益 $K_p$, 积分增益 $K_i$）和积分器构成闭环锁相环，假设额定状态下电压幅值为 $E_{s}$。若输入 3 相电压的幅值降为 $0.5E_{s}$，则闭环带宽（锁相环的带宽）将如何变化？",
+      "options": [
+        "A. 降低到原来的一半",
+        "B. 降低到原来的四分之一",
+        "C. 维持不变",
+        "D. 增加到原来的两倍"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中虚线框内实现的将$\\alpha\\beta$静止坐标系电压转换到$dq$同步旋转坐标系的变换称为_______变换。",
+      "answer": "Park"
+    }
+  ]
+}

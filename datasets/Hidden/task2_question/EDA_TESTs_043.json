@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "结合图中定时恢复回路，可知其中的定时误差检测器（Timing Error Detector，TED）属于下列哪一种类型？",
+      "options": [
+        "A. Early–Late Gate 检测器",
+        "B. Gardner 检测器",
+        "C. Mueller–Müller (M&M) 检测器",
+        "D. 零交叉 (Zero–Crossing) 检测器"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示判决导向BPSK载波恢复环中，Delay $T_b$模块的主要作用是将判决设备输出 $\\hat A(t-T_b)$ 与输入信号的 _______ 分量 对齐，以便在第二次乘法中产生正确的误差信号。(选项如下：同相分量,载波分量,正交分量,调制分量)"
+    }
+  ]
+}

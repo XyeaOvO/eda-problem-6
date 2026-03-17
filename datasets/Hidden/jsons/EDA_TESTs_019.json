@@ -1,0 +1,262 @@
+{
+  "task1": [
+    {
+      "Component": "SWJ-DP",
+      "Pos": [
+        134,
+        318,
+        215,
+        361
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AHB-AP"
+        ]
+      }
+    },
+    {
+      "Component": "DWT",
+      "Pos": [
+        427,
+        402,
+        490,
+        443
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "FPB",
+      "Pos": [
+        427,
+        451,
+        490,
+        493
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "ITM",
+      "Pos": [
+        427,
+        500,
+        490,
+        542
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "TPIU",
+      "Pos": [
+        555,
+        300,
+        627,
+        342
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "DBGMCU",
+      "Pos": [
+        649,
+        402,
+        720,
+        443
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Cortex-M3 core",
+      "Pos": [
+        234,
+        134,
+        313,
+        276
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "External private peripheral bus (PPB)_327_283",
+          "External private peripheral bus (PPB)_327_192",
+          "External private peripheral bus (PPB)_327_366"
+        ]
+      }
+    },
+    {
+      "Component": "AHB-AP",
+      "Pos": [
+        240,
+        318,
+        311,
+        361
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "External private peripheral bus (PPB)_327_366",
+          "External private peripheral bus (PPB)_327_283",
+          "External private peripheral bus (PPB)_327_192"
+        ]
+      }
+    },
+    {
+      "Component": "External private peripheral bus (PPB)_382_373",
+      "Pos": [
+        427,
+        300,
+        490,
+        342
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "TPIU",
+          "DBGMCU"
+        ]
+      }
+    },
+    {
+      "Component": "External private peripheral bus (PPB)_382_420",
+      "Pos": [
+        427,
+        352,
+        490,
+        396
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "External private peripheral bus (PPB)_327_283",
+      "Pos": [
+        366,
+        199,
+        391,
+        254
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "External private peripheral bus (PPB)_327_192",
+      "Pos": [
+        366,
+        97,
+        391,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "External private peripheral bus (PPB)_327_366",
+      "Pos": [
+        366,
+        292,
+        391,
+        351
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 5
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "External private peripheral bus (PPB)_382_420",
+          "DWT",
+          "FPB",
+          "ITM",
+          "External private peripheral bus (PPB)_382_373"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设图中连接内部私有外设总线(PPB)和外部PPB的Bridge发生故障，下列哪项调试功能最有可能失效？",
+      "options": [
+        "A. 通过AHB-AP进行的内存和寄存器访问",
+        "B. 由FPB模块实现的硬件断点功能",
+        "C. 通过Trace端口(例如TRACESWO)输出的跟踪数据",
+        "D. 基于DWT的事件和性能计数监测"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中Trace端口的TRACED总线位宽为_____位。(请从以下答案中选择一个：4,2,8,5)",
+      "answer": "4"
+    }
+  ]
+}

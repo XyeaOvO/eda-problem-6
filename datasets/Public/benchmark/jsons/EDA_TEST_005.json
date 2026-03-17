@@ -1,0 +1,136 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        267,
+        230,
+        428,
+        383
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A sin(.)"
+        ]
+      }
+    },
+    {
+      "Component": "A sin(.)",
+      "Pos": [
+        585,
+        198,
+        956,
+        432
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        1082,
+        236,
+        1233,
+        389
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Loop gain"
+        ]
+      }
+    },
+    {
+      "Component": "Loop gain",
+      "Pos": [
+        1402,
+        196,
+        1639,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Loop filter"
+        ]
+      }
+    },
+    {
+      "Component": "Loop filter",
+      "Pos": [
+        1832,
+        187,
+        2152,
+        424
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCO"
+        ]
+      }
+    },
+    {
+      "Component": "VCO",
+      "Pos": [
+        1204,
+        593,
+        1416,
+        903
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图中注入的噪声 $n'(t)$，其到输出相位 $\\hat\\Phi(s)$ 的闭环传递函数 $H_n(s)=\\frac{\\hat\\Phi(s)}{N'(s)}$ 哪个表达式是正确的？",
+      "options": [
+        "A. \\; H_n(s)=\\dfrac{sK F(s)}{s + A K F(s)}",
+        "B. \\; H_n(s)=\\dfrac{1}{1 + \\dfrac{A K F(s)}{s}}",
+        "C. \\; H_n(s)=\\dfrac{A K F(s)}{s + A K F(s)}",
+        "D. \\; H_n(s)=\\dfrac{s}{s + A K F(s)}"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若PLL环路滤波器F(s)在直流具有单位增益(F(0)=1)，输入信号与VCO自由振荡频率存在恒定频偏Δω，在锁定状态下的静态相位误差φ_0=________。",
+      "answer": "\\frac{\\Delta\\omega}{A K}"
+    }
+  ]
+}

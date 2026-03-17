@@ -1,0 +1,254 @@
+{
+  "task1": [
+    {
+      "Component": "a0",
+      "Pos": [
+        312,
+        45,
+        362,
+        105
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "a1",
+      "Pos": [
+        433,
+        81,
+        485,
+        141
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "a2",
+      "Pos": [
+        550,
+        121,
+        599,
+        179
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        676,
+        205,
+        714,
+        243
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "fs"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        261,
+        205,
+        298,
+        243
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ω1/s"
+        ]
+      }
+    },
+    {
+      "Component": "fs",
+      "Pos": [
+        852,
+        180,
+        939,
+        268
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DAC2",
+          "DAC1"
+        ]
+      }
+    },
+    {
+      "Component": "ω1/s",
+      "Pos": [
+        324,
+        187,
+        401,
+        263
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "a1",
+          "ω2/s"
+        ]
+      }
+    },
+    {
+      "Component": "ω2/s",
+      "Pos": [
+        433,
+        187,
+        510,
+        264
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "a2",
+          "ω3/s",
+          "b1"
+        ]
+      }
+    },
+    {
+      "Component": "ω3/s",
+      "Pos": [
+        541,
+        187,
+        617,
+        263
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "DAC2",
+      "Pos": [
+        670,
+        258,
+        723,
+        346
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "b1",
+      "Pos": [
+        391,
+        274,
+        444,
+        335
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "DAC1",
+      "Pos": [
+        294,
+        335,
+        385,
+        389
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图(c)所示的三级前馈被动求和结构中，如果将系数 $a_0$ 置零，则量化噪声在低频附近将被几阶整形？",
+      "options": [
+        "A. 一阶",
+        "B. 二阶",
+        "C. 三阶",
+        "D. 零阶"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图(a)所示三级前馈$\\Delta\\Sigma$调制器的噪声传递函数在低频区近似为$(s/\\omega_1)(s/\\omega_2)(s/\\omega_3)$，则该调制器的噪声整形斜率为 ______。",
+      "answer": "60 dB/decade"
+    }
+  ]
+}

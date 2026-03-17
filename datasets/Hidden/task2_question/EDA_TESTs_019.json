@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设图中连接内部私有外设总线(PPB)和外部PPB的Bridge发生故障，下列哪项调试功能最有可能失效？",
+      "options": [
+        "A. 通过AHB-AP进行的内存和寄存器访问",
+        "B. 由FPB模块实现的硬件断点功能",
+        "C. 通过Trace端口(例如TRACESWO)输出的跟踪数据",
+        "D. 基于DWT的事件和性能计数监测"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中Trace端口的TRACED总线位宽为_____位。(请从以下答案中选择一个：4,2,8,5)"
+    }
+  ]
+}

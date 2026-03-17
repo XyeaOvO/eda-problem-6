@@ -1,0 +1,276 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        106,
+        677,
+        262,
+        811
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Position_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        119,
+        930,
+        256,
+        1064
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Position_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        892,
+        143,
+        1042,
+        284
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Thrust_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        877,
+        503,
+        1042,
+        635
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Roll_PID_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Sum5",
+      "Pos": [
+        884,
+        881,
+        1029,
+        1018
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Pitch_PID_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Sum6",
+      "Pos": [
+        897,
+        1249,
+        1032,
+        1384
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Yaw_PID_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Position_Controller",
+      "Pos": [
+        326,
+        87,
+        607,
+        1526
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4",
+          "Sum5",
+          "Sum6"
+        ]
+      }
+    },
+    {
+      "Component": "Thrust_Controller",
+      "Pos": [
+        1280,
+        85,
+        1728,
+        342
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Translational_Dynamics"
+        ]
+      }
+    },
+    {
+      "Component": "Roll_PID_Controller",
+      "Pos": [
+        1284,
+        455,
+        1726,
+        707
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Rotational_Dynamics"
+        ]
+      }
+    },
+    {
+      "Component": "Pitch_PID_Controller",
+      "Pos": [
+        1282,
+        799,
+        1732,
+        1060
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Rotational_Dynamics"
+        ]
+      }
+    },
+    {
+      "Component": "Yaw_PID_Controller",
+      "Pos": [
+        1284,
+        1188,
+        1732,
+        1447
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Rotational_Dynamics"
+        ]
+      }
+    },
+    {
+      "Component": "Translational_Dynamics",
+      "Pos": [
+        2718,
+        331,
+        3247,
+        627
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3",
+          "Sum1",
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Rotational_Dynamics",
+      "Pos": [
+        2587,
+        742,
+        3125,
+        1058
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Translational_Dynamics",
+          "Sum6",
+          "Sum5",
+          "Sum4"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设图中Yaw PID控制器失效导致其输出$I_4$始终为零，那么以下哪项描述是正确的？",
+      "options": [
+        "A. 只有偏航角$\\psi$无法跟踪，位置$(x,y)$和高度$z$仍可维持",
+        "B. 高度$z$将无法维持，飞行器会坠落",
+        "C. 平面位置$(x,y)$无法跟踪，飞行器将侧向漂移",
+        "D. 滚转$\\phi$和俯仰$\\theta$不受控制，将发生不稳定摆动"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "框图所示的各控制器模块（Thrust Controller, Roll PID Controller, Pitch PID Controller, Yaw PID Controller）输出到动力学模块（Translational Dynamics 和 Rotational Dynamics）的信号连接线总数为______。(请从以下答案中选择一个：6,4,8,3)",
+      "answer": "4"
+    }
+  ]
+}

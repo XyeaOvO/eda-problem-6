@@ -1,0 +1,366 @@
+{
+  "task1": [
+    {
+      "Component": "Pred. segm.",
+      "Pos": [
+        691,
+        1088,
+        858,
+        1192
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Bckg. Mem. (n-k)",
+      "Pos": [
+        127,
+        1215,
+        423,
+        1327
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum5",
+          "sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Motion Field (n-k/n)",
+      "Pos": [
+        630,
+        119,
+        927,
+        232
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Local segm.",
+      "Pos": [
+        691,
+        860,
+        858,
+        967
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum6"
+        ]
+      }
+    },
+    {
+      "Component": "Extrap. segm.",
+      "Pos": [
+        489,
+        973,
+        657,
+        1082
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum6"
+        ]
+      }
+    },
+    {
+      "Component": "Bckg. Mem. (n)",
+      "Pos": [
+        1122,
+        1209,
+        1418,
+        1321
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Image (n-k)",
+      "Pos": [
+        127,
+        296,
+        429,
+        413
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum1",
+          "sum2"
+        ]
+      }
+    },
+    {
+      "Component": "FD",
+      "Pos": [
+        691,
+        639,
+        862,
+        741
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum3",
+          "sum4"
+        ]
+      }
+    },
+    {
+      "Component": "O/B Segm. (n-k)",
+      "Pos": [
+        127,
+        864,
+        429,
+        975
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Extrap. segm."
+        ]
+      }
+    },
+    {
+      "Component": "O/B Segm. (n)",
+      "Pos": [
+        1126,
+        856,
+        1422,
+        967
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum5"
+        ]
+      }
+    },
+    {
+      "Component": "Image (n)",
+      "Pos": [
+        1126,
+        292,
+        1424,
+        409
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum1",
+          "sum2"
+        ]
+      }
+    },
+    {
+      "Component": "DFD",
+      "Pos": [
+        691,
+        413,
+        862,
+        522
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum4"
+        ]
+      }
+    },
+    {
+      "Component": "sum1",
+      "Pos": [
+        763,
+        334,
+        800,
+        371
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DFD"
+        ]
+      }
+    },
+    {
+      "Component": "sum2",
+      "Pos": [
+        763,
+        564,
+        800,
+        600
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "FD"
+        ]
+      }
+    },
+    {
+      "Component": "sum3",
+      "Pos": [
+        757,
+        780,
+        794,
+        816
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Local segm."
+        ]
+      }
+    },
+    {
+      "Component": "sum4",
+      "Pos": [
+        1001,
+        896,
+        1037,
+        933
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "O/B Segm. (n)"
+        ]
+      }
+    },
+    {
+      "Component": "sum5",
+      "Pos": [
+        1257,
+        1005,
+        1293,
+        1041
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Bckg. Mem. (n)"
+        ]
+      }
+    },
+    {
+      "Component": "sum6",
+      "Pos": [
+        763,
+        1009,
+        800,
+        1045
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Pred. segm."
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示分割系统中，如果运动场(Motion Field)估计完全准确，对于静止背景区域，下列哪个模块的输出将近似为零？",
+      "options": [
+        "A. FD 模块",
+        "B. DFD 模块",
+        "C. Local segm. 模块",
+        "D. Extrap. segm. 模块"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示框图中，DFD模块在计算差分前需要先对前一帧图像进行______，以消除背景的运动影响。(选项如下：运动补偿,直接差分,滤波,采样)",
+      "answer": "运动补偿"
+    }
+  ]
+}

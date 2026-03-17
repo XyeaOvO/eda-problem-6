@@ -1,0 +1,212 @@
+{
+  "task1": [
+    {
+      "Component": "Antenna",
+      "Pos": [
+        89,
+        64,
+        157,
+        126
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "RF front-end"
+        ]
+      }
+    },
+    {
+      "Component": "RF front-end",
+      "Pos": [
+        142,
+        186,
+        294,
+        286
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1",
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "LO",
+      "Pos": [
+        346,
+        194,
+        461,
+        278
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1",
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        372,
+        91,
+        432,
+        153
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF1"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        374,
+        320,
+        437,
+        384
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF2"
+        ]
+      }
+    },
+    {
+      "Component": "LPF1",
+      "Pos": [
+        497,
+        80,
+        608,
+        164
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A/D1"
+        ]
+      }
+    },
+    {
+      "Component": "LPF2",
+      "Pos": [
+        498,
+        308,
+        610,
+        397
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A/D2"
+        ]
+      }
+    },
+    {
+      "Component": "A/D1",
+      "Pos": [
+        668,
+        80,
+        781,
+        168
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DSP"
+        ]
+      }
+    },
+    {
+      "Component": "A/D2",
+      "Pos": [
+        670,
+        311,
+        783,
+        397
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DSP"
+        ]
+      }
+    },
+    {
+      "Component": "DSP",
+      "Pos": [
+        829,
+        77,
+        946,
+        398
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如图所示的I/Q直接变频接收机结构，若RF前端在载波频率附近的带宽为±5\\,MHz（即总带宽10\\,MHz），经下变频和LPF后得到的基带I/Q信号带宽均为5\\,MHz。为了使对应的I、Q两路实数ADC不发生混叠，每路ADC的最小采样率应为多少？",
+      "options": [
+        "A. 2.5\\,MS/s",
+        "B. 5\\,MS/s",
+        "C. 10\\,MS/s",
+        "D. 20\\,MS/s"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示的零中频接收机中，图像频率$f_{image}$与射频信号和本振频率的关系为$$f_{image}=2f_{LO}-f_{RF}$$。若$f_{RF}=1\\,\\mathrm{GHz}$，$f_{LO}=995\\,\\mathrm{MHz}$，则$f_{image}=\\underline{\\quad}$。",
+      "answer": "990 MHz"
+    }
+  ]
+}

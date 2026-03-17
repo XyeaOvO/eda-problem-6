@@ -1,0 +1,117 @@
+{
+  "task1": [
+    {
+      "Component": "Controller",
+      "Pos": [
+        21,
+        177,
+        195,
+        267
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Canary Cell Banks",
+          "VDD Generator"
+        ]
+      }
+    },
+    {
+      "Component": "Core Cells",
+      "Pos": [
+        459,
+        94,
+        636,
+        227
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "VDD Generator",
+      "Pos": [
+        21,
+        13,
+        195,
+        103
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Canary Cell Banks",
+          "Core Cells"
+        ]
+      }
+    },
+    {
+      "Component": "Failure Detector",
+      "Pos": [
+        240,
+        272,
+        415,
+        363
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Canary Cell Banks",
+      "Pos": [
+        240,
+        94,
+        415,
+        227
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Failure Detector"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示基于 canary 单元的动态电压调整电路中，如果故障检测器检测到 canary 单元发生失效，控制器应采取下列哪项措施以保证核心电路的可靠性？",
+      "options": [
+        "A. 立即切断核心电路电源，防止进一步损坏",
+        "B. 逐步升高 V_{DD}，直到 canary 单元恢复正常工作",
+        "C. 保持 V_{DD} 不变，切换到备用核心单元组",
+        "D. 降低系统时钟频率而不改变供电电压"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "基于图中金丝雀单元对供应电压 $V_{DD}$ 的实时监测，并通过控制器和 $V_{DD}$ 发生器动态调整供电电压的整体设计技术通常称为 ______。(请选择：自适应电压调节,动态电压频率缩放,电源门控,电压裕度控制)",
+      "answer": "自适应电压调节"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "task1": [
+    {
+      "Component": "1/s²",
+      "Pos": [
+        648,
+        129,
+        733,
+        204
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_626_478"
+        ]
+      }
+    },
+    {
+      "Component": "Rotational Accelerometer",
+      "Pos": [
+        277,
+        212,
+        526,
+        325
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_182_429"
+        ]
+      }
+    },
+    {
+      "Component": "Digital Controller",
+      "Pos": [
+        348,
+        336,
+        506,
+        411
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_182_429"
+        ]
+      }
+    },
+    {
+      "Component": "ADC",
+      "Pos": [
+        542,
+        336,
+        646,
+        411
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Digital Controller"
+        ]
+      }
+    },
+    {
+      "Component": "VCM",
+      "Pos": [
+        382,
+        133,
+        503,
+        207
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_507_287"
+        ]
+      }
+    },
+    {
+      "Component": "DAC",
+      "Pos": [
+        246,
+        133,
+        350,
+        207
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCM"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_182_429",
+      "Pos": [
+        195,
+        306,
+        227,
+        338
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_138_287"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_626_478",
+      "Pos": [
+        672,
+        358,
+        703,
+        389
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_507_287",
+      "Pos": [
+        544,
+        153,
+        576,
+        186
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/s²"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_138_287",
+      "Pos": [
+        148,
+        153,
+        180,
+        186
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DAC"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中“Rotational Accelerometer”与PES及数字控制器构成内环加速度反馈，使得数字控制器所控制的从PES输出到位置输出x(t)的等效被控对象模型由原始的1/s^2变为何种形式？",
+      "options": [
+        "A. \\(1/s^2\\)",
+        "B. \\(1/s\\)",
+        "C. \\(1\\)",
+        "D. \\(s\\)"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中所示的被控对象机械环节 $1/s^2$ 处引入旋转加速度计反馈后，等效质量为\n$$m_{eff}=m \\bigl(1+K_vS_aK_{acc}\\bigr)\n$$\n若 $m=0.01\\,\\mathrm{kg}$，$K_v=0.1\\,\\mathrm{N/V}$，加速度计灵敏度 $S_a=5\\,\\mathrm{V/(m/s^2)}$，加速度反馈增益 $K_{acc}=8$，则 $m_{eff}=\\underline{\\quad}\\,\\mathrm{kg}$。(请从以下答案中选择一个：0.04,0.01,0.05,5)",
+      "answer": "0.05"
+    }
+  ]
+}

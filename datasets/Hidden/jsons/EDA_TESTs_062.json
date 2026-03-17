@@ -1,0 +1,252 @@
+{
+  "task1": [
+    {
+      "Component": "a1 z⁻¹ / (1 − z⁻¹)",
+      "Pos": [
+        554,
+        828,
+        864,
+        1060
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_297_434"
+        ]
+      }
+    },
+    {
+      "Component": "a2 z⁻¹ / (1 − z⁻¹)",
+      "Pos": [
+        1202,
+        828,
+        1511,
+        1060
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "N-bit Quantizer"
+        ]
+      }
+    },
+    {
+      "Component": "M-bit DAC",
+      "Pos": [
+        880,
+        545,
+        1189,
+        738
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_297_434"
+        ]
+      }
+    },
+    {
+      "Component": "N-bit DAC",
+      "Pos": [
+        1418,
+        1170,
+        1727,
+        1366
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_97_434",
+          "Σ_297_434"
+        ]
+      }
+    },
+    {
+      "Component": "K(z)",
+      "Pos": [
+        880,
+        361,
+        1189,
+        529
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "M-bit DAC"
+        ]
+      }
+    },
+    {
+      "Component": "M-bit Quantizer",
+      "Pos": [
+        303,
+        200,
+        612,
+        396
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "z⁻¹_206_232"
+        ]
+      }
+    },
+    {
+      "Component": "N-bit Quantizer",
+      "Pos": [
+        1598,
+        828,
+        1908,
+        1060
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_621_434"
+        ]
+      }
+    },
+    {
+      "Component": "z⁻¹_518_232",
+      "Pos": [
+        1669,
+        219,
+        1834,
+        380
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_621_434"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_621_434",
+      "Pos": [
+        2001,
+        870,
+        2153,
+        1022
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "N-bit DAC"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_297_434",
+      "Pos": [
+        957,
+        870,
+        1109,
+        1022
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "a2 z⁻¹ / (1 − z⁻¹)"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_97_434",
+      "Pos": [
+        313,
+        870,
+        464,
+        1022
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "a1 z⁻¹ / (1 − z⁻¹)"
+        ]
+      }
+    },
+    {
+      "Component": "z⁻¹_206_232",
+      "Pos": [
+        664,
+        219,
+        825,
+        380
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "z⁻¹_518_232",
+          "K(z)"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设图中模拟分支的积分系数a_{1}=a_{2}=1，且数字滤波器K(z)=1 - z^{-1}，则该混合ΣΔ调制器的总体噪声传递函数NTF在理想情况下可简化为哪一项？",
+      "options": [
+        "A. (1 - z^{-1})^{1}",
+        "B. (1 - z^{-1})^{2}",
+        "C. (1 - z^{-1})^{3}",
+        "D. (1 - z^{-1})^{4}"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中模拟分支中两级积分器的系数均设为 $a_1=a_2=1$，且数字滤波器 $K(z)=1 - z^{-1}$，理想DAC下，该混合MASH结构ΣΔ调制器的总噪声传递函数 $NTF(z)= $ ______ 。(请选择：(1 - z^{-1})^3, (1 - z^{-1})^2, 1 - z^{-1}, 1/((1 - z^{-1})^2))",
+      "answer": "(1 - z^{-1})^3"
+    }
+  ]
+}

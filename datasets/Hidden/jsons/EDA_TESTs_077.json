@@ -1,0 +1,114 @@
+{
+  "task1": [
+    {
+      "Component": "90°",
+      "Pos": [
+        110,
+        98,
+        204,
+        150
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer_300_538",
+          "Mixer_300_151"
+        ]
+      }
+    },
+    {
+      "Component": "Mixer_300_538",
+      "Pos": [
+        196,
+        291,
+        244,
+        340
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF_426_538"
+        ]
+      }
+    },
+    {
+      "Component": "LPF_426_538",
+      "Pos": [
+        279,
+        291,
+        375,
+        341
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Mixer_300_151",
+      "Pos": [
+        196,
+        37,
+        244,
+        85
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF_426_149"
+        ]
+      }
+    },
+    {
+      "Component": "LPF_426_149",
+      "Pos": [
+        279,
+        36,
+        377,
+        87
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "当图中90°相移器故障，使其输出相移变为0°（即两路LO同相）时，以下哪项描述正确？",
+      "options": [
+        "I输出与Q输出幅值相同且同相",
+        "I输出为零而Q输出幅值保持原值",
+        "Q输出为零而I输出幅值保持原值",
+        "I输出和Q输出均不受影响"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设系统中90°移相网络存在$5^\\circ$的相位误差，其余器件理想，则该IQ解调器的镜像抑制比(IRR)约为______ dB。(请从以下答案中选择一个：25.3,27.2,28.6,29.5)",
+      "answer": "27.2"
+    }
+  ]
+}

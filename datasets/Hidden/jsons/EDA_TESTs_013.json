@@ -1,0 +1,157 @@
+{
+  "task1": [
+    {
+      "Component": "P(s)",
+      "Pos": [
+        328,
+        136,
+        381,
+        182
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "e^{-θs}",
+          "Σ_465_455"
+        ]
+      }
+    },
+    {
+      "Component": "P(s)e^{-θs}",
+      "Pos": [
+        370,
+        46,
+        464,
+        108
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_605_399"
+        ]
+      }
+    },
+    {
+      "Component": "e^{-θs}",
+      "Pos": [
+        418,
+        136,
+        478,
+        182
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_605_399"
+        ]
+      }
+    },
+    {
+      "Component": "F(s)/[(1-F(s))P(s)]",
+      "Pos": [
+        162,
+        46,
+        271,
+        108
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "P(s)e^{-θs}",
+          "P(s)"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_465_455",
+      "Pos": [
+        386,
+        191,
+        415,
+        220
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_140_297"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_605_399",
+      "Pos": [
+        502,
+        144,
+        531,
+        174
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_465_455"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_140_297",
+      "Pos": [
+        116,
+        60,
+        145,
+        90
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "F(s)/[(1-F(s))P(s)]"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示的Smith预测器结构中，若过程模型$\\hat P(s)=P(s)$但估计时延$\\hat\\theta<\\theta$，则闭环系统的相位裕度将如何变化？",
+      "options": [
+        "A. 相位裕度与理想完全补偿情况相同",
+        "B. 相位裕度减小",
+        "C. 相位裕度增大",
+        "D. 相位裕度变为零"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示的Smith预估器结构中，假设$\\hat P(s)=P(s)$且$\\hat\\theta=\\theta$，则闭环过程变量$PV(s)$与设定值$SP(s)$的传递函数$$\\frac{PV(s)}{SP(s)}=\\underline{\\quad\\quad\\quad\\quad\\quad}\\,$$(请从以下答案中选择一个：\\frac{P(s)}{1+F(s)P(s)}e^{-\\theta s},\\frac{F(s)}{1+F(s)P(s)}e^{-\\theta s},\\frac{F(s)P(s)}{1+F(s)P(s)},\\frac{F(s)P(s)}{1+F(s)P(s)}e^{-\\theta s})",
+      "answer": "\\frac{F(s)P(s)}{1+F(s)P(s)}e^{-\\theta s}"
+    }
+  ]
+}

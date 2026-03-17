@@ -1,0 +1,117 @@
+{
+  "task1": [
+    {
+      "Component": "Tαβ",
+      "Pos": [
+        224,
+        40,
+        310,
+        164
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Tqd(θ)"
+        ]
+      }
+    },
+    {
+      "Component": "1/s",
+      "Pos": [
+        831,
+        43,
+        915,
+        164
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Tqd(θ)"
+        ]
+      }
+    },
+    {
+      "Component": "Tqd(θ)",
+      "Pos": [
+        359,
+        35,
+        462,
+        164
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF"
+        ]
+      }
+    },
+    {
+      "Component": "PI",
+      "Pos": [
+        694,
+        43,
+        781,
+        164
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/s"
+        ]
+      }
+    },
+    {
+      "Component": "LPF",
+      "Pos": [
+        511,
+        46,
+        626,
+        167
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PI"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示SRF-PLL结构中，假设红色LPF模块为一阶低通滤波器，截止频率$f_c=30\\mathrm{Hz}$，则50Hz基波的二次谐波(100Hz)在该LPF处的幅值衰减约为多少？",
+      "options": [
+        "A. -3dB",
+        "B. -7dB",
+        "C. -11dB",
+        "D. -16dB"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若要求图中红色LPF在 $100\\,\\mathrm{Hz}$ 处的相位滞后不超过 $5^\\circ$，则其截止频率 $f_c$ 应至少为 ______ Hz。(请选择：100,500,1143,1672)",
+      "answer": "1143"
+    }
+  ]
+}

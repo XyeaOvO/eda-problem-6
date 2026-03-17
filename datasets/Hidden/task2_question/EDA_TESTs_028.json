@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设在图示的IFO C模型中，Clarke变换模块的b相电流传感器失效导致测得 $i_b$ 恒为0，则该模块的输出 $i_{\\alpha}$ 和 $i_{\\beta}$ 分别为？",
+      "options": [
+        "A. $i_{\\alpha}=i_{a},\\quad i_{\\beta}=\\dfrac{i_{a}}{\\sqrt3}$",
+        "B. $i_{\\alpha}=\\dfrac{i_{a}}{2},\\quad i_{\\beta}=\\dfrac{i_{a}}{\\sqrt3}$",
+        "C. $i_{\\alpha}=i_{a},\\quad i_{\\beta}=\\dfrac{2i_{a}}{\\sqrt3}$",
+        "D. $i_{\\alpha}=0,\\quad i_{\\beta}=i_{a}$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设逆变器直流母线电压 $V_{dc}=300\\,\\mathrm V$，则图中 Reverse Park T. \\& circle limitation 模块所限制的参考电压矢量在 $d$-$q$ 平面上的最大幅值（限幅圆的半径）为 ______ V。(请从以下答案中选择一个：173.2,300,519.6,100)"
+    }
+  ]
+}

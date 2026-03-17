@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设像素时钟DCMI\\_PIXCLK=36MHz，Data extraction模块输出14位像素数据和HSYNC、VSYNC两个同步信号（共16位）到Synchronizer，则该链路的最低数据吞吐量应为多少？",
+      "options": [
+        "A. 512Mb/s",
+        "B. 576Mb/s",
+        "C. 648Mb/s",
+        "D. 720Mb/s"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中Data extraction模块输出14位像素数据，通过32位宽FIFO/Data formatter发送到DMA。为了存储一帧640×480像素的数据，所需FIFO的最小深度为_____（32位字）。(请从以下答案中选择一个：614400,32,307,200,153600)"
+    }
+  ]
+}

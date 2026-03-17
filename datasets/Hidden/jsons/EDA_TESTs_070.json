@@ -1,0 +1,267 @@
+{
+  "task1": [
+    {
+      "Component": "PFD/CP + LF",
+      "Pos": [
+        74,
+        326,
+        157,
+        432
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCO"
+        ]
+      }
+    },
+    {
+      "Component": "VCO",
+      "Pos": [
+        177,
+        340,
+        255,
+        419
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/2_244_462"
+        ]
+      }
+    },
+    {
+      "Component": "/5",
+      "Pos": [
+        449,
+        349,
+        505,
+        406
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "I/Q, 50% duty cycle",
+          "1/2_340_544"
+        ]
+      }
+    },
+    {
+      "Component": "/2",
+      "Pos": [
+        228,
+        446,
+        282,
+        503
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PFD/CP + LF"
+        ]
+      }
+    },
+    {
+      "Component": "/3",
+      "Pos": [
+        228,
+        446,
+        282,
+        503
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "I/Q, 50% duty cycle",
+      "Pos": [
+        562,
+        337,
+        669,
+        419
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Filter"
+        ]
+      }
+    },
+    {
+      "Component": "Filter",
+      "Pos": [
+        675,
+        275,
+        756,
+        356
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Freq. Selector"
+        ]
+      }
+    },
+    {
+      "Component": "Freq. Selector",
+      "Pos": [
+        675,
+        176,
+        756,
+        257
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SSB mixer"
+        ]
+      }
+    },
+    {
+      "Component": "SSB mixer",
+      "Pos": [
+        738,
+        5,
+        833,
+        162
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "1/2_317_462",
+      "Pos": [
+        374,
+        349,
+        429,
+        406
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "/5"
+        ]
+      }
+    },
+    {
+      "Component": "1/2_267_544",
+      "Pos": [
+        315,
+        446,
+        370,
+        503
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "/3"
+        ]
+      }
+    },
+    {
+      "Component": "1/2_244_462",
+      "Pos": [
+        288,
+        349,
+        341,
+        406
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/2_317_462",
+          "SSB mixer"
+        ]
+      }
+    },
+    {
+      "Component": "1/2_340_544",
+      "Pos": [
+        401,
+        446,
+        457,
+        503
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/2_267_544"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中，为产生528\\,MHz的IF本振信号，VCO输出7920\\,MHz依次经过除2、除1.5和除5分频后得到IF本振。请问该分频链的总分频比是多少？",
+      "options": [
+        "A. 10",
+        "B. 15",
+        "C. 12",
+        "D. 20"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中，当Band Select选择-528\\,MHz时，Freq. Selector将Signal Conditioner输出-528\\,MHz信号送入SSB mixer，与VCO分频后3960\\,MHz的信号混频。此时SSB mixer输出的上边带和下边带中心频率分别为______\\,MHz、______\\,MHz。",
+      "answer": "3432"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图示PID控制结构，假设比例增益 $K_p=5$，积分增益 $K_i=20$，微分增益 $K_d=0.1$。该控制器在低频区域(例如 $\\omega=0.01\\ \\mathrm{rad/s}$)处的幅频特性斜率约为多少？",
+      "options": [
+        "A. -20\\ dB/dec",
+        "B. 0\\ dB/dec",
+        "C. +20\\ dB/dec",
+        "D. -40\\ dB/dec"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中比例环节、积分环节和微分环节的增益分别为 $K_p$、$K_i$、$K_d$，则该控制器PID部分的传递函数\n$$C(s)=\\frac{U(s)}{E(s)}$$\n为 ______。(请从以下答案中选择一个：K_p + \\frac{K_i}{s} + K_d s,K_p + frac{K_i}{s},K_p + \\frac{K_d}{s} + K_i s,K_p s + \\frac{K_i}{s} + K_d s)"
+    }
+  ]
+}

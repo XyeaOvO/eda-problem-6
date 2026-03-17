@@ -1,0 +1,496 @@
+{
+  "task1": [
+    {
+      "Component": "LNA",
+      "Pos": [
+        97,
+        64,
+        151,
+        128
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "TA1",
+          "TA2"
+        ]
+      }
+    },
+    {
+      "Component": "TA1",
+      "Pos": [
+        181,
+        63,
+        236,
+        127
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SAMPLER1"
+        ]
+      }
+    },
+    {
+      "Component": "SAMPLER1",
+      "Pos": [
+        263,
+        63,
+        356,
+        128
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SINC FILTER"
+        ]
+      }
+    },
+    {
+      "Component": "SINC FILTER",
+      "Pos": [
+        371,
+        62,
+        453,
+        129
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "8_1"
+        ]
+      }
+    },
+    {
+      "Component": "8_1",
+      "Pos": [
+        481,
+        76,
+        519,
+        113
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "FILTER IIR/SINC1"
+        ]
+      }
+    },
+    {
+      "Component": "FILTER IIR/SINC1",
+      "Pos": [
+        537,
+        63,
+        620,
+        129
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "4_1"
+        ]
+      }
+    },
+    {
+      "Component": "4_1",
+      "Pos": [
+        648,
+        76,
+        685,
+        112
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "IFA1"
+        ]
+      }
+    },
+    {
+      "Component": "IFA1",
+      "Pos": [
+        709,
+        63,
+        766,
+        124
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SINC3 FILTER1"
+        ]
+      }
+    },
+    {
+      "Component": "SINC3 FILTER1",
+      "Pos": [
+        792,
+        62,
+        876,
+        129
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2_1"
+        ]
+      }
+    },
+    {
+      "Component": "2_1",
+      "Pos": [
+        903,
+        76,
+        940,
+        116
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC1"
+        ]
+      }
+    },
+    {
+      "Component": "ADC1",
+      "Pos": [
+        955,
+        62,
+        1038,
+        128
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DIGITAL RECEIVE CHAIN"
+        ]
+      }
+    },
+    {
+      "Component": "DIGITAL RECEIVE CHAIN",
+      "Pos": [
+        1064,
+        62,
+        1155,
+        334
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "ADPLL",
+      "Pos": [
+        321,
+        165,
+        405,
+        232
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DCU"
+        ]
+      }
+    },
+    {
+      "Component": "DCU",
+      "Pos": [
+        430,
+        165,
+        514,
+        234
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PCU"
+        ]
+      }
+    },
+    {
+      "Component": "PCU",
+      "Pos": [
+        792,
+        168,
+        874,
+        234
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DIGITAL RECEIVE CHAIN"
+        ]
+      }
+    },
+    {
+      "Component": "TA2",
+      "Pos": [
+        180,
+        266,
+        235,
+        330
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SAMPLER2"
+        ]
+      }
+    },
+    {
+      "Component": "SAMPLER2",
+      "Pos": [
+        263,
+        266,
+        355,
+        332
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SINC FILTER2"
+        ]
+      }
+    },
+    {
+      "Component": "SINC FILTER2",
+      "Pos": [
+        370,
+        265,
+        455,
+        333
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "8_2"
+        ]
+      }
+    },
+    {
+      "Component": "8_2",
+      "Pos": [
+        480,
+        279,
+        518,
+        320
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "FILTER IIR/SINC2"
+        ]
+      }
+    },
+    {
+      "Component": "FILTER IIR/SINC2",
+      "Pos": [
+        537,
+        268,
+        621,
+        331
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "4_2"
+        ]
+      }
+    },
+    {
+      "Component": "4_2",
+      "Pos": [
+        649,
+        279,
+        682,
+        319
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "IFA2"
+        ]
+      }
+    },
+    {
+      "Component": "IFA2",
+      "Pos": [
+        712,
+        267,
+        763,
+        330
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SINC3 FILTER2"
+        ]
+      }
+    },
+    {
+      "Component": "SINC3 FILTER2",
+      "Pos": [
+        791,
+        267,
+        874,
+        332
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2_2"
+        ]
+      }
+    },
+    {
+      "Component": "2_2",
+      "Pos": [
+        906,
+        279,
+        940,
+        318
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC2"
+        ]
+      }
+    },
+    {
+      "Component": "ADC2",
+      "Pos": [
+        955,
+        266,
+        1040,
+        332
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DIGITAL RECEIVE CHAIN"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中标注的采样率，从 FILTER IIR/SINC 级前后的速率变化可知，该级实际的抽取因子是多少？",
+      "options": [
+        "A. 2",
+        "B. 4",
+        "C. 8",
+        "D. 16"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中在IFA之后的SINC^3滤波器输入采样率为75\\,MS/s，且其抽取因子为2，则该SINC^3滤波器的幅频响应第一个零点位置为_______，单位MHz。",
+      "answer": "37.5"
+    }
+  ]
+}

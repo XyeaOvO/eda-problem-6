@@ -1,0 +1,135 @@
+{
+  "task1": [
+    {
+      "Component": "Sum",
+      "Pos": [
+        244,
+        257,
+        350,
+        357
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Loop Filter"
+        ]
+      }
+    },
+    {
+      "Component": "Loop Filter",
+      "Pos": [
+        431,
+        124,
+        709,
+        455
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Third order modulator"
+        ]
+      }
+    },
+    {
+      "Component": "Third order modulator",
+      "Pos": [
+        796,
+        124,
+        1170,
+        455
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DAC",
+          "f(h) Digital Filter"
+        ]
+      }
+    },
+    {
+      "Component": "DAC",
+      "Pos": [
+        474,
+        555,
+        789,
+        763
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum"
+        ]
+      }
+    },
+    {
+      "Component": "OSR Decimsator",
+      "Pos": [
+        1905,
+        126,
+        2301,
+        670
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "f(h) Digital Filter",
+      "Pos": [
+        1372,
+        124,
+        1820,
+        668
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "OSR Decimsator"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图中所示的三阶Sigma-Delta调制器，当其他条件不变，将过采样率OSR加倍，则带内量化噪声功率大约会减少多少？",
+      "options": [
+        "A. 6 dB",
+        "B. 12 dB",
+        "C. 18 dB",
+        "D. 21 dB"
+      ],
+      "answer": "D"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "如图所示数字抽取滤波器$f(h)$的冲激响应呈三角形，则该滤波器是______阶CIC滤波器。",
+      "answer": "2"
+    }
+  ]
+}

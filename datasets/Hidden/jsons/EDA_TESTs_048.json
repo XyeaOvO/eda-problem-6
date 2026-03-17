@@ -1,0 +1,176 @@
+{
+  "task1": [
+    {
+      "Component": "Quantizer",
+      "Pos": [
+        354,
+        129,
+        594,
+        238
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Coder",
+          "Adder_395_290"
+        ]
+      }
+    },
+    {
+      "Component": "Decoder",
+      "Pos": [
+        760,
+        545,
+        998,
+        659
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_395_489"
+        ]
+      }
+    },
+    {
+      "Component": "Coder",
+      "Pos": [
+        760,
+        126,
+        998,
+        235
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Decoder"
+        ]
+      }
+    },
+    {
+      "Component": "Predictor_217_330",
+      "Pos": [
+        354,
+        330,
+        594,
+        441
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_152_229",
+          "Adder_395_290"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_395_290",
+      "Pos": [
+        644,
+        264,
+        682,
+        302
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Predictor_217_330"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_152_229",
+      "Pos": [
+        248,
+        165,
+        286,
+        202
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer"
+        ]
+      }
+    },
+    {
+      "Component": "Predictor_217_539",
+      "Pos": [
+        354,
+        671,
+        594,
+        783
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_395_489"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_395_489",
+      "Pos": [
+        644,
+        589,
+        682,
+        626
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Predictor_217_539"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图示的DPCM系统，假设预测器采用单位延时，即$\\hat X(n)=X'(n-1)$，那么量化误差$e'(n)$到重构信号$X'(n)$的传递函数$H_n(z)=\\frac{X'(z)}{E'(z)}$是？",
+      "options": [
+        "A. $H_n(z)=1$",
+        "B. $H_n(z)=z^{-1}$",
+        "C. $H_n(z)=\\frac{1}{1-z^{-1}}$",
+        "D. $H_n(z)=\\frac{z^{-1}}{1-z^{-1}}$"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "如图所示接收机中，假设预测器传递函数为 $P(z)=\\alpha z^{-1}$ 且 $|\\alpha|<1$，当量化误差信号 $e'(n)$ 为单位脉冲 $\\delta(n)$ 时，重构输出 $X'(n)$ 的冲激响应 $h(n)=\\;\\underline{\\quad\\quad}$。(选项如下：\\δ(n), \\αδ(n−1), \\δ(n)/(1-α), \\alpha^n u(n))",
+      "answer": "\\alpha^n u(n)"
+    }
+  ]
+}

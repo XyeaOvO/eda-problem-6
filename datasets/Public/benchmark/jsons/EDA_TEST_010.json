@@ -1,0 +1,115 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        207,
+        91,
+        279,
+        157
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        572,
+        152,
+        640,
+        216
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        440,
+        209,
+        510,
+        273
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "Sum5",
+      "Pos": [
+        207,
+        209,
+        280,
+        268
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        443,
+        96,
+        509,
+        157
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在理想情况下(\\varepsilon_1=\\varepsilon_2=0,\\;\\varphi_1=\\varphi_2=0)，且假设输入信号为 s(t)=A\\cos(\\omega_0 t+\\theta)，图中所示多级乘法并相减电路 I_OUT 的输出频谱中，以下哪个说法正确？",
+      "options": [
+        "A. 同时包含上边带 (\\omega_0+\\omega_{02}) 和下边带 |\\omega_0-\\omega_{02}| 两个分量",
+        "B. 仅包含上边带分量 \\omega_0+\\omega_{02}",
+        "C. 仅包含下边带分量 |\\omega_0-\\omega_{02}|",
+        "D. 仅包含直流分量"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在理想情况下($\\varepsilon_1=\\varepsilon_2=0,\\;\\varphi_1=\\varphi_2=0$)，输入信号为$s(t)$，则图中电路输出$I_{OUT}$与$s(t)$的关系为$$I_{OUT}=________$$。",
+      "answer": "s(t)\\cos\\bigl((\\omega_0+\\omega_{02})t\\bigr)"
+    }
+  ]
+}

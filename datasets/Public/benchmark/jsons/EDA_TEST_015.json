@@ -1,0 +1,157 @@
+{
+  "task1": [
+    {
+      "Component": "Lock Detector",
+      "Pos": [
+        60,
+        246,
+        237,
+        336
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PD",
+          "PFD"
+        ]
+      }
+    },
+    {
+      "Component": "PD",
+      "Pos": [
+        227,
+        121,
+        311,
+        207
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF"
+        ]
+      }
+    },
+    {
+      "Component": "LPF",
+      "Pos": [
+        373,
+        119,
+        459,
+        206
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCO"
+        ]
+      }
+    },
+    {
+      "Component": "VCO",
+      "Pos": [
+        502,
+        119,
+        607,
+        206
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PD",
+          "÷N"
+        ]
+      }
+    },
+    {
+      "Component": "CP",
+      "Pos": [
+        299,
+        211,
+        385,
+        276
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF"
+        ]
+      }
+    },
+    {
+      "Component": "÷N",
+      "Pos": [
+        447,
+        324,
+        551,
+        411
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PFD"
+        ]
+      }
+    },
+    {
+      "Component": "PFD",
+      "Pos": [
+        299,
+        322,
+        384,
+        409
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "CP"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中Loop II由PD、单极点LPF和VCO组成，下列关于该环路的描述中，哪一项正确？",
+      "options": [
+        "A. 该环为一阶Type-I PLL",
+        "B. 该环为二阶Type-I PLL",
+        "C. 该环为二阶Type-II PLL",
+        "D. 该环为三阶Type-II PLL"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若图中 $\\div N$ 模块的分频比 $N=20$，参考频率 $f_{REF}=50\\,\\mathrm{MHz}$，则环1锁定后的输出频率 $f_{out}$ 为 ______MHz。",
+      "answer": "1000"
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "task1": [
+    {
+      "Component": "Position_Command",
+      "Pos": [
+        38,
+        436,
+        182,
+        582
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        358,
+        464,
+        453,
+        555
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Position_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Position_Controller",
+      "Pos": [
+        608,
+        371,
+        792,
+        642
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        927,
+        457,
+        1027,
+        555
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Speed_controller"
+        ]
+      }
+    },
+    {
+      "Component": "d-axis_Command",
+      "Pos": [
+        1082,
+        74,
+        1215,
+        218
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "Speed_controller",
+      "Pos": [
+        1160,
+        366,
+        1353,
+        650
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        1376,
+        102,
+        1474,
+        191
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "d-axis_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        1512,
+        466,
+        1594,
+        553
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "q-axis_Controller"
+        ]
+      }
+    },
+    {
+      "Component": "d-axis_Controller",
+      "Pos": [
+        1717,
+        11,
+        1897,
+        273
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2eto2s"
+        ]
+      }
+    },
+    {
+      "Component": "q-axis_Controller",
+      "Pos": [
+        1717,
+        371,
+        1901,
+        642
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2eto2s"
+        ]
+      }
+    },
+    {
+      "Component": "2eto2s",
+      "Pos": [
+        2183,
+        169,
+        2428,
+        629
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Stepper_Motor"
+        ]
+      }
+    },
+    {
+      "Component": "2sto2e",
+      "Pos": [
+        2202,
+        978,
+        2456,
+        1446
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4",
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "LPF",
+      "Pos": [
+        2581,
+        322,
+        2733,
+        472
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Stepper_Motor"
+        ]
+      }
+    },
+    {
+      "Component": "0.006",
+      "Pos": [
+        2587,
+        540,
+        2733,
+        684
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Stepper_Motor"
+        ]
+      }
+    },
+    {
+      "Component": "Stepper_Motor",
+      "Pos": [
+        2924,
+        201,
+        3180,
+        682
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "P",
+          "Sum1",
+          "Sum2",
+          "2sto2e"
+        ]
+      }
+    },
+    {
+      "Component": "P",
+      "Pos": [
+        2803,
+        815,
+        2943,
+        957
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2sto2e",
+          "2eto2s"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中由位置控制器、速度控制器和电流控制器（d 轴与 q 轴控制器）构成的多级闭环系统中，各环路的带宽应满足以下哪种关系？",
+      "options": [
+        "A. 位置环带宽 $\\omega_{c,\\rm pos}$ >> 速度环带宽 $\\omega_{c,\\rm spd}$ >> 电流环带宽 $\\omega_{c,\\rm cur}$",
+        "B. 电流环带宽 $\\omega_{c,\\rm cur}$ >> 速度环带宽 $\\omega_{c,\\rm spd}$ >> 位置环带宽 $\\omega_{c,\\rm pos}$",
+        "C. 速度环带宽 $\\omega_{c,\\rm spd}$ >> 电流环带宽 $\\omega_{c,\\rm cur}$ >> 位置环带宽 $\\omega_{c,\\rm pos}$",
+        "D. 电流环带宽 $\\omega_{c,\\rm cur}$ >> 位置环带宽 $\\omega_{c,\\rm pos}$ >> 速度环带宽 $\\omega_{c,\\rm spd}$"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中摩擦力矩模型为 $T_f = Fc \\times Wm$，其中 $Fc=0.006\\,$N·m/(rad/s)。若机械速度 $Wm=200\\,$rad/s，则摩擦力矩 $T_f=\\underline{\\quad}\\,$N·m。(请从以下答案中选择一个：6,0.2,1.2,0.12)",
+      "answer": "1.2"
+    }
+  ]
+}

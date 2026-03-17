@@ -1,0 +1,213 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        163,
+        216,
+        206,
+        258
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H1(s)"
+        ]
+      }
+    },
+    {
+      "Component": "H1(s)",
+      "Pos": [
+        245,
+        186,
+        360,
+        286
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2",
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        453,
+        217,
+        499,
+        255
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC"
+        ]
+      }
+    },
+    {
+      "Component": "ADC",
+      "Pos": [
+        544,
+        185,
+        669,
+        284
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3",
+          "DAC1",
+          "DAC2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        796,
+        216,
+        841,
+        258
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "NCF",
+      "Pos": [
+        762,
+        369,
+        877,
+        449
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "DAC1",
+      "Pos": [
+        547,
+        305,
+        671,
+        392
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "DAC2",
+      "Pos": [
+        546,
+        385,
+        673,
+        461
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        382,
+        404,
+        430,
+        449
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Back-End Stage"
+        ]
+      }
+    },
+    {
+      "Component": "Back-End Stage",
+      "Pos": [
+        272,
+        507,
+        698,
+        618
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "NCF"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如图所示的Σ–Δ调制器中，一个频率为 $f_{tone}$ 的正弦干扰在 ADC 之前的加法节点处注入。下列哪个选项正确地描述了该注入信号到第一阶段数字输出 $D_{O1}$ 的信号传输函数（STF）？",
+      "options": [
+        "A. STF(s)=H_{1}(s)",
+        "B. STF(s)=1",
+        "C. STF(s)=\\frac{1}{1+H_{1}(s)}",
+        "D. STF(s)=\\frac{H_{1}(s)}{1+H_{1}(s)}"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中一级回路滤波器$$H_1(s)=\\frac{2\\pi\\times100\\mathrm{kHz}}{s+2\\pi\\times100\\mathrm{kHz}}$$，当注入信号频率为$$f_{tone}=10\\mathrm{kHz}$$时，注入信号到第一阶段数字输出$$D_{O1}$$的幅值传输函数$$|STF_{tone}(j\\omega)|\\approx$$______.(请从以下答案中选择一个：0.5,0.05,0.4,1)",
+      "answer": "0.5"
+    }
+  ]
+}

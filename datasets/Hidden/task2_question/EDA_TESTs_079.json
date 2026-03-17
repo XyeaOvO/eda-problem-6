@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中第一个环路滤波器 $\\displaystyle\\frac{1}{sR_{in}C_{n}+1}$ 中，若取 $R_{in}=10\\,\\mathrm{k}\\Omega$，希望其 $-3\\,\\mathrm{dB}$ 截止频率为 $100\\,\\mathrm{kHz}$，下列哪一值最接近 $C_{n}$？",
+      "options": [
+        "A. $15.9\\,\\mathrm{pF}$",
+        "B. $159\\,\\mathrm{pF}$",
+        "C. $1.59\\,\\mathrm{nF}$",
+        "D. $1.59\\,\\mathrm{pF}$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中第二环路滤波器模块中R=20\\,\\mathrm{k}\\Omega，C=5\\,\\mathrm{pF}，则其传递函数分子项$sRC+1$所引入的零点角频率$\\omega_z=\\dfrac{1}{RC}=\\underline{\\quad}\\,$rad/s。(请从以下答案中选择一个：1e5,1e6,1e7,1e8)"
+    }
+  ]
+}

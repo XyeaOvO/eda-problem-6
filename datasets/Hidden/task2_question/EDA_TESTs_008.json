@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示的模型参考自适应控制（MRAC）结构中，Adjustment Mechanism输出的参数向量$\\theta$与Controller输出$u_{pid}$经过图中带叉的连接块一起生成最终控制输入$u$。下列哪种运算最符合该连接块的功能？",
+      "options": [
+        "A. 向量加法运算：$u=\\theta+u_{pid}$",
+        "B. 向量点乘运算：$u=\\theta^T u_{pid}$",
+        "C. 开关式选择运算：根据$\\theta$决定使用哪一路$u_{pid}$",
+        "D. 卷积运算：$u=\\theta * u_{pid}$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设Plant的传递函数P(s)=\\frac{1}{s+1}，Reference Model的传递函数M(s)=\\frac{1}{s+2}，Controller为纯比例增益K=5，且图中带叉的连接块实现u=\\theta\\,u_{pid}。在自适应参数\\theta收敛后，为使闭环传递函数y(s)/r(s)=M(s)，\\theta的收敛值应为______。(请从以下答案中选择一个：5,0.1,1,0.2)"
+    }
+  ]
+}

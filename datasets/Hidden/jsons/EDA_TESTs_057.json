@@ -1,0 +1,173 @@
+{
+  "task1": [
+    {
+      "Component": "filter",
+      "Pos": [
+        744,
+        336,
+        886,
+        411
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "comparator"
+        ]
+      }
+    },
+    {
+      "Component": "summing junction",
+      "Pos": [
+        636,
+        354,
+        682,
+        400
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "filter"
+        ]
+      }
+    },
+    {
+      "Component": "feedback 1 bit DAC",
+      "Pos": [
+        943,
+        101,
+        1134,
+        225
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "summing junction"
+        ]
+      }
+    },
+    {
+      "Component": "Microcontroller or DSP",
+      "Pos": [
+        1568,
+        313,
+        1826,
+        437
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Gate clock",
+      "Pos": [
+        1191,
+        313,
+        1336,
+        437
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Microcontroller or DSP",
+          "feedback 1 bit DAC"
+        ]
+      }
+    },
+    {
+      "Component": "comparator",
+      "Pos": [
+        943,
+        336,
+        1134,
+        411
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gate clock"
+        ]
+      }
+    },
+    {
+      "Component": "sensor",
+      "Pos": [
+        230,
+        336,
+        372,
+        411
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sensor interface"
+        ]
+      }
+    },
+    {
+      "Component": "sensor interface",
+      "Pos": [
+        429,
+        313,
+        576,
+        437
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "summing junction"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中所示的1位ΔΣ调制器架构中，若模拟滤波器实现为一阶积分器，并在保持信号带宽不变的前提下将门控时钟频率加倍，则经过数字滤波和抽取后的输出信噪比(SNR)将大约提高多少dB？",
+      "options": [
+        "A. 3 dB",
+        "B. 6 dB",
+        "C. 9 dB",
+        "D. 12 dB"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中gate clock提供的比特流采样时钟频率为2\\,MHz，且传感器信号带宽限定为20\\,kHz，则该ΔΣ调制器的过采样率OSR = ______。(选项如下：50,25,100,40)",
+      "answer": "50"
+    }
+  ]
+}

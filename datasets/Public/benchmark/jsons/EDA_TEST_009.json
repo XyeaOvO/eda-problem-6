@@ -1,0 +1,117 @@
+{
+  "task1": [
+    {
+      "Component": "Stage K",
+      "Pos": [
+        138,
+        43,
+        279,
+        140
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Stages k+1 to K",
+          "CAT"
+        ]
+      }
+    },
+    {
+      "Component": "EST",
+      "Pos": [
+        161,
+        316,
+        258,
+        367
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "COR"
+        ]
+      }
+    },
+    {
+      "Component": "CAT",
+      "Pos": [
+        161,
+        202,
+        256,
+        253
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "EST",
+          "COR"
+        ]
+      }
+    },
+    {
+      "Component": "COR",
+      "Pos": [
+        161,
+        430,
+        256,
+        479
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Stages k+1 to K",
+      "Pos": [
+        364,
+        44,
+        508,
+        140
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "CAT"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示系统中，EST 模块的主要功能是：",
+      "options": [
+        "A. 将 Stage k 输出的分支度量 $D_k$ 与后续阶段反馈的 $x_{k+1}$ 合并得到综合度量 $x_k$",
+        "B. 对综合度量 $x_k$ 进行软判决，生成待测比特 $g_k$ 的估计值 $\\hat g_k$",
+        "C. 对综合度量 $x_k$ 与估计值 $\\hat g_k$ 进行硬判决并输出 $y_k$",
+        "D. 对输入信号 $v_k$ 进行时钟同步和采样"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设 $K=5$，且每个 $D_k$ 为3维列向量，$x_{6}$ 初始化为零向量，则 CAT 模块输出 $x_3$ 的向量维度为 ______ 维。",
+      "answer": "9"
+    }
+  ]
+}

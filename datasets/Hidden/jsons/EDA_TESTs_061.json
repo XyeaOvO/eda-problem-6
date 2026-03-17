@@ -1,0 +1,237 @@
+{
+  "task1": [
+    {
+      "Component": "Timing Recov.",
+      "Pos": [
+        401,
+        96,
+        486,
+        166
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC"
+        ]
+      }
+    },
+    {
+      "Component": "AGC",
+      "Pos": [
+        175,
+        96,
+        262,
+        166
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PGA_127_389"
+        ]
+      }
+    },
+    {
+      "Component": "Forward Equalizer",
+      "Pos": [
+        535,
+        244,
+        621,
+        315
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_475_402"
+        ]
+      }
+    },
+    {
+      "Component": "Feedback Equalizer",
+      "Pos": [
+        749,
+        360,
+        835,
+        432
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_475_402"
+        ]
+      }
+    },
+    {
+      "Component": "ADC",
+      "Pos": [
+        401,
+        244,
+        486,
+        315
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Forward Equalizer"
+        ]
+      }
+    },
+    {
+      "Component": "Slicer",
+      "Pos": [
+        761,
+        244,
+        815,
+        315
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Feedback Equalizer",
+          "Adder_551_328",
+          "Timing Recov.",
+          "AGC"
+        ]
+      }
+    },
+    {
+      "Component": "Offset Comp.",
+      "Pos": [
+        289,
+        96,
+        376,
+        166
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_225_402"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_551_328",
+      "Pos": [
+        776,
+        158,
+        808,
+        190
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Timing Recov.",
+          "Offset Comp.",
+          "AGC"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_225_402",
+      "Pos": [
+        317,
+        262,
+        353,
+        296
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_475_402",
+      "Pos": [
+        669,
+        262,
+        702,
+        296
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Slicer",
+          "Adder_551_328"
+        ]
+      }
+    },
+    {
+      "Component": "PGA_127_389",
+      "Pos": [
+        179,
+        244,
+        265,
+        315
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_225_402"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如果将图中Offset Comp.模块从ADC输入端之前移到ADC采样之后（即在数字域进行偏置补偿），以下哪项关于系统量化噪声和动态范围的描述是正确的？",
+      "options": [
+        "A. 动态范围不变，量化噪声不变",
+        "B. 动态范围降低，量化噪声增加",
+        "C. 动态范围保持不变，量化噪声降低",
+        "D. 动态范围增加，量化噪声增加"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中由 Forward Equalizer、Feedback Equalizer 以及 Slicer 共同构成的均衡结构被称为________。(请选择：线性均衡器,决策反馈均衡器,自适应均衡器,最大似然序列检测)",
+      "answer": "决策反馈均衡器(Decision Feedback Equalizer)"
+    }
+  ]
+}

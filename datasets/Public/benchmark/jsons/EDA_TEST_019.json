@@ -1,0 +1,118 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        138,
+        142,
+        200,
+        210
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        257,
+        146,
+        319,
+        210
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3",
+          "z1"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        537,
+        141,
+        599,
+        209
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "z2"
+        ]
+      }
+    },
+    {
+      "Component": "z1",
+      "Pos": [
+        369,
+        211,
+        455,
+        300
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "z2",
+      "Pos": [
+        369,
+        342,
+        454,
+        429
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如图所示的Σ–Δ调制器结构，输入信号x[n]和量化误差e[n]在输出端叠加形成y[n]。则该系统的信号传递函数H_s(z)=Y(z)/X(z)和噪声传递函数H_n(z)=Y(z)/E(z)分别为？",
+      "options": [
+        "A. H_s(z)=\\frac{1}{1-z^{-1}},\\quad H_n(z)=\\frac{1}{1-z^{-1}}",
+        "B. H_s(z)=z^{-1},\\quad H_n(z)=\\frac{1}{z}",
+        "C. H_s(z)=1,\\quad H_n(z)=1-z^{-1}",
+        "D. H_s(z)=1,\\quad H_n(z)=\\frac{z^{-1}}{1-z^{-1}}"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "根据图中所示的Σ−Δ调制器结构，输出y[n]与量化误差e[n]之间的噪声传递函数H_n(z)=\\frac{Y(z)}{E(z)}为 ______。",
+      "answer": "1 - z^{-1}"
+    }
+  ]
+}

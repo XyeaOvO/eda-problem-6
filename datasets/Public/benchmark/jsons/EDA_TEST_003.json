@@ -1,0 +1,173 @@
+{
+  "task1": [
+    {
+      "Component": "Ramp",
+      "Pos": [
+        31,
+        85,
+        67,
+        120
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum"
+        ]
+      }
+    },
+    {
+      "Component": "Sum",
+      "Pos": [
+        166,
+        89,
+        191,
+        114
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Scope",
+          "Transfer Fcn2"
+        ]
+      }
+    },
+    {
+      "Component": "Transfer Fcn2",
+      "Pos": [
+        216,
+        71,
+        347,
+        133
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gain"
+        ]
+      }
+    },
+    {
+      "Component": "Gain",
+      "Pos": [
+        371,
+        83,
+        404,
+        118
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Transfer Fcn"
+        ]
+      }
+    },
+    {
+      "Component": "Transfer Fcn",
+      "Pos": [
+        436,
+        71,
+        547,
+        133
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gain1"
+        ]
+      }
+    },
+    {
+      "Component": "Scope",
+      "Pos": [
+        217,
+        8,
+        251,
+        45
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Transfer Fcn1",
+      "Pos": [
+        200,
+        231,
+        311,
+        293
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum"
+        ]
+      }
+    },
+    {
+      "Component": "Gain1",
+      "Pos": [
+        508,
+        243,
+        566,
+        280
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Transfer Fcn1"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中所示被控对象 $G(s)=\\displaystyle\\frac{0.027}{0.0008s^3+0.108s^2+s}$ 的极点分布，下列哪项正确？",
+      "options": [
+        "A. 系统具有一个原点极点和一对复共轭极点",
+        "B. 极点分别位于 $s=0,\\,-8,\\,-100$",
+        "C. 极点分别位于 $s=0,\\,-9.26,\\,-1250$",
+        "D. 极点分别位于 $s=0,\\,-10,\\,-125$"
+      ],
+      "answer": "D"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "对于图中闭环系统，当输入为单位斜坡信号（斜率为1）时，系统的稳态误差 $e_{ss}=\\displaystyle\\frac{1}{K_v}\\approx$______。",
+      "answer": "0.015"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "task1": [
+    {
+      "Component": "DAC",
+      "Pos": [
+        707,
+        284,
+        815,
+        350
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_174_344",
+          "Adder_461_402"
+        ]
+      }
+    },
+    {
+      "Component": "NC(z)",
+      "Pos": [
+        494,
+        204,
+        602,
+        270
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_318_344"
+        ]
+      }
+    },
+    {
+      "Component": "H(z)",
+      "Pos": [
+        324,
+        122,
+        412,
+        189
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_318_344"
+        ]
+      }
+    },
+    {
+      "Component": "Quantizer",
+      "Pos": [
+        728,
+        113,
+        836,
+        201
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DAC"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_318_344",
+      "Pos": [
+        448,
+        134,
+        491,
+        177
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer",
+          "Adder_461_402"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_461_402",
+      "Pos": [
+        649,
+        215,
+        693,
+        259
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "NC(z)"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_174_344",
+      "Pos": [
+        245,
+        134,
+        289,
+        177
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H(z)"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中所示的噪声整形$\\Sigma\\Delta$调制器，从输入$u[n]$到输出$y[n]$的信号传递函数$\\mathrm{STF}(z)=\\frac{Y(z)}{U(z)}$的正确表达式是？",
+      "options": [
+        "A. \\displaystyle \\frac{H(z)}{1+H(z)}",
+        "B. \\displaystyle \\frac{1}{1+H(z)}",
+        "C. \\displaystyle \\frac{NC(z)}{1+NC(z)}",
+        "D. \\displaystyle \\frac{H(z)\\,NC(z)}{1+H(z)\\,NC(z)}"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中ΣΔ调制器的环路滤波器和噪声整形网络分别为\n$$H(z)=\\frac{z^{-1}}{1-z^{-1}},\\quad NC(z)=z^{-1},$$\n则该调制器的噪声传递函数NTF(z)=________。(请选择：1 - z^{-1},1 - z^{-2},1 - z^{-3},1 - z^{-4})",
+      "answer": "1 - z^{-1}"
+    }
+  ]
+}

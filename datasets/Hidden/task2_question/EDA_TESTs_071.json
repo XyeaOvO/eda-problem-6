@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中标记为“Second order Low pass Filter”的滤波器传递函数为\n$$H(s)=\\frac{W_n^2}{s^2+2\\zeta_eW_n s+W_n^2}$$\n, 以下哪个说法正确？",
+      "options": [
+        "A. 该滤波器在直流时的增益为1",
+        "B. 在$\\omega=W_n$处，其相位滞后约为45°",
+        "C. 对于$\\omega\\gg W_n$，幅频特性衰减速率为20dB/dec",
+        "D. 该滤波器在高频区具有相位超前特性"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "根据图中环路结构及积分器数量，该锁相环系统为第____型PLL。(请从以下答案中选择一个：一,二,三,四)"
+    }
+  ]
+}

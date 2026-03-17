@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如果将图中Offset Comp.模块从ADC输入端之前移到ADC采样之后（即在数字域进行偏置补偿），以下哪项关于系统量化噪声和动态范围的描述是正确的？",
+      "options": [
+        "A. 动态范围不变，量化噪声不变",
+        "B. 动态范围降低，量化噪声增加",
+        "C. 动态范围保持不变，量化噪声降低",
+        "D. 动态范围增加，量化噪声增加"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中由 Forward Equalizer、Feedback Equalizer 以及 Slicer 共同构成的均衡结构被称为________。(请选择：线性均衡器,决策反馈均衡器,自适应均衡器,最大似然序列检测)"
+    }
+  ]
+}

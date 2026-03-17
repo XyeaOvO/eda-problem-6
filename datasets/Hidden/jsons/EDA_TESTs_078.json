@@ -1,0 +1,150 @@
+{
+  "task1": [
+    {
+      "Component": "Comp (4/8)",
+      "Pos": [
+        107,
+        241,
+        279,
+        340
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Comp (2/8)",
+          "Comp (6/8)"
+        ]
+      }
+    },
+    {
+      "Component": "Comp (2/8)",
+      "Pos": [
+        398,
+        282,
+        570,
+        381
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Comp (1/8)",
+          "Comp (3/8)"
+        ]
+      }
+    },
+    {
+      "Component": "Comp (6/8)",
+      "Pos": [
+        398,
+        148,
+        570,
+        247
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Comp (5/8)",
+          "Comp (7/8)"
+        ]
+      }
+    },
+    {
+      "Component": "Comp (7/8)",
+      "Pos": [
+        688,
+        9,
+        860,
+        108
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Comp (5/8)",
+      "Pos": [
+        688,
+        148,
+        860,
+        247
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Comp (3/8)",
+      "Pos": [
+        688,
+        282,
+        860,
+        381
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Comp (1/8)",
+      "Pos": [
+        688,
+        416,
+        860,
+        515
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中由多级比较器和时钟控制逻辑构成的电路，以下哪种ADC架构最符合该电路的工作原理？",
+      "options": [
+        "A. 逐次逼近型ADC（SAR）",
+        "B. 闪速型ADC（Flash）",
+        "C. 管道型ADC（Pipeline）",
+        "D. Σ-Δ型ADC（Sigma-Delta）"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图示三级子范围比较器ADC结构中，该ADC的最小可分辨电压（LSB）为 ______。(请从以下答案中选择一个：V_{ref}/8,V_{ref}/4,V_{ref}/2,2*V_{ref}/3)",
+      "answer": "V_{ref}/8"
+    }
+  ]
+}

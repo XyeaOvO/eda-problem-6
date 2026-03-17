@@ -1,0 +1,322 @@
+{
+  "task1": [
+    {
+      "Component": "Timing Recovery PLL",
+      "Pos": [
+        568,
+        50,
+        720,
+        135
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Analog Data Sampler",
+      "Pos": [
+        431,
+        158,
+        550,
+        238
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Look-Ahead Detector",
+          "SAMPLED AGC Charge Pump",
+          "Timing Recovery"
+        ]
+      }
+    },
+    {
+      "Component": "AGC Amplifier",
+      "Pos": [
+        143,
+        160,
+        238,
+        239
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Programmable Continuous Time Filter"
+        ]
+      }
+    },
+    {
+      "Component": "Servo Demodulator",
+      "Pos": [
+        268,
+        462,
+        415,
+        542
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Servo Position Data"
+        ]
+      }
+    },
+    {
+      "Component": "1,7 Encoder",
+      "Pos": [
+        718,
+        357,
+        838,
+        442
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Write Precomp"
+        ]
+      }
+    },
+    {
+      "Component": "1,7 Decoder",
+      "Pos": [
+        718,
+        156,
+        827,
+        236
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Time Base Generator",
+      "Pos": [
+        718,
+        247,
+        838,
+        328
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1,7 Encoder",
+          "Timing Recovery"
+        ]
+      }
+    },
+    {
+      "Component": "Programmable Continuous Time Filter",
+      "Pos": [
+        254,
+        158,
+        412,
+        238
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Data Sampler",
+          "Full Wave Rectifier",
+          "Gated Peak Detector"
+        ]
+      }
+    },
+    {
+      "Component": "Timing Recovery",
+      "Pos": [
+        568,
+        50,
+        720,
+        135
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Analog Look-Ahead Detector",
+      "Pos": [
+        564,
+        156,
+        687,
+        238
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Timing Recovery PLL",
+          "SAMPLED AGC Charge Pump",
+          "1,7 Decoder"
+        ]
+      }
+    },
+    {
+      "Component": "Write Precomp",
+      "Pos": [
+        571,
+        357,
+        690,
+        440
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Servo Position Data",
+      "Pos": [
+        268,
+        462,
+        415,
+        542
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Continuous AGC Charge Pump",
+      "Pos": [
+        103,
+        366,
+        247,
+        448
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AGC Amplifier"
+        ]
+      }
+    },
+    {
+      "Component": "Full Wave Rectifier",
+      "Pos": [
+        268,
+        365,
+        389,
+        445
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Servo Demodulator",
+          "Continuous AGC Charge Pump"
+        ]
+      }
+    },
+    {
+      "Component": "Gated Peak Detector",
+      "Pos": [
+        272,
+        38,
+        393,
+        126
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "SAMPLED AGC Charge Pump",
+      "Pos": [
+        416,
+        273,
+        560,
+        353
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AGC Amplifier"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中Timing Recovery PLL的时钟恢复回路的输入信号来自下列哪个模块的输出？",
+      "options": [
+        "A. Programmable Continuous Time Filter的输出",
+        "B. Analog Data Sampler的输出",
+        "C. Analog Look-Ahead Detector的输出",
+        "D. 1,7 Decoder的输出"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在如图所示读写通道中，模块“1,7 Encoder”采用的是RLL(1,7)编码，其数对(d,k)中的k表示允许的最大连续零个数。这里k的值为______。(请从以下答案中选择一个：1,5,7,10)",
+      "answer": "7"
+    }
+  ]
+}

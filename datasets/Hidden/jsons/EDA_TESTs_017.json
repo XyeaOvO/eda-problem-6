@@ -1,0 +1,350 @@
+{
+  "task1": [
+    {
+      "Component": "Discrete Filter6",
+      "Pos": [
+        285,
+        14,
+        726,
+        95
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Scope1"
+        ]
+      }
+    },
+    {
+      "Component": "Scope1",
+      "Pos": [
+        824,
+        37,
+        888,
+        135
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "1024",
+      "Pos": [
+        105,
+        25,
+        187,
+        83
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Memory2"
+        ]
+      }
+    },
+    {
+      "Component": "Memory2",
+      "Pos": [
+        212,
+        34,
+        255,
+        76
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Discrete Filter6",
+          "Summing junction_290_295"
+        ]
+      }
+    },
+    {
+      "Component": "Chrp Signal1",
+      "Pos": [
+        24,
+        34,
+        69,
+        76
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1024"
+        ]
+      }
+    },
+    {
+      "Component": "Gain11",
+      "Pos": [
+        611,
+        612,
+        665,
+        654
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_584_295"
+        ]
+      }
+    },
+    {
+      "Component": "Gain10",
+      "Pos": [
+        611,
+        487,
+        665,
+        530
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_584_295"
+        ]
+      }
+    },
+    {
+      "Component": "Gain9",
+      "Pos": [
+        442,
+        487,
+        512,
+        530
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_290_295"
+        ]
+      }
+    },
+    {
+      "Component": "Gain12",
+      "Pos": [
+        442,
+        612,
+        512,
+        654
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_290_295"
+        ]
+      }
+    },
+    {
+      "Component": "Gain8",
+      "Pos": [
+        611,
+        356,
+        665,
+        399
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_584_295"
+        ]
+      }
+    },
+    {
+      "Component": "Gain7",
+      "Pos": [
+        442,
+        356,
+        512,
+        399
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_290_295"
+        ]
+      }
+    },
+    {
+      "Component": "Gain6",
+      "Pos": [
+        611,
+        229,
+        665,
+        282
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_584_295"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_584_295",
+      "Pos": [
+        728,
+        233,
+        765,
+        275
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Scope1"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_290_295",
+      "Pos": [
+        361,
+        233,
+        404,
+        275
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gain6",
+          "1/z_429_345"
+        ]
+      }
+    },
+    {
+      "Component": "1/z_429_345",
+      "Pos": [
+        535,
+        295,
+        583,
+        344
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gain8",
+          "Gain7",
+          "1/z_429_449"
+        ]
+      }
+    },
+    {
+      "Component": "1/z_429_449",
+      "Pos": [
+        535,
+        425,
+        583,
+        474
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gain10",
+          "Gain9",
+          "1/z_429_549"
+        ]
+      }
+    },
+    {
+      "Component": "1/z_429_549",
+      "Pos": [
+        535,
+        550,
+        583,
+        598
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gain12",
+          "Gain11"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如下图所示，下方由 Unit Delay、Gain 及 Sum 组成的结构实现上方 Discrete Filter6 中所示传递函数，该结构最符合哪种滤波器实现形式？",
+      "options": [
+        "A. 直接型 I 结构 (Direct Form I)",
+        "B. 直接型 II 非转置结构 (Direct Form II non-transposed)",
+        "C. 直接型 II 转置结构 (Direct Form II transposed)",
+        "D. 并联分解结构 (Parallel Form)"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "设图中Discrete Filter6的传递函数为\n$$H(z)=\\frac{0.037259033075663195+z^{-1}+z^{-3}}{1+0.97725265897988278z^{-2}+0.67806909518150338z^{-4}},$$\n则该滤波器对单位阶跃输入信号的稳态输出值为______。(请从以下答案中选择一个：2.655322,1,0.767236,2.037259)",
+      "answer": "0.767236"
+    }
+  ]
+}

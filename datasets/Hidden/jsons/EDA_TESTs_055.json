@@ -1,0 +1,115 @@
+{
+  "task1": [
+    {
+      "Component": "Σ",
+      "Pos": [
+        704,
+        136,
+        758,
+        191
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "SINC²(τ_SH f/fs)",
+      "Pos": [
+        533,
+        211,
+        704,
+        316
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ"
+        ]
+      }
+    },
+    {
+      "Component": "τ_SH²",
+      "Pos": [
+        198,
+        194,
+        316,
+        312
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2(BW/π)"
+        ]
+      }
+    },
+    {
+      "Component": "2(BW/π)",
+      "Pos": [
+        363,
+        211,
+        485,
+        316
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SINC²(τ_SH f/fs)"
+        ]
+      }
+    },
+    {
+      "Component": "1-τ_SH",
+      "Pos": [
+        198,
+        31,
+        316,
+        149
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "为了使图中所示的两条并行路径在直流处整体传输函数的增益恰好为1，以下哪个关系必须成立？",
+      "options": [
+        "A. $BW_n=\\dfrac{f_s}{2\\,\\tau_{SH}}$",
+        "B. $BW_n=\\dfrac{\\tau_{SH}}{2\\,f_s}$",
+        "C. $BW_n=\\dfrac{f_s\\,\\tau_{SH}}{2}$",
+        "D. $BW_n=\\dfrac{2\\,f_s}{\\tau_{SH}}$"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中第一条传输支路经过的 $1-τ_{SH}$ 模块，其频域传输函数 $H_1(f)=1-e^{-j2\\pi fτ_{SH}}$。试求该模块的第一个零点（非零频率处）的频率 $f_z$，即 $f_z=\\underline{\\quad}$（Hz）。(选项如下：1/（2*τ_{SH}）,2/τ_{SH},1/τ_{SH},1/(pi*τ_{SH}))",
+      "answer": "1/τ_{SH}"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "task1": [
+    {
+      "Component": "h_2k",
+      "Pos": [
+        324,
+        64,
+        536,
+        179
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "INVERSION CONTROL",
+      "Pos": [
+        148,
+        360,
+        299,
+        473
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1-TO-2 DEMUX"
+        ]
+      }
+    },
+    {
+      "Component": "h_{2k+1}",
+      "Pos": [
+        324,
+        199,
+        536,
+        319
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "2/T CLOCK GENERATOR",
+      "Pos": [
+        311,
+        367,
+        538,
+        458
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "h_{2k+1}"
+        ]
+      }
+    },
+    {
+      "Component": "1-TO-2 DEMUX",
+      "Pos": [
+        156,
+        64,
+        279,
+        315
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "h_2k",
+          "h_{2k+1}"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图示电路中的1-TO-2 DEMUX和INVERSION CONTROL模块主要实现了哪种功能？",
+      "options": [
+        "A. 对\\(\\frac{4}{T}\\)采样率的数字IF信号进行\\(\\frac{2}{T}\\)的抽取滤波",
+        "B. 利用多相分解方法对低通滤波器进行多相实现",
+        "C. 通过复数混频将采样率为\\(4/T\\)、中心频率为\\(1/T\\)的数字IF信号下变频至基带，获得I\\/Q分量",
+        "D. 生成具有90°相移的时钟以用于四相采样"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "根据图(b)所示结构，多相子滤波器组 $h_{2k}$ 和 $h_{2k+1}$ 对 $k=0,1,\\dots,19$，则构成的整体 FIR 滤波器的抽头数为 ______。(请从以下答案中选择一个：38,40,39,20)",
+      "answer": "40"
+    }
+  ]
+}

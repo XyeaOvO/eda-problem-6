@@ -1,0 +1,364 @@
+{
+  "task1": [
+    {
+      "Component": "y1",
+      "Pos": [
+        671,
+        104,
+        738,
+        166
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "y2"
+        ]
+      }
+    },
+    {
+      "Component": "y2",
+      "Pos": [
+        948,
+        106,
+        1014,
+        166
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "OpNoise",
+      "Pos": [
+        276,
+        362,
+        382,
+        417
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "b",
+      "Pos": [
+        107,
+        486,
+        144,
+        526
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "kT/C"
+        ]
+      }
+    },
+    {
+      "Component": "b1",
+      "Pos": [
+        107,
+        81,
+        144,
+        122
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "kT/C2"
+        ]
+      }
+    },
+    {
+      "Component": "yout",
+      "Pos": [
+        1050,
+        270,
+        1117,
+        325
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "z⁻¹/(1–z⁻¹)_306_365",
+      "Pos": [
+        483,
+        256,
+        583,
+        325
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "y1",
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "z⁻¹/(1–z⁻¹)_203_254",
+      "Pos": [
+        321,
+        81,
+        370,
+        136
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Jitter"
+        ]
+      }
+    },
+    {
+      "Component": "b2",
+      "Pos": [
+        214,
+        372,
+        252,
+        412
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "OpNoise"
+        ]
+      }
+    },
+    {
+      "Component": "kT/C",
+      "Pos": [
+        106,
+        368,
+        190,
+        449
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "kT/C2",
+      "Pos": [
+        107,
+        168,
+        194,
+        248
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Jitter",
+      "Pos": [
+        186,
+        78,
+        269,
+        139
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "kT/C2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        419,
+        270,
+        459,
+        311
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "z⁻¹/(1–z⁻¹)_306_365"
+        ]
+      }
+    },
+    {
+      "Component": "z⁻¹/(1–z⁻¹)",
+      "Pos": [
+        780,
+        264,
+        877,
+        335
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Relay",
+          "y2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        222,
+        260,
+        261,
+        301
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        623,
+        282,
+        663,
+        320
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "b2_2"
+        ]
+      }
+    },
+    {
+      "Component": "b2_2",
+      "Pos": [
+        687,
+        269,
+        747,
+        330
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "z⁻¹/(1–z⁻¹)"
+        ]
+      }
+    },
+    {
+      "Component": "Relay",
+      "Pos": [
+        941,
+        268,
+        997,
+        331
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "yout",
+          "Sum3",
+          "kT/C"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在如图所示的二阶ΣΔ调制器中，以下哪种噪声源在低频处仅经历一次积分的噪声整形(即20dB/dec)？",
+      "options": [
+        "A. 采样电容kT/C产生的热噪声",
+        "B. 采样抖动(Jitter)引入的噪声",
+        "C. 运放(OpNoise)内的噪声",
+        "D. 量化器(Relay)引入的量化噪声"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中 kT/C 模块的采样电容 C=50fF，环境温度 T=300K，则单次采样电容电压的均方根热噪声为______ μV。(选项如下：129,64,0.083,288)",
+      "answer": "288"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "task1": [
+    {
+      "Component": "HOMC(z)",
+      "Pos": [
+        243,
+        130,
+        421,
+        198
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier",
+          "z⁻¹"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier",
+      "Pos": [
+        605,
+        144,
+        647,
+        184
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier1"
+        ]
+      }
+    },
+    {
+      "Component": "z⁻¹",
+      "Pos": [
+        492,
+        189,
+        580,
+        256
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier"
+        ]
+      }
+    },
+    {
+      "Component": "Accum_i[n]",
+      "Pos": [
+        790,
+        120,
+        1100,
+        207
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Multiplier1",
+      "Pos": [
+        716,
+        144,
+        758,
+        184
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Accum_i[n]"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中Weighted Accum.模块由前一时刻累加输出 $\\mathrm{Accum}_i[n-1]$ 与乘法系数 $c_{i,p}[n-1]$ 乘以当前输入相加构成。关于该模块的系统特性，以下哪项最准确？",
+      "options": [
+        "A. 时不变 IIR 滤波器",
+        "B. 时变 FIR 滤波器",
+        "C. 时变 IIR 滤波器",
+        "D. 时不变 FIR 滤波器"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中第一个乘法器输出的信号 $x[n]\\cdot x[n-1]$ 在统计信号处理中称为 ________。(选项如下：自相关,互相关,卷积,协方差)",
+      "answer": "一阶自相关"
+    }
+  ]
+}

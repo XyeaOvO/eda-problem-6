@@ -1,0 +1,193 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        136,
+        114,
+        202,
+        182
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DAC"
+        ]
+      }
+    },
+    {
+      "Component": "DAC",
+      "Pos": [
+        257,
+        113,
+        343,
+        184
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF1"
+        ]
+      }
+    },
+    {
+      "Component": "ADC",
+      "Pos": [
+        266,
+        315,
+        348,
+        383
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "PPA",
+      "Pos": [
+        660,
+        86,
+        782,
+        214
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "GAIN"
+        ]
+      }
+    },
+    {
+      "Component": "GAIN",
+      "Pos": [
+        676,
+        300,
+        756,
+        390
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        535,
+        114,
+        602,
+        184
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PPA"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        531,
+        311,
+        601,
+        387
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF2"
+        ]
+      }
+    },
+    {
+      "Component": "LPF1",
+      "Pos": [
+        417,
+        114,
+        502,
+        186
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "LPF2",
+      "Pos": [
+        412,
+        314,
+        496,
+        389
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图中所示的两个采样保持环节Ts_{DAC}和Ts_{ADC}，在低频区它们对系统相位的总滞后可近似表示为何者？",
+      "options": [
+        "A. -\\omega\\,(T_{s_{DAC}}+T_{s_{ADC}})",
+        "B. -\\tfrac{\\omega\\,(T_{s_{DAC}}+T_{s_{ADC}})}{2}",
+        "C. -\\tfrac{\\omega\\,(T_{s_{DAC}}+T_{s_{ADC}})}{3}",
+        "D. 在低频区可忽略不计"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中前向滤波器和反馈滤波器均为一阶低通滤波器，时间常数分别为 $\\tau_{FW}=10\\,\\mu\\text{s}$ 和 $\\tau_{FB}=40\\,\\mu\\text{s}$，则闭环 $-3\\,\\mathrm{dB}$ 带宽 $$f_c\\approx\\frac{1}{2\\pi\\sqrt{\\tau_{FW}\\tau_{FB}}}=\\underline{\\quad\\quad}\\,\\mathrm{kHz}.$$",
+      "answer": "7.96 kHz"
+    }
+  ]
+}

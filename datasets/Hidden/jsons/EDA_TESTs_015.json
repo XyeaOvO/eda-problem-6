@@ -1,0 +1,370 @@
+{
+  "task1": [
+    {
+      "Component": "PID for altitude",
+      "Pos": [
+        222,
+        10,
+        360,
+        55
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_630_276"
+        ]
+      }
+    },
+    {
+      "Component": "PID for x position",
+      "Pos": [
+        222,
+        64,
+        360,
+        109
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Conversion control signals T to attitude set-points"
+        ]
+      }
+    },
+    {
+      "Component": "PID for y position",
+      "Pos": [
+        222,
+        120,
+        360,
+        165
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Conversion control signals T to attitude set-points"
+        ]
+      }
+    },
+    {
+      "Component": "Conversion control signals T to attitude set-points",
+      "Pos": [
+        391,
+        64,
+        545,
+        169
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_403_321",
+          "Summing junction_433_359"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_55_279",
+      "Pos": [
+        78,
+        14,
+        110,
+        47
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID for altitude"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_81_321",
+      "Pos": [
+        114,
+        73,
+        147,
+        106
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID for x position"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_111_359",
+      "Pos": [
+        157,
+        127,
+        189,
+        159
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID for y position"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_403_321",
+      "Pos": [
+        569,
+        73,
+        601,
+        106
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID-MFENN for φ_497_314"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_433_359",
+      "Pos": [
+        611,
+        127,
+        644,
+        159
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID-MFENN for φ_497_356"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_460_400",
+      "Pos": [
+        649,
+        185,
+        682,
+        217
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID-MFENN for φ_497_398"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_630_276",
+      "Pos": [
+        889,
+        10,
+        1035,
+        223
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 6
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_460_400",
+          "Summing junction_433_359",
+          "Summing junction_403_321",
+          "Summing junction_111_359",
+          "Summing junction_81_321",
+          "Summing junction_55_279"
+        ]
+      }
+    },
+    {
+      "Component": "Zd_0_276",
+      "Pos": [
+        0,
+        10,
+        47,
+        55
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_55_279"
+        ]
+      }
+    },
+    {
+      "Component": "Zd_0_320",
+      "Pos": [
+        0,
+        72,
+        47,
+        117
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_81_321"
+        ]
+      }
+    },
+    {
+      "Component": "Zd_0_356",
+      "Pos": [
+        0,
+        123,
+        47,
+        168
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_111_359"
+        ]
+      }
+    },
+    {
+      "Component": "PID-MFENN for φ_497_314",
+      "Pos": [
+        701,
+        64,
+        847,
+        109
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_630_276"
+        ]
+      }
+    },
+    {
+      "Component": "PID-MFENN for φ_497_356",
+      "Pos": [
+        701,
+        123,
+        847,
+        168
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_630_276"
+        ]
+      }
+    },
+    {
+      "Component": "PID-MFENN for φ_497_398",
+      "Pos": [
+        701,
+        182,
+        847,
+        227
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_630_276"
+        ]
+      }
+    },
+    {
+      "Component": "Wd_316_396",
+      "Pos": [
+        446,
+        179,
+        491,
+        224
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_460_400"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中所示位置控制（外环）和姿态控制（内环）的级联结构，以下哪项关于频率响应的说法是正确的？",
+      "options": [
+        "A. 为保证系统稳定性，姿态控制环带宽应低于位置控制环带宽",
+        "B. 为确保快速跟踪，姿态控制环带宽应高于位置控制环带宽",
+        "C. 姿态控制环和位置控制环带宽应相等，以避免产生相位延迟",
+        "D. 内外环带宽关系对系统稳定性影响不大"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中 Conversion 模块在小角度近似下采用 $\\phi_d\\approx T_y/U_1$ 的映射关系。若四旋翼质量 $m=1.2\\,\\mathrm{kg}$，重力加速度 $g=9.8\\,\\mathrm{m/s^2}$，当位置环输出产生的期望横向加速度 $a_y=3.0\\,\\mathrm{m/s^2}$ 时，对应的期望滚转角 $\\phi_d$（单位：度，保留一位小数）= ______。(请从以下答案中选择一个：17.5,57.3,9.8,0.3)",
+      "answer": "17.5"
+    }
+  ]
+}

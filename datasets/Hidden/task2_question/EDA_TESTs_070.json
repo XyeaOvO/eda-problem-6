@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中，为产生528\\,MHz的IF本振信号，VCO输出7920\\,MHz依次经过除2、除1.5和除5分频后得到IF本振。请问该分频链的总分频比是多少？",
+      "options": [
+        "A. 10",
+        "B. 15",
+        "C. 12",
+        "D. 20"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中，当Band Select选择-528\\,MHz时，Freq. Selector将Signal Conditioner输出-528\\,MHz信号送入SSB mixer，与VCO分频后3960\\,MHz的信号混频。此时SSB mixer输出的上边带和下边带中心频率分别为______\\,MHz、______\\,MHz。"
+    }
+  ]
+}

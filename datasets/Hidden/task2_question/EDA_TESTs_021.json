@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图示的双回路控制结构（外环电压PI调节器产生电流参考$i_1^*$，内环滑模电流控制SMC输出驱动信号$u$），为了满足环路带宽分离原则，若外环电压环带宽设计为100\\,Hz，则更合理的内环电流环带宽应为下列哪一项？",
+      "options": [
+        "A. 10\\,Hz",
+        "B. 50\\,Hz",
+        "C. 500\\,Hz",
+        "D. 1\\,kHz"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示的Modified Cuk Converter中，若其平均模型可表示为 $V_0/V_i = D/(1 - D)$，当输入电压 $V_i=12\\mathrm{V}$、输出电压 $V_0=30\\mathrm{V}$ 时，则占空比 $D=\\underline{\\quad\\,}$。(请从以下答案中选择一个：5/7,7/5,2/7,5/3)"
+    }
+  ]
+}

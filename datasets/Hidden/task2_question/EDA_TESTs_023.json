@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中LPF-2在FSK解调电路中所起的主要作用是什么？",
+      "options": [
+        "A. 作为锁相环的环路滤波器，稳定VCO控制电压",
+        "B. 对LPF-1输出的模拟信号做二次低通，进一步平滑基带波形",
+        "C. 与比较器结合提供正反馈，构成施密特触发器以消除噪声抖动",
+        "D. 为鉴频鉴相环提供直流偏置，调整工作点"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "已知图中前级放大器增益为 $A=20$，相位检测器灵敏度 $K_d=0.5\\,\\mathrm{V/rad}$，VCO 调谐灵敏度 $K_v=10000\\,\\mathrm{Hz/V}$，则该 FSK 解调器的频偏检测增益 $K=V_{out}/\\Delta f=\\dfrac{K_d\\,A}{K_v}=\\underline{\\quad}$ (V/Hz)。(请从以下答案中选择一个：0.5,0.01,1,0.001)"
+    }
+  ]
+}

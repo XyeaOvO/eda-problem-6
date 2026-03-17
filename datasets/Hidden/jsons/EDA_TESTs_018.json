@@ -1,0 +1,215 @@
+{
+  "task1": [
+    {
+      "Component": "Differentiator",
+      "Pos": [
+        529,
+        258,
+        706,
+        323
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_535_395"
+        ]
+      }
+    },
+    {
+      "Component": "Process",
+      "Pos": [
+        513,
+        55,
+        706,
+        142
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sensor"
+        ]
+      }
+    },
+    {
+      "Component": "Proportional Amplifier",
+      "Pos": [
+        529,
+        162,
+        706,
+        240
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_535_395"
+        ]
+      }
+    },
+    {
+      "Component": "Sensor",
+      "Pos": [
+        148,
+        49,
+        269,
+        137
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_180_331"
+        ]
+      }
+    },
+    {
+      "Component": "Integrator",
+      "Pos": [
+        529,
+        350,
+        706,
+        408
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_535_395",
+          "Summing junction_277_337"
+        ]
+      }
+    },
+    {
+      "Component": "Actuator",
+      "Pos": [
+        794,
+        63,
+        922,
+        148
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Process"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_277_337",
+      "Pos": [
+        391,
+        162,
+        457,
+        240
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Proportional Amplifier",
+          "Differentiator"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_290_466",
+      "Pos": [
+        409,
+        344,
+        478,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Integrator"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_535_395",
+      "Pos": [
+        754,
+        244,
+        818,
+        331
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Actuator"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_180_331",
+      "Pos": [
+        254,
+        154,
+        322,
+        233
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_277_337",
+          "Summing junction_290_466"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图示PID控制结构，假设比例增益 $K_p=5$，积分增益 $K_i=20$，微分增益 $K_d=0.1$。该控制器在低频区域(例如 $\\omega=0.01\\ \\mathrm{rad/s}$)处的幅频特性斜率约为多少？",
+      "options": [
+        "A. -20\\ dB/dec",
+        "B. 0\\ dB/dec",
+        "C. +20\\ dB/dec",
+        "D. -40\\ dB/dec"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中比例环节、积分环节和微分环节的增益分别为 $K_p$、$K_i$、$K_d$，则该控制器PID部分的传递函数\n$$C(s)=\\frac{U(s)}{E(s)}$$\n为 ______。(请从以下答案中选择一个：K_p + \\frac{K_i}{s} + K_d s,K_p + frac{K_i}{s},K_p + \\frac{K_d}{s} + K_i s,K_p s + \\frac{K_i}{s} + K_d s)",
+      "answer": "K_p + \\frac{K_i}{s} + K_d s"
+    }
+  ]
+}

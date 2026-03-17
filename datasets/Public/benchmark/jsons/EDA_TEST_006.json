@@ -1,0 +1,117 @@
+{
+  "task1": [
+    {
+      "Component": "8-bitflash ADC",
+      "Pos": [
+        314,
+        100,
+        517,
+        242
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "12-bit DAC",
+          "Combining",
+          "Sum"
+        ]
+      }
+    },
+    {
+      "Component": "12-bit DAC",
+      "Pos": [
+        594,
+        97,
+        734,
+        243
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum"
+        ]
+      }
+    },
+    {
+      "Component": "Sum",
+      "Pos": [
+        788,
+        115,
+        906,
+        231
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "6-bit flash ADC"
+        ]
+      }
+    },
+    {
+      "Component": "6-bit flash ADC",
+      "Pos": [
+        960,
+        97,
+        1158,
+        240
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Combining"
+        ]
+      }
+    },
+    {
+      "Component": "Combining",
+      "Pos": [
+        1215,
+        79,
+        1405,
+        425
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图中所示的子分辨率ADC架构，第一阶段为8位闪速ADC对应12位DAC，随后经Σ块送入6位闪速ADC。若要使第一阶段残差信号在Σ块放大后刚好覆盖6位ADC的满量程输入，其放大倍数G应满足下列哪一项？",
+      "options": [
+        "A. $G = 2^6$",
+        "B. $G = 2^8$",
+        "C. $G = 2^{12}$",
+        "D. $G = \\frac{2^8-1}{2^6-1}$"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "如图所示混合型ADC结构中，若第一级8位闪速ADC的参考电压为$V_{\\rm ref}$，则第2级6位闪速ADC的满量程输入应设为______以完全覆盖减法器输出的峰-峰残差信号。",
+      "answer": "V_{\\rm ref}/256"
+    }
+  ]
+}

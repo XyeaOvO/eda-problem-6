@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示的偏移PLL合成器中，混频器输出包含$f_o-f_b$和$f_o+f_b$两路信号。为了让后续的÷N分频器只接收到差频分量$f_o-f_b$，而有效抑制和频分量$f_o+f_b$，LP FILTER的截止频率$f_c$应满足下列哪一关系？",
+      "options": [
+        "A. $f_c>f_o+f_b$，只要高于和频即可",
+        "B. $f_o-f_b<f_c<f_o+f_b$",
+        "C. $f_c<f_o-f_b$，只通过差频分量",
+        "D. $f_c\\gg f_o$，以保证环路带宽最大化"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若目标输出频率 $f_o=868\\,\\mathrm{MHz}$，参考频率 $f_a=13\\,\\mathrm{MHz}$，前馈分支的分频比 $N=64$，则图中用于混频的偏移频率 $f_b=\\underline{\\quad}$。(请从以下答案中选择一个：12 MHz,24 MHz,36 MHz,48 MHz)"
+    }
+  ]
+}

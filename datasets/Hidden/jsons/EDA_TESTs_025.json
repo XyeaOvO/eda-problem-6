@@ -1,0 +1,154 @@
+{
+  "task1": [
+    {
+      "Component": "SWTC",
+      "Pos": [
+        670,
+        44,
+        777,
+        100
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Reload 16-Bit Down-counter Rollover = 0"
+        ]
+      }
+    },
+    {
+      "Component": "Clock Disable",
+      "Pos": [
+        154,
+        215,
+        261,
+        301
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Divide by 2,048",
+          "MUX"
+        ]
+      }
+    },
+    {
+      "Component": "SWSR",
+      "Pos": [
+        349,
+        27,
+        456,
+        83
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Service Logic"
+        ]
+      }
+    },
+    {
+      "Component": "MUX",
+      "Pos": [
+        493,
+        215,
+        560,
+        396
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Reload 16-Bit Down-counter Rollover = 0"
+        ]
+      }
+    },
+    {
+      "Component": "Divide by 2,048",
+      "Pos": [
+        349,
+        215,
+        456,
+        301
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "MUX"
+        ]
+      }
+    },
+    {
+      "Component": "Reload 16-Bit Down-counter Rollover = 0",
+      "Pos": [
+        628,
+        137,
+        816,
+        285
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Service Logic",
+      "Pos": [
+        349,
+        121,
+        459,
+        206
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Reload 16-Bit Down-counter Rollover = 0"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设Core Clock频率为8\\,MHz，并且在SWP配置下Watchdog Timer时钟由Divide by\\,2,048预分频器提供给16位下拉计数器，若Reload寄存器装载最大值0xFFFF，则软件看门狗的最大超时时间约为多少？",
+      "options": [
+        "A. 16.78\\,ms",
+        "B. 16.78\\,s",
+        "C. 33.55\\,s",
+        "D. 65.54\\,s"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中Core Clock = 20\\;MHz，SWP = 0（选择分频输出），且Reload寄存器装载值为0x7A12，则软件看门狗的超时时间约为 ______ s。(请从以下答案中选择一个：3.2,0.0001024 ,1.6,1)",
+      "answer": "3.2"
+    }
+  ]
+}

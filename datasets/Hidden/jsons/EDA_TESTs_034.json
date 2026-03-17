@@ -1,0 +1,158 @@
+{
+  "task1": [
+    {
+      "Component": "Quantizer",
+      "Pos": [
+        1553,
+        278,
+        1669,
+        394
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_99_346"
+        ]
+      }
+    },
+    {
+      "Component": "1/(1-z⁻¹)",
+      "Pos": [
+        791,
+        156,
+        957,
+        288
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "z⁻¹/(1–z⁻¹)_429_337",
+          "Σ_577_396"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_577_396",
+      "Pos": [
+        1431,
+        303,
+        1498,
+        370
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_276_346",
+      "Pos": [
+        685,
+        179,
+        752,
+        246
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/(1-z⁻¹)"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_99_346",
+      "Pos": [
+        246,
+        179,
+        313,
+        246
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "z⁻¹/(1–z⁻¹)_165_337"
+        ]
+      }
+    },
+    {
+      "Component": "z⁻¹/(1–z⁻¹)_429_337",
+      "Pos": [
+        1064,
+        156,
+        1230,
+        288
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_577_396",
+          "Σ_276_346"
+        ]
+      }
+    },
+    {
+      "Component": "z⁻¹/(1–z⁻¹)_165_337",
+      "Pos": [
+        409,
+        156,
+        575,
+        288
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_276_346",
+          "Σ_577_396"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中从节点 b 到节点 c 的信号经由 $\\displaystyle\\frac{1}{1-z^{-1}}$ 块并带有反馈系数 $\\delta/C$，构成的离散时间滤波器，在采样间隔 $T\\to0$ 时，其对应的连续时间传递函数最接近以下哪一项？",
+      "options": [
+        "A. $H(s)=\\frac{1}{s}$",
+        "B. $H(s)=\\frac{1}{s+\\frac{\\delta}{C}}$",
+        "C. $H(s)=\\frac{s}{s+\\frac{\\delta}{C}}$",
+        "D. $H(s)=\\frac{s+\\frac{\\delta}{C}}{s}$"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中所示的3级MASH ΣΔ调制器在量化器理想的情况下，其整体量化噪声传递函数NTF(z)=\\displaystyle\\frac{Y_n(z)}{N(z)} = ______。(请从以下答案中选择一个：(1 - z^{-1})^3, (1 - z^{-1})^2, (1 + z^{-1})^3, z^{-3})",
+      "answer": "(1 - z^{-1})^3"
+    }
+  ]
+}

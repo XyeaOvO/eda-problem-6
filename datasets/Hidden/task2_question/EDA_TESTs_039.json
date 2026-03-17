@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如图所示的Σ–Δ调制器中，一个频率为 $f_{tone}$ 的正弦干扰在 ADC 之前的加法节点处注入。下列哪个选项正确地描述了该注入信号到第一阶段数字输出 $D_{O1}$ 的信号传输函数（STF）？",
+      "options": [
+        "A. STF(s)=H_{1}(s)",
+        "B. STF(s)=1",
+        "C. STF(s)=\\frac{1}{1+H_{1}(s)}",
+        "D. STF(s)=\\frac{H_{1}(s)}{1+H_{1}(s)}"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中一级回路滤波器$$H_1(s)=\\frac{2\\pi\\times100\\mathrm{kHz}}{s+2\\pi\\times100\\mathrm{kHz}}$$，当注入信号频率为$$f_{tone}=10\\mathrm{kHz}$$时，注入信号到第一阶段数字输出$$D_{O1}$$的幅值传输函数$$|STF_{tone}(j\\omega)|\\approx$$______.(请从以下答案中选择一个：0.5,0.05,0.4,1)"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "task1": [
+    {
+      "Component": "Sampler",
+      "Pos": [
+        152,
+        221,
+        228,
+        413
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Integrator Channel"
+        ]
+      }
+    },
+    {
+      "Component": "Integrator Channel",
+      "Pos": [
+        302,
+        260,
+        517,
+        371
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Incomplete Integrator Output Gen.",
+          "Q1"
+        ]
+      }
+    },
+    {
+      "Component": "Incomplete Integrator Output Gen.",
+      "Pos": [
+        301,
+        51,
+        519,
+        202
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Q2"
+        ]
+      }
+    },
+    {
+      "Component": "Q2",
+      "Pos": [
+        550,
+        83,
+        630,
+        167
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Complete Output Gen."
+        ]
+      }
+    },
+    {
+      "Component": "Q1",
+      "Pos": [
+        547,
+        275,
+        631,
+        357
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Complete Output Gen."
+        ]
+      }
+    },
+    {
+      "Component": "DAC",
+      "Pos": [
+        509,
+        423,
+        631,
+        492
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Integrator Channel"
+        ]
+      }
+    },
+    {
+      "Component": "Complete Output Gen.",
+      "Pos": [
+        663,
+        99,
+        768,
+        345
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mux",
+          "Feedback Gen."
+        ]
+      }
+    },
+    {
+      "Component": "Feedback Gen.",
+      "Pos": [
+        697,
+        411,
+        907,
+        506
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DAC"
+        ]
+      }
+    },
+    {
+      "Component": "Mux",
+      "Pos": [
+        853,
+        124,
+        928,
+        315
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图(b)所示的采样、积分通道、反馈 DAC、不完整积分输出生成、量化器 Q1、Q2 及数字输出组合和多路复用结构，最可能实现以下哪种 ADC 架构？",
+      "options": [
+        "A. 两级流水线 ADC",
+        "B. 二阶 Σ–Δ 调制器",
+        "C. MASH 多级噪声整形 ADC",
+        "D. 时间交错 ADC"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图(b)所示的ADC架构最可能属于______架构。(请从以下答案中选择一个：FLASH,SAR,Sigma-delta,Pipeline)",
+      "answer": "Sigma-delta"
+    }
+  ]
+}

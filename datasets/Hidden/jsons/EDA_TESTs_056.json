@@ -1,0 +1,172 @@
+{
+  "task1": [
+    {
+      "Component": "DECISION CIRCUIT",
+      "Pos": [
+        1157,
+        151,
+        1332,
+        260
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "SAMPLER",
+      "Pos": [
+        927,
+        151,
+        1102,
+        260
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DECISION CIRCUIT"
+        ]
+      }
+    },
+    {
+      "Component": "LOW PASS FILTER",
+      "Pos": [
+        700,
+        151,
+        873,
+        260
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SAMPLER"
+        ]
+      }
+    },
+    {
+      "Component": "IF FILTER (Center Freq. f_I + Δf)",
+      "Pos": [
+        235,
+        16,
+        412,
+        125
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ENVELOPE DETECTOR_232_292"
+        ]
+      }
+    },
+    {
+      "Component": "IF FILTER (Center Freq. f_I − Δf)",
+      "Pos": [
+        235,
+        280,
+        412,
+        388
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ENVELOPE DETECTOR_232_423"
+        ]
+      }
+    },
+    {
+      "Component": "SUMMING JUNCTION",
+      "Pos": [
+        632,
+        179,
+        674,
+        223
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LOW PASS FILTER"
+        ]
+      }
+    },
+    {
+      "Component": "ENVELOPE DETECTOR_232_292",
+      "Pos": [
+        467,
+        16,
+        644,
+        125
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SUMMING JUNCTION"
+        ]
+      }
+    },
+    {
+      "Component": "ENVELOPE DETECTOR_232_423",
+      "Pos": [
+        467,
+        280,
+        644,
+        388
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SUMMING JUNCTION"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中ENVELOPE DETECTOR所用低通滤波器的截止频率$f_c$应满足下列哪一关系，以保证去除载波成份同时能准确跟踪基带信号幅度变化？",
+      "options": [
+        "A. $f_c\\ll1/T$",
+        "B. $f_c\\gg f_i\\pm\\Delta f$",
+        "C. $1/T\\ll f_c\\ll f_i$",
+        "D. $f_c=\\Delta f$"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中两路IF滤波器为理想带通滤波器，中心频率分别为 $f_i+\\Delta f$ 和 $f_i-\\Delta f$。为了保证FSK信号的瞬时频率在这一区间跳变时不被滤除，则每个IF滤波器的带宽 $B$ 至少应为 ______。(选项如下：2\\Delta f,4\\Delta f,(1/2)\\Delta f, Delta f)",
+      "answer": "2\\Delta f"
+    }
+  ]
+}

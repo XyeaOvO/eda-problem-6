@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中从模拟矩阵(Analog Matrix)到ADC1和ADC2的Channel Select总线宽度标注，下述关于两路ADC可选择的输入通道数量的说法正确的是？",
+      "options": [
+        "A. ADC1和ADC2均最多可选择16路输入通道",
+        "B. ADC1最多可选择18路输入通道，ADC2最多可选择16路",
+        "C. ADC1最多可选择16路输入通道，ADC2最多可选择18路",
+        "D. ADC1和ADC2均最多可选择18路输入通道"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "根据图中ADC1的Result总线宽度可知，若ADC1为$N$位ADC，则其最大数字输出值为$2^N-1$，则本ADC1的最大输出数字码（十进制）为______。(请从以下答案中选择一个：4096,4095,2047,2048)"
+    }
+  ]
+}

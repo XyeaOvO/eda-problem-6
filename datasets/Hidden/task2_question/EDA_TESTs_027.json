@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中由位置控制器、速度控制器和电流控制器（d 轴与 q 轴控制器）构成的多级闭环系统中，各环路的带宽应满足以下哪种关系？",
+      "options": [
+        "A. 位置环带宽 $\\omega_{c,\\rm pos}$ >> 速度环带宽 $\\omega_{c,\\rm spd}$ >> 电流环带宽 $\\omega_{c,\\rm cur}$",
+        "B. 电流环带宽 $\\omega_{c,\\rm cur}$ >> 速度环带宽 $\\omega_{c,\\rm spd}$ >> 位置环带宽 $\\omega_{c,\\rm pos}$",
+        "C. 速度环带宽 $\\omega_{c,\\rm spd}$ >> 电流环带宽 $\\omega_{c,\\rm cur}$ >> 位置环带宽 $\\omega_{c,\\rm pos}$",
+        "D. 电流环带宽 $\\omega_{c,\\rm cur}$ >> 位置环带宽 $\\omega_{c,\\rm pos}$ >> 速度环带宽 $\\omega_{c,\\rm spd}$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中摩擦力矩模型为 $T_f = Fc \\times Wm$，其中 $Fc=0.006\\,$N·m/(rad/s)。若机械速度 $Wm=200\\,$rad/s，则摩擦力矩 $T_f=\\underline{\\quad}\\,$N·m。(请从以下答案中选择一个：6,0.2,1.2,0.12)"
+    }
+  ]
+}

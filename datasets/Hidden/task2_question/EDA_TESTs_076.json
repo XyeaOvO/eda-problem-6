@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在如图所示的运放设计流程框图中，最终由Σ模块输出的估计误差$e$如何表示？",
+      "options": [
+        "A. $e=\\text{SPICE仿真结果}-\\text{高层性能估计结果}$",
+        "B. $e=\\text{高层性能估计结果}-\\text{SPICE仿真结果}$",
+        "C. $e=\\text{高层性能估计结果}+\\text{SPICE仿真结果}$",
+        "D. $e=\\text{SPICE仿真结果}+\\text{高层性能估计结果}$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中Σ模块输出的单位增益带宽误差$e_{GBW}$的计算表达式为\n$$e_{GBW}=\\underline{\\quad\\quad}$$(请从以下答案中选择一个：GBW_{HPE}+GBW_{SPICE},GBW_{HPE}-GBW_{SPICE},GBW_{HPE}/GBW_{SPICE},ab(GBW_{HPE}-GBW_{SPICE}))"
+    }
+  ]
+}

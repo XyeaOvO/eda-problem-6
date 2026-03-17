@@ -1,0 +1,213 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        152,
+        144,
+        202,
+        196
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        236,
+        147,
+        288,
+        202
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        319,
+        145,
+        374,
+        200
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4",
+          "Sum7"
+        ]
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        456,
+        146,
+        511,
+        199
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum5"
+        ]
+      }
+    },
+    {
+      "Component": "Sum5",
+      "Pos": [
+        542,
+        148,
+        593,
+        199
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "f_r/k_DCO"
+        ]
+      }
+    },
+    {
+      "Component": "f_r/k_DCO",
+      "Pos": [
+        650,
+        115,
+        756,
+        228
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "sum6"
+        ]
+      }
+    },
+    {
+      "Component": "sum6",
+      "Pos": [
+        784,
+        132,
+        864,
+        210
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/s"
+        ]
+      }
+    },
+    {
+      "Component": "1/s",
+      "Pos": [
+        893,
+        128,
+        965,
+        215
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "f_r/s",
+      "Pos": [
+        528,
+        230,
+        606,
+        314
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum5"
+        ]
+      }
+    },
+    {
+      "Component": "Sum7",
+      "Pos": [
+        457,
+        244,
+        509,
+        297
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "f_r/s"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "若环路滤波器中与 $\\rho$ 相乘的分支被设为零，则图示PLL控制环路退化为下列哪一种类型？",
+      "options": [
+        "A. 二阶二型系统",
+        "B. 一阶一型系统",
+        "C. 纯比例控制环路，无积分作用",
+        "D. 无法实现频率锁定"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "由图示PLL闭环特征方程$$s^2+N\\alpha f_Rs+N\\rho f_R^2=0$$，则该PLL的自然振荡角频率$\\omega_n=$ ______。(选项如下：f_R\\sqrt{N\\rho},N_rho\\f_R,N_alpha\\f_R,sqrt{alpha}\\f_R)",
+      "answer": "f_R\\sqrt{N\\rho}"
+    }
+  ]
+}

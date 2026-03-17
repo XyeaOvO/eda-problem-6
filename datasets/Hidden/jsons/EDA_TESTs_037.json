@@ -1,0 +1,194 @@
+{
+  "task1": [
+    {
+      "Component": "Fixed Delay",
+      "Pos": [
+        140,
+        108,
+        394,
+        167
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier_288_325"
+        ]
+      }
+    },
+    {
+      "Component": "Adaptive H(z)",
+      "Pos": [
+        140,
+        229,
+        394,
+        289
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier_288_325"
+        ]
+      }
+    },
+    {
+      "Component": "Hnrl(z)",
+      "Pos": [
+        714,
+        163,
+        846,
+        233
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier_622_369"
+        ]
+      }
+    },
+    {
+      "Component": "1+z⁻²",
+      "Pos": [
+        465,
+        163,
+        596,
+        233
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier_467_325",
+          "Multiplier_622_369"
+        ]
+      }
+    },
+    {
+      "Component": "Accum",
+      "Pos": [
+        795,
+        335,
+        925,
+        386
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Calculate or Look-up Coefficients"
+        ]
+      }
+    },
+    {
+      "Component": "Calculate or Look-up Coefficients",
+      "Pos": [
+        370,
+        328,
+        623,
+        479
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adaptive H(z)"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier_288_325",
+      "Pos": [
+        388,
+        177,
+        432,
+        220
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1+z⁻²"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier_467_325",
+      "Pos": [
+        630,
+        177,
+        674,
+        220
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Hnrl(z)"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier_622_369",
+      "Pos": [
+        839,
+        236,
+        884,
+        279
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Accum"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中Δt Detector内部的$1+z^{-2}$模块具有如下哪项特性？",
+      "options": [
+        "A. 它在归一化频率$\\omega=0$和$\\omega=\\pi$处有零点",
+        "B. 它具有恒定的群时延，等于1个采样周期",
+        "C. 它是一个高通滤波器，在$\\omega=\\pi/2$处有截止频率",
+        "D. 它引入与频率相关的非线性相位失真"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中Δt Detector模块中，1+z^{-2}块与乘以$(-1)^n$块级联后，对输入信号$y[n]$的输出$y_c[n]$可写成$$y_c[n]=______$$。(请从以下答案中选择一个：(-1)^n(y[n-1]+y[n-2]), (-1)^ny[n], (-1)^n(y[n]+y[n-2]), (-1)^n(y[n]+y[n-1]))",
+      "answer": "(-1)^n(y[n]+y[n-2])"
+    }
+  ]
+}

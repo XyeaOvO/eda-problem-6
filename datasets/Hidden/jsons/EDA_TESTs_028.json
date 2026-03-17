@@ -1,0 +1,229 @@
+{
+  "task1": [
+    {
+      "Component": "θsr calculation",
+      "Pos": [
+        160,
+        422,
+        318,
+        483
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Current reading",
+      "Pos": [
+        710,
+        268,
+        822,
+        387
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Clarke"
+        ]
+      }
+    },
+    {
+      "Component": "CALC SVPWM",
+      "Pos": [
+        548,
+        105,
+        668,
+        226
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Park T.",
+      "Pos": [
+        387,
+        276,
+        500,
+        381
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "θsr calculation",
+          "Summing junction_131_236",
+          "Summing junction_96_315"
+        ]
+      }
+    },
+    {
+      "Component": "Reverse, Park T. & circle limitation",
+      "Pos": [
+        387,
+        91,
+        500,
+        229
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "CALC SVPWM"
+        ]
+      }
+    },
+    {
+      "Component": "Clarke",
+      "Pos": [
+        548,
+        276,
+        661,
+        381
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Park T."
+        ]
+      }
+    },
+    {
+      "Component": "Speed reading",
+      "Pos": [
+        710,
+        409,
+        822,
+        510
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "θsr calculation"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_131_236",
+      "Pos": [
+        149,
+        99,
+        194,
+        145
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID_213_238"
+        ]
+      }
+    },
+    {
+      "Component": "PID_213_238",
+      "Pos": [
+        242,
+        101,
+        324,
+        139
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Reverse, Park T. & circle limitation"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_96_315",
+      "Pos": [
+        109,
+        188,
+        154,
+        235
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID_213_317"
+        ]
+      }
+    },
+    {
+      "Component": "PID_213_317",
+      "Pos": [
+        242,
+        191,
+        324,
+        229
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Reverse, Park T. & circle limitation"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设在图示的IFO C模型中，Clarke变换模块的b相电流传感器失效导致测得 $i_b$ 恒为0，则该模块的输出 $i_{\\alpha}$ 和 $i_{\\beta}$ 分别为？",
+      "options": [
+        "A. $i_{\\alpha}=i_{a},\\quad i_{\\beta}=\\dfrac{i_{a}}{\\sqrt3}$",
+        "B. $i_{\\alpha}=\\dfrac{i_{a}}{2},\\quad i_{\\beta}=\\dfrac{i_{a}}{\\sqrt3}$",
+        "C. $i_{\\alpha}=i_{a},\\quad i_{\\beta}=\\dfrac{2i_{a}}{\\sqrt3}$",
+        "D. $i_{\\alpha}=0,\\quad i_{\\beta}=i_{a}$"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设逆变器直流母线电压 $V_{dc}=300\\,\\mathrm V$，则图中 Reverse Park T. \\& circle limitation 模块所限制的参考电压矢量在 $d$-$q$ 平面上的最大幅值（限幅圆的半径）为 ______ V。(请从以下答案中选择一个：173.2,300,519.6,100)",
+      "answer": "173.2"
+    }
+  ]
+}

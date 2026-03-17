@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "下列关于图中预测电流控制器（Predictive Control）输入信号的描述，哪项正确？",
+      "options": [
+        "A. $V_{INV}^*,\\;i_L,\\;e_s(t)$",
+        "B. $I_i^*,\\;i_L,\\;e_s(t)$",
+        "C. $V_{ref}^*,\\;v_{sa\\_avg},\\;i_{sa\\_avg}$",
+        "D. 三角波载波信号、$\\sin(\\omega_s t)$和$V_{INV}^*$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中MPPT模块若采用增量电导法(Maximum Power Point Tracking by Incremental Conductance)，为了满足最大功率点跟踪，应满足的条件 $\\frac{dP}{dV}=0$ 即______。(选项如下：dI/dV=0,dI/dV=-I/V,dP/dV=0,I/V=常数)"
+    }
+  ]
+}

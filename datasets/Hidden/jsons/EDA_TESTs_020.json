@@ -1,0 +1,191 @@
+{
+  "task1": [
+    {
+      "Component": "Discrete-Time Integrator1",
+      "Pos": [
+        820,
+        177,
+        950,
+        295
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Discrete-Time Integrator3"
+        ]
+      }
+    },
+    {
+      "Component": "Discrete-Time Integrator3",
+      "Pos": [
+        1039,
+        177,
+        1169,
+        295
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/s",
+          "-K"
+        ]
+      }
+    },
+    {
+      "Component": "Fcoil/Ks",
+      "Pos": [
+        49,
+        108,
+        159,
+        165
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Add"
+        ]
+      }
+    },
+    {
+      "Component": "1/s",
+      "Pos": [
+        1442,
+        362,
+        1554,
+        421
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Summing junction",
+      "Pos": [
+        533,
+        28,
+        850,
+        142
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Add",
+      "Pos": [
+        232,
+        71,
+        346,
+        321
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction",
+          "Subtract"
+        ]
+      }
+    },
+    {
+      "Component": "Subtract",
+      "Pos": [
+        584,
+        171,
+        698,
+        289
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Discrete-Time Integrator1"
+        ]
+      }
+    },
+    {
+      "Component": "Mp*g/Ks",
+      "Pos": [
+        49,
+        197,
+        159,
+        309
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Add"
+        ]
+      }
+    },
+    {
+      "Component": "-K",
+      "Pos": [
+        838,
+        449,
+        950,
+        563
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Subtract"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如图所示离散时间闭环控制系统，前向通路包含两个级联的离散积分器 $\\displaystyle\\frac{K T_s}{z-1}$，并采用单位负反馈，则该系统对单位斜坡输入的稳态误差 $e_{ss}$ 为下列哪一项？",
+      "options": [
+        "A. $0$",
+        "B. $\\dfrac{1}{K T_s}$",
+        "C. $\\dfrac{1}{K}$",
+        "D. $\\infty$"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中Discrete-Time Integrator1与Discrete-Time Integrator3串联后的前向通道传递函数为 ______。(请从以下答案中选择一个：\\-left(\\frac{K T_s}{z-1}\\right)^2,\\left(\\frac{K T_s}{z-1}\\right)^2 K,\\frac{K T_s}{z-1},\\left(\\frac{K T_s}{z-1}\\right)^2)",
+      "answer": "\\left(\\frac{K T_s}{z-1}\\right)^2"
+    }
+  ]
+}

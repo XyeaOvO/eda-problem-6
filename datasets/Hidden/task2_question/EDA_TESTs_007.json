@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设在t=0时刻误差信号e(t)由0突变为常数E_0(阶跃信号)，且控制器无其它动态，以下关于比例、积分、微分支路输出u_P(t)、u_I(t)、u_D(t)的描述，哪一项是正确的？",
+      "options": [
+        "A. \\,u_P(t)=K_PE_0H(t)",
+        "B. \\,u_I(t)=K_IE_0tH(t)",
+        "C. \\,u_D(t)=K_DE_0\\delta(t)",
+        "D. \\,u_D(t)=0 \\,(t>0)"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示理想PID控制器中，令误差信号为交流正弦 e(t)=E\\sin(\\omega t)（E为常数），则比例分支幅值为 |u_P|=K_P E，积分分支幅值为 |u_I|=K_I E/\\omega。当两者幅值相等时，角频率\\omega=______。(请从以下答案中选择一个：K_P/K_I,K_I/K_P,K_PK_D/K_I,K_DK_I/K_P)"
+    }
+  ]
+}

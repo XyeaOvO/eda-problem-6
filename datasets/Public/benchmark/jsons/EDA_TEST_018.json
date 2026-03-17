@@ -1,0 +1,175 @@
+{
+  "task1": [
+    {
+      "Component": "PFC",
+      "Pos": [
+        246,
+        161,
+        410,
+        288
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "CP"
+        ]
+      }
+    },
+    {
+      "Component": "CP",
+      "Pos": [
+        471,
+        160,
+        639,
+        286
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LF"
+        ]
+      }
+    },
+    {
+      "Component": "LF",
+      "Pos": [
+        701,
+        159,
+        867,
+        286
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCO"
+        ]
+      }
+    },
+    {
+      "Component": "VCO",
+      "Pos": [
+        934,
+        155,
+        1060,
+        289
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PRS"
+        ]
+      }
+    },
+    {
+      "Component": "PRS",
+      "Pos": [
+        763,
+        385,
+        961,
+        515
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PGC"
+        ]
+      }
+    },
+    {
+      "Component": "PGC",
+      "Pos": [
+        458,
+        387,
+        656,
+        515
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PRS",
+          "PFC"
+        ]
+      }
+    },
+    {
+      "Component": "Wave generator",
+      "Pos": [
+        135,
+        617,
+        353,
+        807
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Modulator"
+        ]
+      }
+    },
+    {
+      "Component": "Modulator",
+      "Pos": [
+        449,
+        617,
+        665,
+        805
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PGC"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示的分数-N PLL架构中，平均分频比为 P+M/T。已知参考频率 F_{ref}=10\\,MHz，整数分频比 P=50，小数分频比 M/T=4/10，则环路锁定后 VCO 输出频率 F_{VC} 最接近以下哪项？",
+      "options": [
+        "A. 504\\,MHz",
+        "B. 504.4\\,MHz",
+        "C. 500\\,MHz",
+        "D. 10\\,MHz"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设参考频率 $F_{ref}=10\\,\\mathrm{MHz}$，整数分频比 $P=50$，小数分频比 $M/T=3/5$，则该 PLL 锁定后 VCO 输出频率 $F_{vc}=______\\,\\mathrm{MHz}$。",
+      "answer": "506"
+    }
+  ]
+}

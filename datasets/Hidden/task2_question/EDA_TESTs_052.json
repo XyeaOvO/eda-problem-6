@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中插值器结构，下列关于其幅频特性哪一项描述正确？",
+      "options": [
+        "A. 它等同于零阶保持，幅度响应为 $H(f)=\\frac{\\sin(\\pi fT)}{\\pi fT}$",
+        "B. 它实现了一阶保持（线性插值），幅度响应为 $H(f)=\\bigl(\\frac{\\sin(\\pi fT)}{\\pi fT}\\bigr)^2$",
+        "C. 它实现了三阶拉格朗日插值，幅度响应在直流处封顶，在基带边缘处有$-6\\,\\mathrm{dB}$凹陷",
+        "D. 它实现了理想带限重建，幅度响应为矩形函数"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中M=1，Diff模块输出\\(\\Delta V_p[n]=V_p[n]-V_p[n-1]\\)，且Acc.模块输出的估计系数\\(\\alpha=\\hat{\\Delta t}/T\\)为常数，则该插值器的Z域传递函数\\(H(z)=\\dfrac{V_{int}(z)}{V_p(z)}=\\underline{\\quad}\\).(选项如下：1,alpha*z^{-1}+(1-alpha), 5, 1+alpha(1-z^{-1}))"
+    }
+  ]
+}

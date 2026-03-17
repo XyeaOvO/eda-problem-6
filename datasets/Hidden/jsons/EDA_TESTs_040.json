@@ -1,0 +1,114 @@
+{
+  "task1": [
+    {
+      "Component": "Adder",
+      "Pos": [
+        856,
+        196,
+        955,
+        295
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Multiplier_532_311"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier_281_311",
+      "Pos": [
+        592,
+        196,
+        689,
+        295
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier_532_311",
+      "Pos": [
+        1121,
+        196,
+        1221,
+        295
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Multiplier_281_412",
+      "Pos": [
+        592,
+        409,
+        689,
+        508
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder",
+          "Multiplier_532_412"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier_532_412",
+      "Pos": [
+        1121,
+        409,
+        1221,
+        508
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中L_{1}载波调制前的基带信号，由C/A码(±1)与P码(±1)叠加而成，则该基带信号具有多少个不同电平？",
+      "options": [
+        "A. 2个",
+        "B. 3个",
+        "C. 4个",
+        "D. 5个"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中L_{2}信号由P码(10.23\\,MHz)进行BPSK调制，其主瓣零点到零点带宽为 ______ MHz。(请从以下答案中选择一个：5,40.92,20.46,10.23)",
+      "answer": "20.46"
+    }
+  ]
+}

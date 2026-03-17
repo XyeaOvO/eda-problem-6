@@ -1,0 +1,193 @@
+{
+  "task1": [
+    {
+      "Component": "interpolator",
+      "Pos": [
+        863,
+        156,
+        1043,
+        230
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "DAC",
+      "Pos": [
+        387,
+        295,
+        512,
+        356
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H(s)"
+        ]
+      }
+    },
+    {
+      "Component": "Edge detector",
+      "Pos": [
+        599,
+        25,
+        757,
+        122
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer_518_355"
+        ]
+      }
+    },
+    {
+      "Component": "H(z)",
+      "Pos": [
+        610,
+        153,
+        739,
+        227
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer_518_355"
+        ]
+      }
+    },
+    {
+      "Component": "H(s)",
+      "Pos": [
+        171,
+        286,
+        367,
+        370
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_78_357"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_78_357",
+      "Pos": [
+        115,
+        162,
+        171,
+        216
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_141_351"
+        ]
+      }
+    },
+    {
+      "Component": "Quantizer_222_334",
+      "Pos": [
+        327,
+        128,
+        470,
+        252
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H(z)",
+          "Edge detector",
+          "DAC"
+        ]
+      }
+    },
+    {
+      "Component": "Quantizer_518_355",
+      "Pos": [
+        763,
+        159,
+        851,
+        221
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "interpolator"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_141_351",
+      "Pos": [
+        208,
+        153,
+        296,
+        218
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer_222_334"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中由 p[n] 驱动 Edge detector 和第二个开关构成的采样结构，以下哪个说法是正确的？",
+      "options": [
+        "A. Edge detector 检测 p[n] 的上升沿以便在量化器仅在 p[n] 变化时输出新的 u[n] 样本，减少冗余数据。",
+        "B. 第二个开关用于将 u[n] 的输出与 p[n] 同步，保证插值器输入在恒定速率下无抖动。",
+        "C. 该结构等价于在采样率为 $1/T_r$ 的时钟下对 u[n] 进行同步采样，无需考虑 p[n] 转换时序。",
+        "D. 仅当 p[n] 不同于前一时刻时，Edge detector 触发第二个开关，导致插值器输入 $x_q[n]$ 在非均匀时刻更新。"
+      ],
+      "answer": "D"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中采样、量化器和反馈DAC及H(s)环路构成一阶ΔΣ调制器，则其量化噪声传递函数NTF(z)=______。(请从以下答案中选择一个：{1 - z^{-1}}^2,1 - z^{-2},1 + z^{-1},1 - z^{-1})",
+      "answer": "1 - z^{-1}"
+    }
+  ]
+}

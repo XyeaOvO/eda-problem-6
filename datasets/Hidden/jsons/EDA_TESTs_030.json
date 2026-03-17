@@ -1,0 +1,208 @@
+{
+  "task1": [
+    {
+      "Component": "Display 3D magnetic field distribution",
+      "Pos": [
+        58,
+        468,
+        177,
+        542
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Three-dimensional gauss meter",
+      "Pos": [
+        560,
+        328,
+        694,
+        375
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Data collection system"
+        ]
+      }
+    },
+    {
+      "Component": "Industrial computer (measuring software)",
+      "Pos": [
+        38,
+        312,
+        193,
+        388
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Data collection system",
+          "Motion controller",
+          "Display 3D magnetic field distribution"
+        ]
+      }
+    },
+    {
+      "Component": "Motion controller",
+      "Pos": [
+        58,
+        131,
+        193,
+        178
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Motor driver",
+          "Data collection system"
+        ]
+      }
+    },
+    {
+      "Component": "Motor driver",
+      "Pos": [
+        331,
+        18,
+        387,
+        235
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "X-axis motor",
+          "Y-axis motor",
+          "Z-axis motor",
+          "Rotating motor"
+        ]
+      }
+    },
+    {
+      "Component": "Data collection system",
+      "Pos": [
+        316,
+        312,
+        436,
+        388
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Industrial computer (measuring software)"
+        ]
+      }
+    },
+    {
+      "Component": "X-axis motor",
+      "Pos": [
+        560,
+        18,
+        678,
+        64
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Y-axis motor",
+      "Pos": [
+        560,
+        74,
+        678,
+        122
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Z-axis motor",
+      "Pos": [
+        560,
+        131,
+        678,
+        178
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Rotating motor",
+      "Pos": [
+        560,
+        188,
+        678,
+        234
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "为了提高数据采集与实际运动到位之间的同步精度，下列哪种系统改进最为有效？",
+      "options": [
+        "A. 将“Synchronous control”信号由运动控制器改为由电机驱动器在运动完成后直接输出",
+        "B. 将“Synchronous control”信号改由工业计算机来控制，以便统一调度",
+        "C. 增加RS232的通信波特率，以减少指令延迟",
+        "D. 在数据采集系统中增加固定延时，以等待电机运动完成"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中三维Gauss计输出三通道24位精度信号，采样率50 kS/s，则Data collection system与工业计算机之间至少需保证的连续数据传输速率 $R=3\\times24\\,\\mathrm{bit}\\times50\\times10^3\\,\\mathrm{s^{-1}}=______$ Mbit/s。(请从以下答案中选择一个：1.8,0.36,3.6,3)",
+      "answer": "3.6"
+    }
+  ]
+}

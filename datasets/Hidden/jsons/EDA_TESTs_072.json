@@ -1,0 +1,212 @@
+{
+  "task1": [
+    {
+      "Component": "Channel",
+      "Pos": [
+        988,
+        111,
+        1118,
+        170
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_488_357",
+          "Delay L2"
+        ]
+      }
+    },
+    {
+      "Component": "Threshold detector",
+      "Pos": [
+        1824,
+        93,
+        2003,
+        195
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Chaotic source (CDSK) or PRBS generator [-1,1] (DADS)",
+      "Pos": [
+        195,
+        31,
+        542,
+        260
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_283_357",
+          "Delay L"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_488_357",
+      "Pos": [
+        1511,
+        121,
+        1561,
+        170
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "∑Mriri*-L"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_283_357",
+      "Pos": [
+        876,
+        121,
+        926,
+        170
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Channel"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_272_376",
+      "Pos": [
+        842,
+        180,
+        898,
+        235
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_283_357"
+        ]
+      }
+    },
+    {
+      "Component": "Delay L",
+      "Pos": [
+        655,
+        179,
+        791,
+        239
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_272_376"
+        ]
+      }
+    },
+    {
+      "Component": "Delay L2",
+      "Pos": [
+        1234,
+        181,
+        1372,
+        239
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "()*"
+        ]
+      }
+    },
+    {
+      "Component": "()*",
+      "Pos": [
+        1414,
+        177,
+        1485,
+        243
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_488_357"
+        ]
+      }
+    },
+    {
+      "Component": "∑Mriri*-L",
+      "Pos": [
+        1619,
+        101,
+        1773,
+        195
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Threshold detector"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中所示混沌调制系统的接收端结构，以下哪项是正确的？",
+      "options": [
+        "A. 最优判决门限应设为0",
+        "B. 判决门限应设为 $M\\,E[x^2]$",
+        "C. 判决门限应设为 $E[x_i x_{i-L}]$",
+        "D. 判决门限应设为 $-M\\,E[x^2]$"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "该系统中每个信息比特由一段参考子序列和一段信息子序列组成，参考子序列长度为 $L$，且整个比特周期共有 $M$ 个混沌样本，则 $M$ 与 $L$ 的关系为 ______。(请从以下答案中选择一个：M=L/2,M=L,M=2L,M=4L)",
+      "answer": "M=2L"
+    }
+  ]
+}

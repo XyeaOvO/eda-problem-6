@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中所示各级的采样电容C和偏置电流I数值，哪一级的近似单位带宽GBW最小？",
+      "options": [
+        "A. Stage 1 & 2",
+        "B. Stage 3 & 4",
+        "C. Stage 5 & 6",
+        "D. Stage 9 & 10"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中各级放大器的跨导 $g_m\\approx I/V_T$（取 $V_T\\approx25\\,\\mathrm{mV}$），主极点频率 $f_p=\\displaystyle\\frac{g_m}{2\\pi C}$。则 Stage5（$I=1.95\\,\\mathrm{mA}$，$C=0.3\\,\\mathrm{pF}$）的 $f_p$ 约为 ______\\,GHz。(请选择：4.14,20.7,41.4,82.8)"
+    }
+  ]
+}

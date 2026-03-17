@@ -1,0 +1,213 @@
+{
+  "task1": [
+    {
+      "Component": "Gq",
+      "Pos": [
+        579,
+        75,
+        657,
+        143
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_634_290"
+        ]
+      }
+    },
+    {
+      "Component": "e^{-0.5s}",
+      "Pos": [
+        718,
+        175,
+        805,
+        262
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H_DAC(s)"
+        ]
+      }
+    },
+    {
+      "Component": "b",
+      "Pos": [
+        295,
+        185,
+        362,
+        251
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_286_290"
+        ]
+      }
+    },
+    {
+      "Component": "1",
+      "Pos": [
+        49,
+        185,
+        116,
+        251
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_56_290"
+        ]
+      }
+    },
+    {
+      "Component": "H_DAC(s)",
+      "Pos": [
+        559,
+        283,
+        688,
+        371
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "b",
+          "1"
+        ]
+      }
+    },
+    {
+      "Component": "G_m R_i (sRC + 1) / (sRC + 1 - G_m R_i A_v)",
+      "Pos": [
+        382,
+        66,
+        545,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gq"
+        ]
+      }
+    },
+    {
+      "Component": "1/(sR_{in}C_{in} + 1)",
+      "Pos": [
+        146,
+        66,
+        264,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_286_290"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_286_290",
+      "Pos": [
+        307,
+        87,
+        350,
+        132
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "G_m R_i (sRC + 1) / (sRC + 1 - G_m R_i A_v)"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_56_290",
+      "Pos": [
+        60,
+        87,
+        105,
+        132
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/(sR_{in}C_{in} + 1)"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_634_290",
+      "Pos": [
+        681,
+        87,
+        724,
+        132
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "e^{-0.5s}"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中第一个环路滤波器 $\\displaystyle\\frac{1}{sR_{in}C_{n}+1}$ 中，若取 $R_{in}=10\\,\\mathrm{k}\\Omega$，希望其 $-3\\,\\mathrm{dB}$ 截止频率为 $100\\,\\mathrm{kHz}$，下列哪一值最接近 $C_{n}$？",
+      "options": [
+        "A. $15.9\\,\\mathrm{pF}$",
+        "B. $159\\,\\mathrm{pF}$",
+        "C. $1.59\\,\\mathrm{nF}$",
+        "D. $1.59\\,\\mathrm{pF}$"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中第二环路滤波器模块中R=20\\,\\mathrm{k}\\Omega，C=5\\,\\mathrm{pF}，则其传递函数分子项$sRC+1$所引入的零点角频率$\\omega_z=\\dfrac{1}{RC}=\\underline{\\quad}\\,$rad/s。(请从以下答案中选择一个：1e5,1e6,1e7,1e8)",
+      "answer": "1e7"
+    }
+  ]
+}

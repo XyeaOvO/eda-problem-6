@@ -1,0 +1,138 @@
+{
+  "task1": [
+    {
+      "Component": "Adder",
+      "Pos": [
+        702,
+        279,
+        772,
+        349
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF"
+        ]
+      }
+    },
+    {
+      "Component": "LPF",
+      "Pos": [
+        523,
+        275,
+        653,
+        353
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCO"
+        ]
+      }
+    },
+    {
+      "Component": "VCO",
+      "Pos": [
+        331,
+        276,
+        460,
+        354
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "D flip-flop_108_286",
+          "D flip-flop_108_472"
+        ]
+      }
+    },
+    {
+      "Component": "D flip-flop_585_371",
+      "Pos": [
+        820,
+        242,
+        1037,
+        370
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder"
+        ]
+      }
+    },
+    {
+      "Component": "D flip-flop_108_472",
+      "Pos": [
+        151,
+        384,
+        377,
+        504
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "D flip-flop_585_371"
+        ]
+      }
+    },
+    {
+      "Component": "D flip-flop_108_286",
+      "Pos": [
+        151,
+        123,
+        377,
+        251
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "D flip-flop_585_371",
+          "Adder"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中PLL结构中的相位器(PD)功能，以下哪项说法最准确？",
+      "options": [
+        "A. 该相位鉴别器利用模拟乘法方式检测相位误差",
+        "B. 上下采样结果抵消，相位误差为零，当VCO输出相位与数据中点同步时",
+        "C. 该结构只能检测±90°以内的相位差",
+        "D. 使用两个D触发器分别在0°和90°采样，可实现四象限相位检测"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "参照图中CDR电路，所有触发器均为双边沿触发，则该相位检测器在每个比特周期内可产生的相位误差信号脉冲数为 ______。(选项如下：1,4,2,0)",
+      "answer": "2"
+    }
+  ]
+}

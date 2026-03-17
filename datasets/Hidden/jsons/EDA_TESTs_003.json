@@ -1,0 +1,367 @@
+{
+  "task1": [
+    {
+      "Component": "AMP",
+      "Pos": [
+        75,
+        177,
+        130,
+        239
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1",
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        173,
+        138,
+        221,
+        188
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Amp2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        170,
+        229,
+        220,
+        273
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AMP3"
+        ]
+      }
+    },
+    {
+      "Component": "Amp2",
+      "Pos": [
+        254,
+        135,
+        309,
+        192
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "90° Phase shifer2"
+        ]
+      }
+    },
+    {
+      "Component": "AMP3",
+      "Pos": [
+        258,
+        221,
+        309,
+        275
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "90° Phase shifer2"
+        ]
+      }
+    },
+    {
+      "Component": "90° Phase shifer2",
+      "Pos": [
+        334,
+        168,
+        452,
+        238
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        390,
+        338,
+        438,
+        382
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "90° Phase shifer",
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "90° Phase shifer",
+      "Pos": [
+        226,
+        321,
+        340,
+        394
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        464,
+        187,
+        503,
+        229
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AMP4"
+        ]
+      }
+    },
+    {
+      "Component": "AMP4",
+      "Pos": [
+        530,
+        175,
+        583,
+        232
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A/D",
+          "AGC DET"
+        ]
+      }
+    },
+    {
+      "Component": "AGC DET",
+      "Pos": [
+        618,
+        259,
+        703,
+        337
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A/D"
+        ]
+      }
+    },
+    {
+      "Component": "A/D",
+      "Pos": [
+        762,
+        167,
+        845,
+        238
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "D/A",
+          "AMP5"
+        ]
+      }
+    },
+    {
+      "Component": "D/A",
+      "Pos": [
+        717,
+        336,
+        805,
+        405
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AMP"
+        ]
+      }
+    },
+    {
+      "Component": "AMP5",
+      "Pos": [
+        907,
+        180,
+        967,
+        231
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "BPF"
+        ]
+      }
+    },
+    {
+      "Component": "AMP6",
+      "Pos": [
+        1108,
+        177,
+        1162,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DET",
+          "AGC DET2"
+        ]
+      }
+    },
+    {
+      "Component": "BPF",
+      "Pos": [
+        980,
+        171,
+        1095,
+        240
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AMP6"
+        ]
+      }
+    },
+    {
+      "Component": "DET",
+      "Pos": [
+        1209,
+        173,
+        1291,
+        239
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "AGC DET2",
+      "Pos": [
+        1139,
+        334,
+        1220,
+        404
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AMP6"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "若图中第2混频器（Image rejection mixer）中90^\\circ相移器存有10^\\circ的相位误差，则理论上的图像抑制比（Image Rejection Ratio，IRR）约为多少？",
+      "options": [
+        "A. 6\\,dB",
+        "B. 15\\,dB",
+        "C. 30\\,dB",
+        "D. 40\\,dB"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设2nd mixer(Image rejection mixer)中，每个混频器的转换增益为-7 dB，每个IF放大器的增益为15 dB，分支合成时仅考虑理想相位叠加，无其他损耗，则该图像抑制混频器的等效转换增益约为______ dB。(请从以下答案中选择一个：14,11,10,5)",
+      "answer": "11"
+    }
+  ]
+}

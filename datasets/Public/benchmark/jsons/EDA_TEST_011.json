@@ -1,0 +1,151 @@
+{
+  "task1": [
+    {
+      "Component": "Antenna",
+      "Pos": [
+        48,
+        106,
+        186,
+        207
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LNA"
+        ]
+      }
+    },
+    {
+      "Component": "LNA",
+      "Pos": [
+        227,
+        180,
+        362,
+        340
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "TAD (ADC)"
+        ]
+      }
+    },
+    {
+      "Component": "TAD (ADC)",
+      "Pos": [
+        395,
+        178,
+        592,
+        345
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DSP section"
+        ]
+      }
+    },
+    {
+      "Component": "DSP section",
+      "Pos": [
+        651,
+        157,
+        865,
+        370
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Frequency-multiplying numbers",
+      "Pos": [
+        647,
+        415,
+        864,
+        555
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADPLL"
+        ]
+      }
+    },
+    {
+      "Component": "ADPLL",
+      "Pos": [
+        422,
+        415,
+        592,
+        554
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "TAD (ADC)"
+        ]
+      }
+    },
+    {
+      "Component": "REG",
+      "Pos": [
+        225,
+        371,
+        362,
+        485
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示一片式RCC接收器IC中，TAD(ADC)的采样时钟CKS由ADPLL输出。若要实现约2.097MHz的采样频率，应将频率乘法因子N设置为多少？",
+      "options": [
+        "A. N=8",
+        "B. N=16",
+        "C. N=64",
+        "D. N=128"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "当频率乘法因子$N=20$时，ADPLL输出的ADC采样时钟频率$f_s=N\\times32.768\\mathrm{\\,kHz}=655.36\\mathrm{\\,kHz}$。若输入模拟信号频率$f_{\\rm in}=1.7\\mathrm{\\,MHz}$，则该信号在数字域中的折叠频率$f_{\\rm alias}=|f_{\\rm in}-m f_s|$（其中$m$取使$f_{\\rm alias}$最小的整数），约为 ______ kHz。",
+      "answer": "266.08"
+    }
+  ]
+}

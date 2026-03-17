@@ -1,0 +1,251 @@
+{
+  "task1": [
+    {
+      "Component": "RF Module",
+      "Pos": [
+        1160,
+        77,
+        1347,
+        136
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Temperature Control Unit",
+      "Pos": [
+        132,
+        472,
+        353,
+        578
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Temperature Sensor"
+        ]
+      }
+    },
+    {
+      "Component": "A/D",
+      "Pos": [
+        1056,
+        280,
+        1154,
+        350
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "μC"
+        ]
+      }
+    },
+    {
+      "Component": "Gas Sensor",
+      "Pos": [
+        132,
+        206,
+        353,
+        274
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Interface Circuit_210_314"
+        ]
+      }
+    },
+    {
+      "Component": "Adjustable Gain Amplifier",
+      "Pos": [
+        699,
+        244,
+        884,
+        384
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF"
+        ]
+      }
+    },
+    {
+      "Component": "LPF",
+      "Pos": [
+        920,
+        280,
+        1018,
+        350
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A/D"
+        ]
+      }
+    },
+    {
+      "Component": "μC",
+      "Pos": [
+        1194,
+        189,
+        1311,
+        438
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Temperature Control Unit",
+          "MUX",
+          "Driving Circuit_70_253",
+          "RF Module"
+        ]
+      }
+    },
+    {
+      "Component": "MUX",
+      "Pos": [
+        591,
+        213,
+        665,
+        431
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adjustable Gain Amplifier"
+        ]
+      }
+    },
+    {
+      "Component": "Interface Circuit_210_381",
+      "Pos": [
+        397,
+        316,
+        555,
+        419
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "MUX"
+        ]
+      }
+    },
+    {
+      "Component": "Interface Circuit_210_314",
+      "Pos": [
+        397,
+        189,
+        555,
+        289
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "MUX"
+        ]
+      }
+    },
+    {
+      "Component": "Driving Circuit_70_253",
+      "Pos": [
+        132,
+        74,
+        353,
+        136
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gas Sensor"
+        ]
+      }
+    },
+    {
+      "Component": "Temperature Sensor",
+      "Pos": [
+        136,
+        318,
+        353,
+        422
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Interface Circuit_210_381"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中采集链中，设可调增益放大器闭环增益$A_{CL}=1$，微控制器在切换至某传感器通道后对该通道输入施加阶跃信号，LPF输出在$t=20\\,\\mathrm{ms}$时达到最终值的63\\%。则此低通滤波器的截止频率$f_c$约为多少？",
+      "options": [
+        "A. 6.37\\,Hz",
+        "B. 7.96\\,Hz",
+        "C. 15.9\\,Hz",
+        "D. 50\\,Hz"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中可调增益放大器以非反相运放结构实现，反馈电阻和输入电阻由同一100\\,k\\Omega数字电位器构成，微控制器将电位器调至20\\%刻度，则闭环电压增益$$A_v=1+R_f/R_{in}=$$ ______ 。(选项如下：1.25,4,5,6)",
+      "answer": "5"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "task1": [
+    {
+      "Component": "af2",
+      "Pos": [
+        349,
+        93,
+        410,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_388_293"
+        ]
+      }
+    },
+    {
+      "Component": "af1",
+      "Pos": [
+        68,
+        93,
+        128,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_122_293"
+        ]
+      }
+    },
+    {
+      "Component": "5-Level Flash A/D",
+      "Pos": [
+        587,
+        28,
+        689,
+        142
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ILA Error Shaping_620_442"
+        ]
+      }
+    },
+    {
+      "Component": "INT2",
+      "Pos": [
+        464,
+        14,
+        566,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "5-Level Flash A/D"
+        ]
+      }
+    },
+    {
+      "Component": "D/A_8_398",
+      "Pos": [
+        8,
+        166,
+        69,
+        218
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "af1"
+        ]
+      }
+    },
+    {
+      "Component": "ILA Error Shaping_474_442",
+      "Pos": [
+        503,
+        212,
+        607,
+        298
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "D/A_273_398",
+          "D/A_8_398"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_388_293",
+      "Pos": [
+        412,
+        54,
+        470,
+        114
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "INT2"
+        ]
+      }
+    },
+    {
+      "Component": "D/A_273_398",
+      "Pos": [
+        290,
+        166,
+        350,
+        218
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "af2"
+        ]
+      }
+    },
+    {
+      "Component": "INT1_171_255",
+      "Pos": [
+        181,
+        14,
+        283,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ai2"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_122_293",
+      "Pos": [
+        129,
+        54,
+        188,
+        114
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "INT1_171_255"
+        ]
+      }
+    },
+    {
+      "Component": "ILA Error Shaping_620_442",
+      "Pos": [
+        658,
+        212,
+        762,
+        298
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ILA Error Shaping_474_442"
+        ]
+      }
+    },
+    {
+      "Component": "INT1_64_255",
+      "Pos": [
+        68,
+        14,
+        128,
+        74
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_122_293"
+        ]
+      }
+    },
+    {
+      "Component": "ai2",
+      "Pos": [
+        352,
+        15,
+        408,
+        76
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_388_293"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中两个级联积分器(INT1, INT2)和5级Flash A/D组成的∆Σ调制器结构，下列哪一项正确描述了该系统的噪声传递函数NTF(z)?",
+      "options": [
+        "A. \\(NTF(z)=1 - z^{-1}\\)",
+        "B. \\(NTF(z)=(1 - z^{-1})^2\\)",
+        "C. \\(NTF(z)=(1 - z^{-1})^3\\)",
+        "D. \\(NTF(z)=(z^{-1}-1)^2\\)"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "如图所示的二阶Σ–Δ调制器，在理想无失真条件下，当过采样比OSR每增加一倍时，理论上其信噪比SNR可提升约 ______ dB。(选项如下：0,15,30,45)",
+      "answer": "15"
+    }
+  ]
+}

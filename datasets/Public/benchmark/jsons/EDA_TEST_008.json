@@ -1,0 +1,194 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        172,
+        151,
+        202,
+        188
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Kd"
+        ]
+      }
+    },
+    {
+      "Component": "Kd",
+      "Pos": [
+        242,
+        138,
+        309,
+        203
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "÷N"
+        ]
+      }
+    },
+    {
+      "Component": "÷N",
+      "Pos": [
+        345,
+        138,
+        427,
+        205
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "÷Y",
+          "1/L"
+        ]
+      }
+    },
+    {
+      "Component": "÷Y",
+      "Pos": [
+        477,
+        138,
+        560,
+        203
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "fb/s"
+        ]
+      }
+    },
+    {
+      "Component": "fb/s",
+      "Pos": [
+        589,
+        123,
+        653,
+        219
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Δf"
+        ]
+      }
+    },
+    {
+      "Component": "1/L",
+      "Pos": [
+        586,
+        235,
+        653,
+        330
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Δf",
+      "Pos": [
+        683,
+        138,
+        753,
+        203
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        788,
+        151,
+        822,
+        190
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2πfb/s"
+        ]
+      }
+    },
+    {
+      "Component": "2πfb/s",
+      "Pos": [
+        858,
+        125,
+        945,
+        218
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中环路滤波器部分，Phase Path和Freq Path两条并联支路分别对鉴相器输出信号实现了什么控制作用？",
+      "options": [
+        "A. Phase Path支路实现积分作用，Freq Path支路实现比例作用",
+        "B. Phase Path支路实现比例作用，Freq Path支路实现积分作用",
+        "C. Phase Path支路实现微分作用，Freq Path支路实现比例作用",
+        "D. Phase Path支路同时实现比例和积分作用，Freq Path支路为纯通道"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "由图中环路滤波器(Freq Path与Phase Path并联)的传递函数可写为\n$$F(s)=\\frac{1}{L}+\\frac{f_b}{s}\\,,\n$$则该滤波器引入的零点角频率 $\\omega_z=$ ______。",
+      "answer": "f_b L"
+    }
+  ]
+}

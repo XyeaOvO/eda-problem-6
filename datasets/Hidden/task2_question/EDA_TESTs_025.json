@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设Core Clock频率为8\\,MHz，并且在SWP配置下Watchdog Timer时钟由Divide by\\,2,048预分频器提供给16位下拉计数器，若Reload寄存器装载最大值0xFFFF，则软件看门狗的最大超时时间约为多少？",
+      "options": [
+        "A. 16.78\\,ms",
+        "B. 16.78\\,s",
+        "C. 33.55\\,s",
+        "D. 65.54\\,s"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中Core Clock = 20\\;MHz，SWP = 0（选择分频输出），且Reload寄存器装载值为0x7A12，则软件看门狗的超时时间约为 ______ s。(请从以下答案中选择一个：3.2,0.0001024 ,1.6,1)"
+    }
+  ]
+}

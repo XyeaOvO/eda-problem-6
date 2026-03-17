@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中由多级比较器和时钟控制逻辑构成的电路，以下哪种ADC架构最符合该电路的工作原理？",
+      "options": [
+        "A. 逐次逼近型ADC（SAR）",
+        "B. 闪速型ADC（Flash）",
+        "C. 管道型ADC（Pipeline）",
+        "D. Σ-Δ型ADC（Sigma-Delta）"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图示三级子范围比较器ADC结构中，该ADC的最小可分辨电压（LSB）为 ______。(请从以下答案中选择一个：V_{ref}/8,V_{ref}/4,V_{ref}/2,2*V_{ref}/3)"
+    }
+  ]
+}

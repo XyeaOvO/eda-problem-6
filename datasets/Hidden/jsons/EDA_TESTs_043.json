@@ -1,0 +1,175 @@
+{
+  "task1": [
+    {
+      "Component": "Delay T_b",
+      "Pos": [
+        287,
+        53,
+        435,
+        131
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer_630_338"
+        ]
+      }
+    },
+    {
+      "Component": "90°",
+      "Pos": [
+        172,
+        277,
+        245,
+        342
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer_174_519"
+        ]
+      }
+    },
+    {
+      "Component": "Decision Device",
+      "Pos": [
+        283,
+        395,
+        430,
+        473
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer_630_338"
+        ]
+      }
+    },
+    {
+      "Component": "Loop Filter",
+      "Pos": [
+        478,
+        209,
+        575,
+        285
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCO"
+        ]
+      }
+    },
+    {
+      "Component": "VCO",
+      "Pos": [
+        285,
+        209,
+        433,
+        285
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "90°",
+          "Mixer_176_176"
+        ]
+      }
+    },
+    {
+      "Component": "Mixer_630_338",
+      "Pos": [
+        628,
+        214,
+        703,
+        282
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Loop Filter"
+        ]
+      }
+    },
+    {
+      "Component": "Mixer_174_519",
+      "Pos": [
+        174,
+        395,
+        241,
+        464
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Decision Device"
+        ]
+      }
+    },
+    {
+      "Component": "Mixer_176_176",
+      "Pos": [
+        176,
+        53,
+        247,
+        125
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Delay T_b"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "结合图中定时恢复回路，可知其中的定时误差检测器（Timing Error Detector，TED）属于下列哪一种类型？",
+      "options": [
+        "A. Early–Late Gate 检测器",
+        "B. Gardner 检测器",
+        "C. Mueller–Müller (M&M) 检测器",
+        "D. 零交叉 (Zero–Crossing) 检测器"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示判决导向BPSK载波恢复环中，Delay $T_b$模块的主要作用是将判决设备输出 $\\hat A(t-T_b)$ 与输入信号的 _______ 分量 对齐，以便在第二次乘法中产生正确的误差信号。(选项如下：同相分量,载波分量,正交分量,调制分量)",
+      "answer": "正交"
+    }
+  ]
+}

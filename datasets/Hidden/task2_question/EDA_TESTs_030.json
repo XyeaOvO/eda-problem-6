@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "为了提高数据采集与实际运动到位之间的同步精度，下列哪种系统改进最为有效？",
+      "options": [
+        "A. 将“Synchronous control”信号由运动控制器改为由电机驱动器在运动完成后直接输出",
+        "B. 将“Synchronous control”信号改由工业计算机来控制，以便统一调度",
+        "C. 增加RS232的通信波特率，以减少指令延迟",
+        "D. 在数据采集系统中增加固定延时，以等待电机运动完成"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中三维Gauss计输出三通道24位精度信号，采样率50 kS/s，则Data collection system与工业计算机之间至少需保证的连续数据传输速率 $R=3\\times24\\,\\mathrm{bit}\\times50\\times10^3\\,\\mathrm{s^{-1}}=______$ Mbit/s。(请从以下答案中选择一个：1.8,0.36,3.6,3)"
+    }
+  ]
+}

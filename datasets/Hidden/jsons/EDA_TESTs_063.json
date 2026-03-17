@@ -1,0 +1,286 @@
+{
+  "task1": [
+    {
+      "Component": "I & Q modulator",
+      "Pos": [
+        764,
+        337,
+        867,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "IF Amplifier_488_427"
+        ]
+      }
+    },
+    {
+      "Component": "Mixer Down convert",
+      "Pos": [
+        320,
+        25,
+        423,
+        110
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Low Pass Filter_368_182"
+        ]
+      }
+    },
+    {
+      "Component": "Local Oscillator_373_522",
+      "Pos": [
+        475,
+        458,
+        578,
+        542
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer Up convert_373_427"
+        ]
+      }
+    },
+    {
+      "Component": "IF Amplifier_488_427",
+      "Pos": [
+        621,
+        337,
+        727,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer Up convert_373_427"
+        ]
+      }
+    },
+    {
+      "Component": "IF Amplifier_485_182",
+      "Pos": [
+        618,
+        25,
+        721,
+        110
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "I & Q Demodulator_595_182"
+        ]
+      }
+    },
+    {
+      "Component": "Bandpass filter_251_427",
+      "Pos": [
+        320,
+        337,
+        423,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "RF Amplifier (LNA)_141_427"
+        ]
+      }
+    },
+    {
+      "Component": "RF Amplifier (LNA)_141_427",
+      "Pos": [
+        180,
+        337,
+        283,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Bow Tie Antenna_28_427"
+        ]
+      }
+    },
+    {
+      "Component": "Low Pass Filter_368_182",
+      "Pos": [
+        469,
+        25,
+        572,
+        110
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "IF Amplifier_485_182"
+        ]
+      }
+    },
+    {
+      "Component": "Local Oscillator_251_278",
+      "Pos": [
+        320,
+        148,
+        423,
+        232
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer Down convert"
+        ]
+      }
+    },
+    {
+      "Component": "RF Amplifier (LNA)_141_182",
+      "Pos": [
+        180,
+        25,
+        283,
+        110
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mixer Down convert"
+        ]
+      }
+    },
+    {
+      "Component": "Mixer Up convert_373_427",
+      "Pos": [
+        475,
+        337,
+        578,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Bandpass filter_251_427"
+        ]
+      }
+    },
+    {
+      "Component": "I & Q Demodulator_595_182",
+      "Pos": [
+        758,
+        25,
+        861,
+        110
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "I & Q modulator"
+        ]
+      }
+    },
+    {
+      "Component": "Bow Tie Antenna_28_427",
+      "Pos": [
+        36,
+        337,
+        141,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Bow Tie Antenna_28_182",
+      "Pos": [
+        36,
+        25,
+        141,
+        110
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "RF Amplifier (LNA)_141_182"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设图中接收链如下：LNA 增益 20dB，噪声系数 1dB；混频器转换损耗 6dB（等效噪声系数 6dB）；IF 放大器增益 40dB，噪声系数 5dB；忽略低通滤波器的插入损耗。则该接收链的总噪声系数 $F_{tot}$ 最接近下列哪个值？",
+      "options": [
+        "A. 1.2dB",
+        "B. 1.4dB",
+        "C. 2.5dB",
+        "D. 3.5dB"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中接收链的I\\&Q解调器中，I通道与Q通道幅度完全匹配，仅存在3°的相位误差，则该I\\&Q解调器的镜像抑制比IRR≈______ dB。(请选择：15,20,31.5,45)",
+      "answer": "31.5"
+    }
+  ]
+}

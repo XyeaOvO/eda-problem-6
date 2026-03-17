@@ -1,0 +1,118 @@
+{
+  "task1": [
+    {
+      "Component": "Loop Filter",
+      "Pos": [
+        448,
+        100,
+        561,
+        209
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "VCO"
+        ]
+      }
+    },
+    {
+      "Component": "Phase Detector",
+      "Pos": [
+        286,
+        107,
+        382,
+        204
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Loop Filter"
+        ]
+      }
+    },
+    {
+      "Component": "VCO",
+      "Pos": [
+        659,
+        83,
+        780,
+        214
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "÷N/N+1"
+        ]
+      }
+    },
+    {
+      "Component": "÷N/N+1",
+      "Pos": [
+        482,
+        232,
+        688,
+        333
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Phase Detector",
+          "Modules Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Modules Controller",
+      "Pos": [
+        263,
+        362,
+        404,
+        449
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "÷N/N+1"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中合成环的可编程除法器在除数 N=99 和 N+1=100 之间按 75% : 25% 的占空比切换，参考频率 $F_{ref}=10\\,\\mathrm{MHz}$，则合成输出频率 $F_{o}$ 最接近下列哪个值？",
+      "options": [
+        "A. 992.5\\,MHz",
+        "B. 995\\,MHz",
+        "C. 990\\,MHz",
+        "D. 997.5\\,MHz"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设参考频率 $F_{ref}=10\\,\\mathrm{MHz}$，基本分频数 $N=100$，调制周期 $M=64$，在一个调制周期内共有 $C=20$ 次执行 $\\div(N+1)$ 分频，则该分数-$N$ PLL 的输出合成频率 $F_{0}= $ ______。",
+      "answer": "1003.125\\,\\mathrm{MHz}"
+    }
+  ]
+}

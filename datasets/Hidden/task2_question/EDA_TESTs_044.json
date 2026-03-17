@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "忽略漫射分支和加性噪声，并在$\\phi=0$且$\\xi_s=1$条件下，当差分延时$\\tau_0=0.5\\,\\mu\\mathrm{s}$时，图中直射分支与镜像多径分支叠加后的频率响应$H(f)=1+e^{-j2\\pi f\\tau_0}$在相邻两个零点之间的频率间隔$\\Delta f$约为多少？",
+      "options": [
+        "A.\\;0.5\\,MHz",
+        "B.\\;1\\,MHz",
+        "C.\\;2\\,MHz",
+        "D.\\;4\\,MHz"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中，如果将“Differential Delay”模块（延时 $\\tau_0$）与“Differential Doppler”模块（乘以 $e^{-j2\\pi f_0 t}$）的顺序对调，则与原系统相比，复信号将额外多乘以的相位因子为 ______。(选项如下：$e^{-j2\\pi f_0 \tau_0}$,e^{j2\\pi f_0\\tau_0},$1$,$e^{j2\\pi f_0 t}$)"
+    }
+  ]
+}

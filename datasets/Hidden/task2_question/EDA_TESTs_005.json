@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中室内机中跟踪滤波器（Tracking filter）的带宽设计，下列选项中最符合典型卫星转发器（transponder）带宽要求的是？",
+      "options": [
+        "A. 8\\,MHz",
+        "B. 36\\,MHz",
+        "C. 200\\,kHz",
+        "D. 4\\,MHz"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中低噪声变换器(LNC)的增益为15\\,dB，室内前置放大器增益为20\\,dB，跟踪滤波与下变频模块的转换损耗为7\\,dB，IF放大器增益为40\\,dB，则从天线端到IF输出的总增益为______dB。(请从以下答案中选择一个：60,68,75,40)"
+    }
+  ]
+}

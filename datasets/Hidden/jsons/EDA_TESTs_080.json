@@ -1,0 +1,306 @@
+{
+  "task1": [
+    {
+      "Component": "E'_φ",
+      "Pos": [
+        344,
+        35,
+        389,
+        82
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PI_375_208"
+        ]
+      }
+    },
+    {
+      "Component": "Eφ",
+      "Pos": [
+        98,
+        35,
+        147,
+        82
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "E'_φ",
+          "Multiplier"
+        ]
+      }
+    },
+    {
+      "Component": "v_ref",
+      "Pos": [
+        368,
+        276,
+        459,
+        350
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_402_512"
+        ]
+      }
+    },
+    {
+      "Component": "v_ss",
+      "Pos": [
+        85,
+        359,
+        162,
+        434
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF_185_498"
+        ]
+      }
+    },
+    {
+      "Component": "vφ",
+      "Pos": [
+        224,
+        100,
+        315,
+        174
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "E'_φ"
+        ]
+      }
+    },
+    {
+      "Component": "I_dref",
+      "Pos": [
+        690,
+        21,
+        782,
+        93
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "I_qref",
+      "Pos": [
+        688,
+        359,
+        782,
+        434
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "system idle state detection",
+      "Pos": [
+        555,
+        168,
+        754,
+        260
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "vφ",
+          "v_ref"
+        ]
+      }
+    },
+    {
+      "Component": "Multiplier",
+      "Pos": [
+        224,
+        100,
+        315,
+        174
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "E'_φ"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_402_512",
+      "Pos": [
+        468,
+        375,
+        515,
+        422
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PI"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_295_220",
+      "Pos": [
+        344,
+        35,
+        389,
+        82
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PI_375_208"
+        ]
+      }
+    },
+    {
+      "Component": "PI_375_208",
+      "Pos": [
+        437,
+        21,
+        510,
+        93
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LPF_480_208"
+        ]
+      }
+    },
+    {
+      "Component": "LPF_480_208",
+      "Pos": [
+        559,
+        21,
+        641,
+        93
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "I_dref"
+        ]
+      }
+    },
+    {
+      "Component": "LPF_185_498",
+      "Pos": [
+        216,
+        359,
+        299,
+        434
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "v_ref",
+          "Summing junction_402_512"
+        ]
+      }
+    },
+    {
+      "Component": "PI",
+      "Pos": [
+        568,
+        363,
+        638,
+        435
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "I_qref"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示的双闭环矢量控制结构中，若要在不显著增加磁链环和转矩环输出纹波的前提下提升两环的动态响应，下列哪项改动最为合适？",
+      "options": [
+        "A. 增大两路PI调节器的比例增益",
+        "B. 提高两条LPF滤波器的截止频率",
+        "C. 减小触发信号 $T_{trig}$ 的周期（提高触发频率）",
+        "D. 增大限幅器的饱和阈值"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设信号$v_{ss}(t)=V_m\\sin(\\omega_s t)$，相位同步信号$\\phi_s=\\omega_s t$，$v_{ss}$与$\\sin\\phi_s$相乘后的信号经理想低通滤波器（截止频率介于$\\omega_s$与$2\\omega_s$之间）后得到的直流分量$v_p$等于________。(请从以下答案中选择一个：0,V_m/sqrt{2},V_m/2,V_m)",
+      "answer": "V_m/2"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在如图所示的系统中，若串联电阻 $R_s=2\\,\\Omega$，输入电流 $I=3\\,\\mathrm{A}$，输入电压 $V=20\\,\\mathrm{V}$，串联电池数 $N=5$，平行电阻 $R_p=30\\,\\Omega$，则输出 $Rp\\_current$ 的数值为多少？",
+      "options": [
+        "A. $0.0267\\,\\mathrm{A}$",
+        "B. $0.0867\\,\\mathrm{A}$",
+        "C. $0.1733\\,\\mathrm{A}$",
+        "D. $0.5200\\,\\mathrm{A}$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若要求 $Rp\\_current=0.1\\,\\mathrm{A}$，当 $V=10\\,\\mathrm{V}$，$I=1\\,\\mathrm{A}$，$R_s=2\\,\\Omega$，$R_p=30\\,\\Omega$ 时，需要串联电池数 $N=\\underline{\\quad}$。(请从以下答案中选择一个：4,20,5,8)"
+    }
+  ]
+}

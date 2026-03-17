@@ -1,0 +1,213 @@
+{
+  "task1": [
+    {
+      "Component": "Switching Table",
+      "Pos": [
+        217,
+        26,
+        298,
+        114
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Inverter"
+        ]
+      }
+    },
+    {
+      "Component": "Inverter",
+      "Pos": [
+        368,
+        28,
+        438,
+        114
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A"
+        ]
+      }
+    },
+    {
+      "Component": "1-ASM",
+      "Pos": [
+        523,
+        41,
+        596,
+        108
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "A",
+      "Pos": [
+        445,
+        26,
+        467,
+        116
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "V",
+          "Flux and Torque Estimator_228_419"
+        ]
+      }
+    },
+    {
+      "Component": "V",
+      "Pos": [
+        475,
+        26,
+        499,
+        116
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1-ASM",
+          "Flux and Torque Estimator_228_419"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_115_352",
+      "Pos": [
+        90,
+        82,
+        113,
+        107
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer_189_346"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_64_287",
+      "Pos": [
+        50,
+        31,
+        75,
+        56
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer_189_280"
+        ]
+      }
+    },
+    {
+      "Component": "Quantizer_189_346",
+      "Pos": [
+        147,
+        77,
+        184,
+        112
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Switching Table"
+        ]
+      }
+    },
+    {
+      "Component": "Quantizer_189_280",
+      "Pos": [
+        147,
+        26,
+        184,
+        62
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Switching Table"
+        ]
+      }
+    },
+    {
+      "Component": "Flux and Torque Estimator_228_419",
+      "Pos": [
+        178,
+        134,
+        304,
+        201
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_115_352",
+          "Summing junction_64_287"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中所示的直接转矩控制(DTC)系统中，若增大转矩比较器的带宽 $\\Delta T$，下列说法中正确的是？",
+      "options": [
+        "A. 增大转矩带宽可减小转矩摆差，但会升高开关频率",
+        "B. 增大转矩带宽可降低开关频率，但会增大转矩摆差",
+        "C. 增大转矩带宽可同时降低开关频率和转矩摆差",
+        "D. 增大转矩带宽对开关频率和转矩摆差均无影响"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示的直接转矩控制(DTC)框图中，切换表(Switching Table)的输入包括磁链滞环比较器输出（±1，共2级）、转矩滞环比较器输出（±1，共2级）以及定子磁链所在的6个扇区编号，则该切换表中需要维护的映射条目总数为 ______。(请从以下答案中选择一个：12,24,6,4)",
+      "answer": "24"
+    }
+  ]
+}

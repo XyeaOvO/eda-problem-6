@@ -1,0 +1,191 @@
+{
+  "task1": [
+    {
+      "Component": "Receiving Antenna",
+      "Pos": [
+        316,
+        30,
+        413,
+        100
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Low Noise Converter"
+        ]
+      }
+    },
+    {
+      "Component": "Tunable oscillator",
+      "Pos": [
+        141,
+        257,
+        239,
+        327
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Tracking filter & Down converter"
+        ]
+      }
+    },
+    {
+      "Component": "IF Amplifier",
+      "Pos": [
+        251,
+        179,
+        348,
+        248
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "FM demodulator"
+        ]
+      }
+    },
+    {
+      "Component": "Channel select and display",
+      "Pos": [
+        264,
+        257,
+        386,
+        327
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Tunable oscillator"
+        ]
+      }
+    },
+    {
+      "Component": "Amplifier",
+      "Pos": [
+        78,
+        192,
+        113,
+        233
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Tracking filter & Down converter"
+        ]
+      }
+    },
+    {
+      "Component": "FM demodulator",
+      "Pos": [
+        362,
+        179,
+        478,
+        248
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "TV"
+        ]
+      }
+    },
+    {
+      "Component": "Low Noise Converter",
+      "Pos": [
+        176,
+        32,
+        273,
+        102
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Amplifier"
+        ]
+      }
+    },
+    {
+      "Component": "Tracking filter & Down converter",
+      "Pos": [
+        141,
+        179,
+        239,
+        248
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "IF Amplifier"
+        ]
+      }
+    },
+    {
+      "Component": "TV",
+      "Pos": [
+        524,
+        183,
+        595,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中室内机中跟踪滤波器（Tracking filter）的带宽设计，下列选项中最符合典型卫星转发器（transponder）带宽要求的是？",
+      "options": [
+        "A. 8\\,MHz",
+        "B. 36\\,MHz",
+        "C. 200\\,kHz",
+        "D. 4\\,MHz"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中低噪声变换器(LNC)的增益为15\\,dB，室内前置放大器增益为20\\,dB，跟踪滤波与下变频模块的转换损耗为7\\,dB，IF放大器增益为40\\,dB，则从天线端到IF输出的总增益为______dB。(请从以下答案中选择一个：60,68,75,40)",
+      "answer": "68"
+    }
+  ]
+}

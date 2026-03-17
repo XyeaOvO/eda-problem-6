@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示分割系统中，如果运动场(Motion Field)估计完全准确，对于静止背景区域，下列哪个模块的输出将近似为零？",
+      "options": [
+        "A. FD 模块",
+        "B. DFD 模块",
+        "C. Local segm. 模块",
+        "D. Extrap. segm. 模块"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图示框图中，DFD模块在计算差分前需要先对前一帧图像进行______，以消除背景的运动影响。(选项如下：运动补偿,直接差分,滤波,采样)"
+    }
+  ]
+}

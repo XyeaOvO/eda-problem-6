@@ -1,0 +1,153 @@
+{
+  "task1": [
+    {
+      "Component": "LP conversion LSF",
+      "Pos": [
+        435,
+        100,
+        523,
+        214
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Preprocessor",
+      "Pos": [
+        150,
+        32,
+        362,
+        97
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 5
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Linear prediction analysis",
+          "Pitch estimation",
+          "Subband U/V decision",
+          "Energy analysis",
+          "Excitation signal analysis"
+        ]
+      }
+    },
+    {
+      "Component": "Energy analysis",
+      "Pos": [
+        260,
+        640,
+        495,
+        719
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Subband U/V decision",
+      "Pos": [
+        258,
+        514,
+        492,
+        598
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Pitch estimation",
+      "Pos": [
+        258,
+        387,
+        492,
+        466
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Excitation signal analysis",
+          "Subband U/V decision"
+        ]
+      }
+    },
+    {
+      "Component": "Linear prediction analysis",
+      "Pos": [
+        234,
+        115,
+        381,
+        196
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "LP conversion LSF",
+          "Excitation signal analysis"
+        ]
+      }
+    },
+    {
+      "Component": "Excitation signal analysis",
+      "Pos": [
+        260,
+        261,
+        495,
+        343
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图1所示的ASELP编码器结构中，下列哪个模块没有直接接收Preprocessor模块的输出信号？",
+      "options": [
+        "A. Linear prediction analysis",
+        "B. LP conversion LSF",
+        "C. Pitch estimation",
+        "D. Subband U/V decision"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图1所示的ASELP编码器架构中，总共输出了____种编码参数(bit streams)。(请从以下答案中选择一个：6,7,5,4)",
+      "answer": "5"
+    }
+  ]
+}

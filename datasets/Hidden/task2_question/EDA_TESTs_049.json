@@ -1,0 +1,12 @@
+{
+  "task2": [
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中Quantization模块采用b位均匀量化器，则该量化器的理论信噪比（SQNR，单位dB）约为______。(选项如下：\\6.02b + 1.76,\\3.01b+1.76,\\6.02b,\\6.02b+4.77)"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中的Codeword Assignment模块中，若量化输出符号集\\{s_1,s_2,s_3,s_4\\}的概率分别为0.5、0.25、0.125、0.125，采用Huffman编码时平均码长（bits/符号）为______。(选项如下：1.75,2,1.5,2.25)"
+    }
+  ]
+}

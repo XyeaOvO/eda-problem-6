@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中“Rotational Accelerometer”与PES及数字控制器构成内环加速度反馈，使得数字控制器所控制的从PES输出到位置输出x(t)的等效被控对象模型由原始的1/s^2变为何种形式？",
+      "options": [
+        "A. \\(1/s^2\\)",
+        "B. \\(1/s\\)",
+        "C. \\(1\\)",
+        "D. \\(s\\)"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中所示的被控对象机械环节 $1/s^2$ 处引入旋转加速度计反馈后，等效质量为\n$$m_{eff}=m \\bigl(1+K_vS_aK_{acc}\\bigr)\n$$\n若 $m=0.01\\,\\mathrm{kg}$，$K_v=0.1\\,\\mathrm{N/V}$，加速度计灵敏度 $S_a=5\\,\\mathrm{V/(m/s^2)}$，加速度反馈增益 $K_{acc}=8$，则 $m_{eff}=\\underline{\\quad}\\,\\mathrm{kg}$。(请从以下答案中选择一个：0.04,0.01,0.05,5)"
+    }
+  ]
+}

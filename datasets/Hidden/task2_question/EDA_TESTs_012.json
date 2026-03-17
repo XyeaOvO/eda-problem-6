@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图中所示的双回路控制系统中，sys3 分支$$G_{3}(s)=\\frac{2}{s^2+2s+3}$$的主要作用是什么？",
+      "options": [
+        "A. 为低频信号提供额外反馈以提高静态精度",
+        "B. 为高频信号提供额外反馈以改善相位裕度",
+        "C. 作为前馈补偿，独立于核心反馈回路",
+        "D. 滤除直流成分，抑制低频扰动"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中sys3模块的传递函数为$G_3(s)=\\displaystyle\\frac{2}{s^2+2s+3}$，则该二阶系统的阻尼比$\\zeta$是 ______。(请从以下答案中选择一个：\\displaystyle\\frac{1}{\\sqrt3},\\displaystyle\\frac{1}{\\sqrt2},\\displaystyle\\frac{2}{\\sqrt3},\\displaystyle\\frac{4}{\\sqrt3})"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "若环路滤波器中与 $\\rho$ 相乘的分支被设为零，则图示PLL控制环路退化为下列哪一种类型？",
+      "options": [
+        "A. 二阶二型系统",
+        "B. 一阶一型系统",
+        "C. 纯比例控制环路，无积分作用",
+        "D. 无法实现频率锁定"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "由图示PLL闭环特征方程$$s^2+N\\alpha f_Rs+N\\rho f_R^2=0$$，则该PLL的自然振荡角频率$\\omega_n=$ ______。(选项如下：f_R\\sqrt{N\\rho},N_rho\\f_R,N_alpha\\f_R,sqrt{alpha}\\f_R)"
+    }
+  ]
+}

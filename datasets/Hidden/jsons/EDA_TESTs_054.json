@@ -1,0 +1,172 @@
+{
+  "task1": [
+    {
+      "Component": "Predictive Control",
+      "Pos": [
+        811,
+        320,
+        977,
+        451
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PWM"
+        ]
+      }
+    },
+    {
+      "Component": "PI",
+      "Pos": [
+        1018,
+        96,
+        1135,
+        184
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_591_426"
+        ]
+      }
+    },
+    {
+      "Component": "PWM",
+      "Pos": [
+        547,
+        320,
+        719,
+        451
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Sliding mode observer",
+      "Pos": [
+        281,
+        84,
+        488,
+        197
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "MPPT"
+        ]
+      }
+    },
+    {
+      "Component": "MPPT",
+      "Pos": [
+        629,
+        84,
+        805,
+        197
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_467_319"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_467_319",
+      "Pos": [
+        912,
+        115,
+        961,
+        164
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PI"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_591_426",
+      "Pos": [
+        1154,
+        324,
+        1201,
+        371
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Predictive Control"
+        ]
+      }
+    },
+    {
+      "Component": "PLL_650_367",
+      "Pos": [
+        1270,
+        209,
+        1381,
+        260
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_591_426"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "下列关于图中预测电流控制器（Predictive Control）输入信号的描述，哪项正确？",
+      "options": [
+        "A. $V_{INV}^*,\\;i_L,\\;e_s(t)$",
+        "B. $I_i^*,\\;i_L,\\;e_s(t)$",
+        "C. $V_{ref}^*,\\;v_{sa\\_avg},\\;i_{sa\\_avg}$",
+        "D. 三角波载波信号、$\\sin(\\omega_s t)$和$V_{INV}^*$"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图中MPPT模块若采用增量电导法(Maximum Power Point Tracking by Incremental Conductance)，为了满足最大功率点跟踪，应满足的条件 $\\frac{dP}{dV}=0$ 即______。(选项如下：dI/dV=0,dI/dV=-I/V,dP/dV=0,I/V=常数)",
+      "answer": "dI/dV=-I/V"
+    }
+  ]
+}

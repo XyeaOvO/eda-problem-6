@@ -1,0 +1,174 @@
+{
+  "task1": [
+    {
+      "Component": "L.P.F. 50Hz",
+      "Pos": [
+        324,
+        664,
+        574,
+        770
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Divider"
+        ]
+      }
+    },
+    {
+      "Component": "A",
+      "Pos": [
+        739,
+        350,
+        894,
+        480
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction"
+        ]
+      }
+    },
+    {
+      "Component": "L.P.F. 3000Hz",
+      "Pos": [
+        929,
+        159,
+        1099,
+        261
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Differentiator",
+      "Pos": [
+        326,
+        340,
+        575,
+        446
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "D.C. restoration"
+        ]
+      }
+    },
+    {
+      "Component": "D.C. restoration",
+      "Pos": [
+        324,
+        502,
+        574,
+        606
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "L.P.F. 50Hz"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction",
+      "Pos": [
+        775,
+        169,
+        859,
+        253
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "L.P.F. 3000Hz"
+        ]
+      }
+    },
+    {
+      "Component": "Flip-flop",
+      "Pos": [
+        218,
+        135,
+        403,
+        282
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Differentiator",
+          "Summing junction",
+          "Divider"
+        ]
+      }
+    },
+    {
+      "Component": "Divider",
+      "Pos": [
+        632,
+        502,
+        714,
+        584
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "A"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图(b)所示的1位闭环D/A转换器中，若底部反馈支路中的 D.C. restoration 级失效，导致无法向“÷”块提供正确的直流平均值，模拟输出会出现下列哪种现象？",
+      "options": [
+        "A. 模拟输出电压将饱和在正电源轨",
+        "B. 模拟输出电压将饱和在负电源轨",
+        "C. 模拟输出电压保持零",
+        "D. 输出信号出现随机高频抖动"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若图(b)所示Σ–Δ型D/A转换器的模拟输出带宽为3kHz，且设计时采用16倍过采样，则调制时钟频率$f_{clk}$最低应为______kHz。(请从以下答案中选择一个：16,96,48,3)",
+      "answer": "96"
+    }
+  ]
+}

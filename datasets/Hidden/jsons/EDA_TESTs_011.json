@@ -1,0 +1,247 @@
+{
+  "task1": [
+    {
+      "Component": "0",
+      "Pos": [
+        17,
+        16,
+        50,
+        49
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        68,
+        16,
+        99,
+        50
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Transfer Fcn"
+        ]
+      }
+    },
+    {
+      "Component": "PID",
+      "Pos": [
+        102,
+        71,
+        135,
+        105
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Transfer Fcn",
+      "Pos": [
+        146,
+        12,
+        230,
+        55
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Scope",
+          "Summary"
+        ]
+      }
+    },
+    {
+      "Component": "Scope",
+      "Pos": [
+        337,
+        14,
+        371,
+        52
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Summary",
+      "Pos": [
+        222,
+        71,
+        255,
+        105
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "PID",
+          "u^2"
+        ]
+      }
+    },
+    {
+      "Component": "Constant1",
+      "Pos": [
+        272,
+        121,
+        306,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summary"
+        ]
+      }
+    },
+    {
+      "Component": "u^2",
+      "Pos": [
+        197,
+        176,
+        230,
+        209
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/s"
+        ]
+      }
+    },
+    {
+      "Component": "1/s",
+      "Pos": [
+        296,
+        175,
+        331,
+        208
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "k"
+        ]
+      }
+    },
+    {
+      "Component": "k",
+      "Pos": [
+        372,
+        176,
+        405,
+        210
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Scope1",
+          "Display"
+        ]
+      }
+    },
+    {
+      "Component": "Scope1",
+      "Pos": [
+        457,
+        175,
+        491,
+        211
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Display",
+      "Pos": [
+        426,
+        225,
+        523,
+        260
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "若仿真停止时间为10\\,s，图中下方分支的显示器（Display）最终显示5447，则增益块Gain的取值最接近下列哪一项？",
+      "options": [
+        "A. \\;0.00445",
+        "B. \\;0.0445",
+        "C. \\;0.000445",
+        "D. \\;0.04445"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中 Transfer Fcn 块 $G(s)=\\frac{10s+0.086}{1660s^2+103s+1}$ 的阻尼比 $\\zeta\\approx$ ______。(请从以下答案中选择一个：0.06,2.6,1.26,1.2)",
+      "answer": "1.26"
+    }
+  ]
+}

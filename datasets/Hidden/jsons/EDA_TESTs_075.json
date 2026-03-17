@@ -1,0 +1,136 @@
+{
+  "task1": [
+    {
+      "Component": "H1(z)",
+      "Pos": [
+        669,
+        224,
+        827,
+        300
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_570_265"
+        ]
+      }
+    },
+    {
+      "Component": "1 - (z-1/z)^k",
+      "Pos": [
+        297,
+        376,
+        532,
+        537
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_163_265"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_454_411",
+      "Pos": [
+        579,
+        320,
+        621,
+        363
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1 - (z-1/z)^k"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_570_265",
+      "Pos": [
+        727,
+        134,
+        770,
+        177
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Adder_394_265",
+      "Pos": [
+        502,
+        134,
+        546,
+        177
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_570_265",
+          "Adder_454_411"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_163_265",
+      "Pos": [
+        208,
+        134,
+        250,
+        177
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_394_265",
+          "Adder_454_411"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中下方模块$$G(z)=1-\\Bigl(\\frac{z-1}{z}\\Bigr)^k=1-(1-z^{-1})^k$$的频率响应特性，以下哪个说法是正确的？",
+      "options": [
+        "A. $$G(z)$$在$$z=1$$处具有$$k$$重零点，因此对直流及低频信号具有完全抑制能力",
+        "B. $$G(z)$$等价于$$k$$步移动平均滤波器，对高频信号有显著衰减",
+        "C. $$G(z)$$是全通滤波器，对所有频率信号幅度保持不变",
+        "D. $$G(z)$$仅实现$$k$$个采样周期的纯延迟，不改变信号频谱"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "设$q(z)=0,\\;T(z)=0,\\;k=2$，则该系统对输入$s(z)$的闭环传递函数$\\displaystyle\\frac{s^*(z)}{s(z)}=$ ______。(请从以下答案中选择一个：\\frac{z^2}{z^2+2z-1},\\2z^1-z^{-2},\\frac{z^2}{z^2-2z+1},\\frac{1}{z^2+2z-1})",
+      "answer": "\\frac{z^2}{z^2+2z-1}"
+    }
+  ]
+}

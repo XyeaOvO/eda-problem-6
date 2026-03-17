@@ -1,0 +1,157 @@
+{
+  "task1": [
+    {
+      "Component": "1-bit quantizer",
+      "Pos": [
+        537,
+        187,
+        587,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/z_341_539"
+        ]
+      }
+    },
+    {
+      "Component": "Discrete integrator 1/(1-1/z)",
+      "Pos": [
+        300,
+        187,
+        350,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_534_352",
+          "1/z_341_444"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_534_352",
+      "Pos": [
+        537,
+        187,
+        587,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/z_341_539"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_298_352",
+      "Pos": [
+        300,
+        187,
+        350,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_534_352",
+          "1/z_341_444"
+        ]
+      }
+    },
+    {
+      "Component": "1/z_341_444",
+      "Pos": [
+        343,
+        279,
+        422,
+        334
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_298_352"
+        ]
+      }
+    },
+    {
+      "Component": "Adder_179_352",
+      "Pos": [
+        180,
+        187,
+        231,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_298_352"
+        ]
+      }
+    },
+    {
+      "Component": "1/z_341_539",
+      "Pos": [
+        343,
+        375,
+        422,
+        429
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adder_179_352"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图中所示的一阶 Sigma-Delta 调制器，从量化误差 $E_1(z)$ 到输出 $Y(z)$ 的噪声传递函数（NTF）是哪一个？",
+      "options": [
+        "A. $\\displaystyle\\frac{1}{1 - z^{-1}}$",
+        "B. $\\displaystyle\\frac{z^{-1}}{1 - z^{-1}}$",
+        "C. $1 - z^{-1}$",
+        "D. $z^{-1}$"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中所有运放及1-bit量化器均为理想器件，推导该一阶Σ–Δ调制器的噪声传递函数 NTF(z)=______。(请选择：1- z^{-1},1,1/(1- z^{-1}), (1- z^{-1})^2)",
+      "answer": "1- z^{-1}"
+    }
+  ]
+}

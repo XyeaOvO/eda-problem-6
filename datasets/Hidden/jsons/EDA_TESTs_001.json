@@ -1,0 +1,289 @@
+{
+  "task1": [
+    {
+      "Component": "Front-end ADC",
+      "Pos": [
+        163,
+        29,
+        281,
+        128
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Stage i Config 1"
+        ]
+      }
+    },
+    {
+      "Component": "Stage i Config 1",
+      "Pos": [
+        411,
+        28,
+        528,
+        128
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Back-end ADC"
+        ]
+      }
+    },
+    {
+      "Component": "Z^-1",
+      "Pos": [
+        481,
+        171,
+        541,
+        232
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2"
+        ]
+      }
+    },
+    {
+      "Component": "2",
+      "Pos": [
+        386,
+        173,
+        447,
+        239
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        327,
+        234,
+        380,
+        285
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2",
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        193,
+        230,
+        250,
+        284
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum3"
+        ]
+      }
+    },
+    {
+      "Component": "Sum3",
+      "Pos": [
+        98,
+        285,
+        155,
+        345
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/(1-z^-1)"
+        ]
+      }
+    },
+    {
+      "Component": "2.1",
+      "Pos": [
+        385,
+        287,
+        448,
+        351
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Sum4",
+      "Pos": [
+        487,
+        292,
+        540,
+        345
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "2.1"
+        ]
+      }
+    },
+    {
+      "Component": "1/(1-z^-1)",
+      "Pos": [
+        190,
+        346,
+        296,
+        420
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Front-end ADC1",
+      "Pos": [
+        163,
+        431,
+        278,
+        524
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Stage i Config 2"
+        ]
+      }
+    },
+    {
+      "Component": "Stage i Config 2",
+      "Pos": [
+        410,
+        428,
+        527,
+        529
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Back-end ADC2"
+        ]
+      }
+    },
+    {
+      "Component": "Back-end ADC2",
+      "Pos": [
+        657,
+        429,
+        776,
+        524
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum4"
+        ]
+      }
+    },
+    {
+      "Component": "Back-end ADC",
+      "Pos": [
+        660,
+        32,
+        774,
+        126
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Z^-1"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图中中央的处理单元中，序列 $(-1)^n$ 乘以电压 $V_{gd}(nT_s)$ 的主要作用是什么？",
+      "options": [
+        "A. 用于实现带通噪声整形，以使量化噪声集中在中频带",
+        "B. 消除数模转换器的直流失调误差",
+        "C. 在数字动态元件匹配(DEM)中对权值失配进行高阶噪声整形",
+        "D. 用于在采样率转换中进行相位对齐"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中校准数字环路里，误差信号 $V_{gd}(nT_s)$ 在进入加法器前被 $(-1)^n$ 调制，该调制在离散频率轴上相当于平移了 ________ (rad/sample)。(请从以下答案中选择一个：\\pi,\\2pi,\\1,\\0.5pi)",
+      "answer": "\\pi"
+    }
+  ]
+}

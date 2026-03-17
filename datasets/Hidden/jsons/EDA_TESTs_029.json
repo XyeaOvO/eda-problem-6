@@ -1,0 +1,218 @@
+{
+  "task1": [
+    {
+      "Component": "MIMO System",
+      "Pos": [
+        1970,
+        1351,
+        2334,
+        1719
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "u1(n).",
+          "u2(n).",
+          "Runge-Kutta Model",
+          "Runge-Kutta Model Based Parameter Estimation"
+        ]
+      }
+    },
+    {
+      "Component": "Cost Function Minimization",
+      "Pos": [
+        502,
+        1351,
+        875,
+        1701
+      ],
+      "I_O": {
+        "input": 2,
+        "output": 3
+      },
+      "Connection": {
+        "input": [
+          "y1(n)",
+          "y2(n)"
+        ],
+        "output": [
+          "MIMO System",
+          "u1(n)",
+          "u2(n)"
+        ]
+      }
+    },
+    {
+      "Component": "Runge-Kutta Model",
+      "Pos": [
+        1827,
+        368,
+        2334,
+        727
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Cost Function Minimization"
+        ]
+      }
+    },
+    {
+      "Component": "Runge-Kutta Model Based Parameter Estimation",
+      "Pos": [
+        1320,
+        797,
+        1719,
+        1147
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Runge-Kutta Model"
+        ]
+      }
+    },
+    {
+      "Component": "y1(n)",
+      "Pos": [
+        931,
+        1221,
+        1013,
+        1329
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "y2(n)",
+      "Pos": [
+        1061,
+        1221,
+        1143,
+        1329
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "u1(n)",
+      "Pos": [
+        931,
+        1221,
+        1013,
+        1329
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Runge-Kutta Model Based Parameter Estimation",
+          "Runge-Kutta Model"
+        ]
+      }
+    },
+    {
+      "Component": "u2(n)",
+      "Pos": [
+        1061,
+        1221,
+        1143,
+        1329
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Runge-Kutta Model Based Parameter Estimation",
+          "Runge-Kutta Model"
+        ]
+      }
+    },
+    {
+      "Component": "u1(n).",
+      "Pos": [
+        1100,
+        1805,
+        1182,
+        1888
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Cost Function Minimization"
+        ]
+      }
+    },
+    {
+      "Component": "u2(n).",
+      "Pos": [
+        1100,
+        1979,
+        1182,
+        2061
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Cost Function Minimization"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "下列哪一信号不是 Cost Function Minimization 模块的输入？",
+      "options": [
+        "A. 预测输出序列 $[\\hat{y}_1(n+1),\\dots,\\hat{y}_1(n+K)]$",
+        "B. 带延迟的先前控制输入 $u^*_1(n-1),\\;u^*_R(n-1)$",
+        "C. 当前估计的模型参数 $\\theta$",
+        "D. 当前测量的输出 $\\tilde{y}_1(n),\\;\\tilde{y}_Q(n)$"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中输入Runge–Kutta Model Based Parameter Estimation模块的信号$\\tilde x_1(n)$和$\\tilde x_N(n)$分别表示模型的第1个和第N个状态的______。(请从以下答案中选择一个：判断值,计算值,测量值,估计值)",
+      "answer": "估计值"
+    }
+  ]
+}

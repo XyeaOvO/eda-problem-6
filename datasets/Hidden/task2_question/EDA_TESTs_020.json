@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如图所示离散时间闭环控制系统，前向通路包含两个级联的离散积分器 $\\displaystyle\\frac{K T_s}{z-1}$，并采用单位负反馈，则该系统对单位斜坡输入的稳态误差 $e_{ss}$ 为下列哪一项？",
+      "options": [
+        "A. $0$",
+        "B. $\\dfrac{1}{K T_s}$",
+        "C. $\\dfrac{1}{K}$",
+        "D. $\\infty$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中Discrete-Time Integrator1与Discrete-Time Integrator3串联后的前向通道传递函数为 ______。(请从以下答案中选择一个：\\-left(\\frac{K T_s}{z-1}\\right)^2,\\left(\\frac{K T_s}{z-1}\\right)^2 K,\\frac{K T_s}{z-1},\\left(\\frac{K T_s}{z-1}\\right)^2)"
+    }
+  ]
+}

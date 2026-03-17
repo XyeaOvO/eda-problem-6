@@ -1,0 +1,271 @@
+{
+  "task1": [
+    {
+      "Component": "Current Control Loop",
+      "Pos": [
+        2554,
+        553,
+        2905,
+        766
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Mechanical Load"
+        ]
+      }
+    },
+    {
+      "Component": "Spline Interpolation",
+      "Pos": [
+        548,
+        21,
+        899,
+        745
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Acceleration Feed-forward Controller",
+          "Velocity Feed-forward Controller",
+          "Summing junction_198_385"
+        ]
+      }
+    },
+    {
+      "Component": "Mechanical Load",
+      "Pos": [
+        3064,
+        553,
+        3416,
+        766
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Last Motion (Backlash)",
+          "dθ/dt_597_423",
+          "Summing junction_198_385"
+        ]
+      }
+    },
+    {
+      "Component": "Trajectory Generation",
+      "Pos": [
+        16,
+        266,
+        378,
+        489
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Spline Interpolation"
+        ]
+      }
+    },
+    {
+      "Component": "Acceleration Feed-forward Controller",
+      "Pos": [
+        1240,
+        21,
+        1596,
+        245
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_450_385"
+        ]
+      }
+    },
+    {
+      "Component": "Position Controller",
+      "Pos": [
+        1240,
+        553,
+        1596,
+        766
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_333_385"
+        ]
+      }
+    },
+    {
+      "Component": "Velocity Controller",
+      "Pos": [
+        1942,
+        553,
+        2293,
+        766
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_450_385"
+        ]
+      }
+    },
+    {
+      "Component": "Velocity Feed-forward Controller",
+      "Pos": [
+        1240,
+        266,
+        1596,
+        489
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_333_385"
+        ]
+      }
+    },
+    {
+      "Component": "Last Motion (Backlash)",
+      "Pos": [
+        3565,
+        553,
+        3916,
+        766
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Summing junction_333_385",
+      "Pos": [
+        1772,
+        628,
+        1851,
+        708
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Velocity Controller"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_450_385",
+      "Pos": [
+        2394,
+        628,
+        2474,
+        708
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Current Control Loop"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_198_385",
+      "Pos": [
+        1053,
+        628,
+        1133,
+        708
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Position Controller"
+        ]
+      }
+    },
+    {
+      "Component": "dθ/dt_597_423",
+      "Pos": [
+        3176,
+        830,
+        3352,
+        1011
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_333_385"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示的级联控制系统中，若加速度前馈控制器失效（其输出始终为零），对跟踪具有非零加速度的轨迹最可能带来的影响是？",
+      "options": [
+        "A. 电流环的频率响应整体向低频方向移动，导致系统带宽降低",
+        "B. 速度环会产生明显的稳态速度误差",
+        "C. 位置跟踪的超调量增加且调节时间延长",
+        "D. 回差（背隙）造成的失调量减小"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设电流环带宽远大且可视为单位增益，机械负载动力学可简化为纯惯性环节$$G_{load}(s)=\\frac{1}{J_{eq}s}$$，其中$$J_{eq}=0.01\\,\\mathrm{kg\\cdot m^2}$$，电机电磁转矩常数$$K_t=0.2\\,\\mathrm{N\\cdot m/A}$$。为使速度环在$$\\omega_{cv}=50\\,\\mathrm{rad/s}$$处的开环增益等于1，若速度控制器选用P型，其增益$$K_v$$应取______。(请从以下答案中选择一个：10,5,2.5,0.4)",
+      "answer": "2.5"
+    }
+  ]
+}

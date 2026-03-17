@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设图中Yaw PID控制器失效导致其输出$I_4$始终为零，那么以下哪项描述是正确的？",
+      "options": [
+        "A. 只有偏航角$\\psi$无法跟踪，位置$(x,y)$和高度$z$仍可维持",
+        "B. 高度$z$将无法维持，飞行器会坠落",
+        "C. 平面位置$(x,y)$无法跟踪，飞行器将侧向漂移",
+        "D. 滚转$\\phi$和俯仰$\\theta$不受控制，将发生不稳定摆动"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "框图所示的各控制器模块（Thrust Controller, Roll PID Controller, Pitch PID Controller, Yaw PID Controller）输出到动力学模块（Translational Dynamics 和 Rotational Dynamics）的信号连接线总数为______。(请从以下答案中选择一个：6,4,8,3)"
+    }
+  ]
+}

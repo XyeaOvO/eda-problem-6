@@ -1,0 +1,157 @@
+{
+  "task1": [
+    {
+      "Component": "Controller",
+      "Pos": [
+        294,
+        153,
+        424,
+        212
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "u_pid"
+        ]
+      }
+    },
+    {
+      "Component": "Adjustment Mechanism",
+      "Pos": [
+        294,
+        60,
+        424,
+        133
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "u_pid"
+        ]
+      }
+    },
+    {
+      "Component": "Reference Model",
+      "Pos": [
+        98,
+        89,
+        190,
+        148
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction",
+          "Adjustment Mechanism"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction",
+      "Pos": [
+        218,
+        50,
+        260,
+        92
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Adjustment Mechanism"
+        ]
+      }
+    },
+    {
+      "Component": "Plant",
+      "Pos": [
+        562,
+        133,
+        628,
+        191
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction",
+          "Summing junction1"
+        ]
+      }
+    },
+    {
+      "Component": "u_pid",
+      "Pos": [
+        480,
+        125,
+        511,
+        199
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Plant"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction1",
+      "Pos": [
+        103,
+        165,
+        145,
+        205
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Controller"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示的模型参考自适应控制（MRAC）结构中，Adjustment Mechanism输出的参数向量$\\theta$与Controller输出$u_{pid}$经过图中带叉的连接块一起生成最终控制输入$u$。下列哪种运算最符合该连接块的功能？",
+      "options": [
+        "A. 向量加法运算：$u=\\theta+u_{pid}$",
+        "B. 向量点乘运算：$u=\\theta^T u_{pid}$",
+        "C. 开关式选择运算：根据$\\theta$决定使用哪一路$u_{pid}$",
+        "D. 卷积运算：$u=\\theta * u_{pid}$"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设Plant的传递函数P(s)=\\frac{1}{s+1}，Reference Model的传递函数M(s)=\\frac{1}{s+2}，Controller为纯比例增益K=5，且图中带叉的连接块实现u=\\theta\\,u_{pid}。在自适应参数\\theta收敛后，为使闭环传递函数y(s)/r(s)=M(s)，\\theta的收敛值应为______。(请从以下答案中选择一个：5,0.1,1,0.2)",
+      "answer": "0.2"
+    }
+  ]
+}

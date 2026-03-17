@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示接收链中，假设本振频率 $f_{LO}=2.4\\,$GHz，混频器后带通滤波器(BPF)的中心频率为 $f_{IF}=100\\,$MHz，且射频输入端未额外设置图像抑制滤波。则下列哪一频率会作为图像频率与所需信号一同下变频并进入IF通带？",
+      "options": [
+        "A. 2.1\\,GHz",
+        "B. 2.3\\,GHz",
+        "C. 2.5\\,GHz",
+        "D. 2.7\\,GHz"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中下变频所用本振频率 $f_{LO}=2.4\\,\\mathrm{GHz}$，且期望接收的射频信号频率 $f_{RF}=2.46\\,\\mathrm{GHz}$，则会与所需信号一同下变频进入IF通带的图像频率 $f_{img}=\\underline{\\quad\\quad\\quad}\\,\\mathrm{GHz}$。(选项如下：2.34,2.4,2.46,2.52))"
+    }
+  ]
+}

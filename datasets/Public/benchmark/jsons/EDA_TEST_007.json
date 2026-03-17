@@ -1,0 +1,117 @@
+{
+  "task1": [
+    {
+      "Component": "1bit ADC",
+      "Pos": [
+        375,
+        35,
+        494,
+        128
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1bit S/H",
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        264,
+        175,
+        324,
+        236
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Intergrator"
+        ]
+      }
+    },
+    {
+      "Component": "Intergrator",
+      "Pos": [
+        405,
+        163,
+        578,
+        252
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1bit S/H"
+        ]
+      }
+    },
+    {
+      "Component": "1bit S/H",
+      "Pos": [
+        716,
+        164,
+        833,
+        252
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1",
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        887,
+        176,
+        944,
+        237
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中数字积分器模块的传递函数 $H(z)=0.001\\dfrac{1+z^{-1}}{1-z^{-1}}$，以下说法正确的是？",
+      "options": [
+        "A. 该滤波器在归一化频率 $\\omega=\\pi$ 处有一个零点",
+        "B. 对直流信号的增益为 0.001",
+        "C. 该积分器是基于向后差分法（Backward Euler）离散化得到的",
+        "D. 在归一化频率 $\\omega=0$ 处，其相位为 $-90^{\\circ}$"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若记图中数字积分器输入为 $x[n]$，输出为 $y[n]$，则其差分方程可表示为 $$y[n]-y[n-1]=\\underline{\\quad\\quad}\\,. $$",
+      "answer": "0.001x[n]+0.001x[n-1]"
+    }
+  ]
+}

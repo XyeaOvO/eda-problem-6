@@ -1,0 +1,193 @@
+{
+  "task1": [
+    {
+      "Component": "Motion controller",
+      "Pos": [
+        519,
+        686,
+        1004,
+        987
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "J T"
+        ]
+      }
+    },
+    {
+      "Component": "Force controller",
+      "Pos": [
+        519,
+        284,
+        1004,
+        565
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction"
+        ]
+      }
+    },
+    {
+      "Component": "Saturation",
+      "Pos": [
+        1908,
+        686,
+        2242,
+        983
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Manipulator"
+        ]
+      }
+    },
+    {
+      "Component": "Torque observer",
+      "Pos": [
+        2548,
+        13,
+        3046,
+        280
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Force Estimation"
+        ]
+      }
+    },
+    {
+      "Component": "Force Estimation",
+      "Pos": [
+        1853,
+        8,
+        2339,
+        280
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction"
+        ]
+      }
+    },
+    {
+      "Component": "J T",
+      "Pos": [
+        1326,
+        745,
+        1531,
+        929
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Saturation"
+        ]
+      }
+    },
+    {
+      "Component": "Stiffness controller",
+      "Pos": [
+        1326,
+        284,
+        1803,
+        565
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Saturation"
+        ]
+      }
+    },
+    {
+      "Component": "Manipulator",
+      "Pos": [
+        2481,
+        686,
+        3046,
+        987
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Torque observer"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction",
+      "Pos": [
+        1134,
+        377,
+        1201,
+        452
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Stiffness controller"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "考虑图中力控制支路，其中刚度控制器 $C_s(s)=K_s$（纯比例），动态块 $m\\times C$ 可建模为传递函数 $G_d(s)=\\frac{1}{mC\\,s}$。若将该力控制回路视为标准负反馈环路，则系统属于哪种类型(type)？对单位阶跃力参考输入的稳态误差如何？",
+      "options": [
+        "A. 系统为0型，对单位阶跃力输入存在常数稳态误差",
+        "B. 系统为1型，对单位阶跃力输入无稳态误差",
+        "C. 系统为1型，对单位阶跃力输入仍存在稳态误差",
+        "D. 系统为2型，对单位阶跃力输入无稳态误差"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "忽略运动支路和饱和效应，设刚度控制器 $C_s(s)=K_s$（纯比例），动态块 $G_d(s)=\\frac{1}{mC s}$，且 $m=2\\,\\mathrm{kg},\\ C=5\\,\\mathrm{Ns/m},\\ K_s=100\\,\\mathrm{N/m}$，则力控制闭环回路的时域时间常数 $\\tau$ = ______ s。(请从以下答案中选择一个：0,1,0.5,0.1)",
+      "answer": "0.1"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "下列哪一信号不是 Cost Function Minimization 模块的输入？",
+      "options": [
+        "A. 预测输出序列 $[\\hat{y}_1(n+1),\\dots,\\hat{y}_1(n+K)]$",
+        "B. 带延迟的先前控制输入 $u^*_1(n-1),\\;u^*_R(n-1)$",
+        "C. 当前估计的模型参数 $\\theta$",
+        "D. 当前测量的输出 $\\tilde{y}_1(n),\\;\\tilde{y}_Q(n)$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图中输入Runge–Kutta Model Based Parameter Estimation模块的信号$\\tilde x_1(n)$和$\\tilde x_N(n)$分别表示模型的第1个和第N个状态的______。(请从以下答案中选择一个：判断值,计算值,测量值,估计值)"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "task1": [
+    {
+      "Component": "ADC1",
+      "Pos": [
+        207,
+        357,
+        296,
+        520
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix",
+          "ADC0"
+        ]
+      }
+    },
+    {
+      "Component": "ADC2",
+      "Pos": [
+        207,
+        181,
+        296,
+        345
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix",
+          "ADC0"
+        ]
+      }
+    },
+    {
+      "Component": "ADC0",
+      "Pos": [
+        24,
+        181,
+        153,
+        520
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "ADC15",
+      "Pos": [
+        555,
+        181,
+        602,
+        228
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix"
+        ]
+      }
+    },
+    {
+      "Component": "ADC14",
+      "Pos": [
+        555,
+        239,
+        602,
+        286
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix"
+        ]
+      }
+    },
+    {
+      "Component": "ADC0_REF+",
+      "Pos": [
+        555,
+        476,
+        602,
+        520
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix",
+          "ADC2",
+          "ADC1"
+        ]
+      }
+    },
+    {
+      "Component": "ADC1_REF-",
+      "Pos": [
+        555,
+        415,
+        602,
+        462
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix",
+          "ADC2",
+          "ADC1"
+        ]
+      }
+    },
+    {
+      "Component": "Vop",
+      "Pos": [
+        330,
+        15,
+        398,
+        79
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SEL_VREF",
+          "ADC0"
+        ]
+      }
+    },
+    {
+      "Component": "Temp",
+      "Pos": [
+        414,
+        15,
+        480,
+        79
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "SEL_TS"
+        ]
+      }
+    },
+    {
+      "Component": "Analog Matrix",
+      "Pos": [
+        350,
+        181,
+        460,
+        520
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "ADC2",
+          "ADC1"
+        ]
+      }
+    },
+    {
+      "Component": "SEL_VREF",
+      "Pos": [
+        332,
+        97,
+        386,
+        132
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix"
+        ]
+      }
+    },
+    {
+      "Component": "SEL_TS",
+      "Pos": [
+        424,
+        97,
+        471,
+        132
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Analog Matrix"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "根据图中从模拟矩阵(Analog Matrix)到ADC1和ADC2的Channel Select总线宽度标注，下述关于两路ADC可选择的输入通道数量的说法正确的是？",
+      "options": [
+        "A. ADC1和ADC2均最多可选择16路输入通道",
+        "B. ADC1最多可选择18路输入通道，ADC2最多可选择16路",
+        "C. ADC1最多可选择16路输入通道，ADC2最多可选择18路",
+        "D. ADC1和ADC2均最多可选择18路输入通道"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "根据图中ADC1的Result总线宽度可知，若ADC1为$N$位ADC，则其最大数字输出值为$2^N-1$，则本ADC1的最大输出数字码（十进制）为______。(请从以下答案中选择一个：4096,4095,2047,2048)",
+      "answer": "4095"
+    }
+  ]
+}

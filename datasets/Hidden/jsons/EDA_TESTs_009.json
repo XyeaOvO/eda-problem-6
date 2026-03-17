@@ -1,0 +1,154 @@
+{
+  "task1": [
+    {
+      "Component": "VariableDelay2",
+      "Pos": [
+        207,
+        138,
+        289,
+        202
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Variable Gain2"
+        ]
+      }
+    },
+    {
+      "Component": "Variable Delay1",
+      "Pos": [
+        205,
+        13,
+        290,
+        78
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Variable Gain1"
+        ]
+      }
+    },
+    {
+      "Component": "Variable Gain1",
+      "Pos": [
+        433,
+        19,
+        482,
+        69
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "++"
+        ]
+      }
+    },
+    {
+      "Component": "Variable Gain2",
+      "Pos": [
+        433,
+        145,
+        482,
+        193
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "++"
+        ]
+      }
+    },
+    {
+      "Component": "++",
+      "Pos": [
+        579,
+        61,
+        606,
+        138
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "y"
+        ]
+      }
+    },
+    {
+      "Component": "y",
+      "Pos": [
+        682,
+        88,
+        728,
+        113
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "x",
+      "Pos": [
+        3,
+        78,
+        48,
+        107
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Variable Delay1",
+          "VariableDelay2"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "如图所示电路，将上分支的延迟设为$d_1=0$，下分支的延迟设为$d_2=D$，且两分支增益均为1，则该电路输出为$$y[n]=x[n]+x[n-D]。$$下列关于该系统频率响应的说法中，正确的是？",
+      "options": [
+        "A. 该系统为带阻梳状滤波器，其零点位于$\\omega=\\frac{(2m+1)\\pi}{D}\\,(m\\in\\mathbb{Z})$处",
+        "B. 该系统为带通梳状滤波器，其峰值频率为$\\omega=\\frac{2m\\pi}{D}\\,(m\\in\\mathbb{Z})$",
+        "C. 该系统是一阶IIR低通滤波器",
+        "D. 该系统对所有频率均具有平坦响应"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中两个分支的延迟均为 $d$，增益均为 $K$，则该系统的 Z 域传输函数 $$H(z)=$$ ______ 。(请从以下答案中选择一个：Kz^{-d},2Kz^{-d},1,Kz^{-2d})",
+      "answer": "2Kz^{-d}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图1所示的ASELP编码器结构中，下列哪个模块没有直接接收Preprocessor模块的输出信号？",
+      "options": [
+        "A. Linear prediction analysis",
+        "B. LP conversion LSF",
+        "C. Pitch estimation",
+        "D. Subband U/V decision"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图1所示的ASELP编码器架构中，总共输出了____种编码参数(bit streams)。(请从以下答案中选择一个：6,7,5,4)"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在图示SRF-PLL结构中，假设红色LPF模块为一阶低通滤波器，截止频率$f_c=30\\mathrm{Hz}$，则50Hz基波的二次谐波(100Hz)在该LPF处的幅值衰减约为多少？",
+      "options": [
+        "A. -3dB",
+        "B. -7dB",
+        "C. -11dB",
+        "D. -16dB"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若要求图中红色LPF在 $100\\,\\mathrm{Hz}$ 处的相位滞后不超过 $5^\\circ$，则其截止频率 $f_c$ 应至少为 ______ Hz。(请选择：100,500,1143,1672)"
+    }
+  ]
+}

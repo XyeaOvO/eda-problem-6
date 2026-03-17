@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "图(b)所示的采样、积分通道、反馈 DAC、不完整积分输出生成、量化器 Q1、Q2 及数字输出组合和多路复用结构，最可能实现以下哪种 ADC 架构？",
+      "options": [
+        "A. 两级流水线 ADC",
+        "B. 二阶 Σ–Δ 调制器",
+        "C. MASH 多级噪声整形 ADC",
+        "D. 时间交错 ADC"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图(b)所示的ADC架构最可能属于______架构。(请从以下答案中选择一个：FLASH,SAR,Sigma-delta,Pipeline)"
+    }
+  ]
+}

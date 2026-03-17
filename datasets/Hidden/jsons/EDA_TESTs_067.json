@@ -1,0 +1,195 @@
+{
+  "task1": [
+    {
+      "Component": "Quantizer",
+      "Pos": [
+        875,
+        29,
+        994,
+        161
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "NRZ RZ HRZ"
+        ]
+      }
+    },
+    {
+      "Component": "K2R",
+      "Pos": [
+        521,
+        202,
+        609,
+        296
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_343_238"
+        ]
+      }
+    },
+    {
+      "Component": "K4H",
+      "Pos": [
+        94,
+        202,
+        182,
+        296
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_108_238"
+        ]
+      }
+    },
+    {
+      "Component": "K4R",
+      "Pos": [
+        236,
+        202,
+        324,
+        296
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_108_238"
+        ]
+      }
+    },
+    {
+      "Component": "NRZ RZ HRZ",
+      "Pos": [
+        843,
+        283,
+        988,
+        514
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "K4H",
+          "K4R",
+          "K2R"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_343_238",
+      "Pos": [
+        521,
+        47,
+        609,
+        141
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H(s)_446_237"
+        ]
+      }
+    },
+    {
+      "Component": "H(s)_446_237",
+      "Pos": [
+        678,
+        46,
+        810,
+        144
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Quantizer"
+        ]
+      }
+    },
+    {
+      "Component": "Σ_108_238",
+      "Pos": [
+        164,
+        47,
+        252,
+        141
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H(s)_213_237"
+        ]
+      }
+    },
+    {
+      "Component": "H(s)_213_237",
+      "Pos": [
+        324,
+        46,
+        453,
+        144
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Σ_343_238"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在如图所示的二阶ΣΔ调制器中，若将底部反馈DAC的输出脉冲形状从NRZ改为RZ，下列关于环路稳定性和噪声性能的说法中，哪项是正确的？",
+      "options": [
+        "A. RZ反馈会提高DAC的闭环等效增益，从而增大环路噪声带外抑制，但降低稳定裕度",
+        "B. RZ反馈会减小环路的有效反馈增益，增大稳定裕度，但会稍微提升带内量化噪声",
+        "C. RZ反馈对环路零点位置无影响，因此对稳定性和噪声性能都无任何改变",
+        "D. RZ反馈与HRZ反馈相比会产生更高的带外噪声峰值，但带内噪声更低"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "如图所示电路串联了两个连续时间积分器$H(s)$，形成二阶$\\Sigma\\Delta$调制器。其噪声传输函数近似为$NTF(s)\\propto s^2$，因此在低频区量化噪声的衰减斜率为 ______ 。(请选择：0 dB/decade,20 dB/decade,40 dB/decade,60 dB/decade)",
+      "answer": "40 dB/decade"
+    }
+  ]
+}

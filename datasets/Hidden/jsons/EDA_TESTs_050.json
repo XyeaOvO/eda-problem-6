@@ -1,0 +1,136 @@
+{
+  "task1": [
+    {
+      "Component": "P(s)",
+      "Pos": [
+        909,
+        112,
+        1072,
+        221
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_630_453"
+        ]
+      }
+    },
+    {
+      "Component": "G(s)",
+      "Pos": [
+        551,
+        112,
+        716,
+        221
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_453_328"
+        ]
+      }
+    },
+    {
+      "Component": "F(s)",
+      "Pos": [
+        197,
+        114,
+        287,
+        221
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_238_328"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_630_453",
+      "Pos": [
+        1069,
+        344,
+        1135,
+        411
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Summing junction_238_328"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_453_328",
+      "Pos": [
+        769,
+        132,
+        835,
+        199
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "P(s)"
+        ]
+      }
+    },
+    {
+      "Component": "Summing junction_238_328",
+      "Pos": [
+        404,
+        132,
+        470,
+        199
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "G(s)"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "关于图中所示含预滤波器 $F(s)$、控制器 $G(s)$、被控对象 $P(s)$ 及测量噪声 $N(s)$ 的二次反馈系统，以下哪个表达式正确描述了测量噪声 $N(s)$ 到输出 $Y(s)$ 的闭环传递函数？",
+      "options": [
+        "A. $\\displaystyle \\frac{Y(s)}{N(s)}=-\\frac{G(s)P(s)}{1+G(s)P(s)}$",
+        "B. $\\displaystyle \\frac{Y(s)}{N(s)}=\\frac{1}{1+G(s)P(s)}$",
+        "C. $\\displaystyle \\frac{Y(s)}{N(s)}=\\frac{F(s)G(s)P(s)}{1+G(s)P(s)}$",
+        "D. $\\displaystyle \\frac{Y(s)}{N(s)}=\\frac{G(s)P(s)}{1-G(s)P(s)}$"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "根据图中系统结构，扰动 $D(s)$ 到输出 $Y(s)$ 的闭环传递函数 $T_{d}(s)=\\displaystyle\\frac{Y(s)}{D(s)}=$ ______ 。(选项如下：\\dfrac{G(s)P(s)}{1+G(s)P(s)}, \\displaystyle\\frac{P(s)}{1+G(s)P(s)}, \\dfrac{1}{1+G(s)P(s)}, \\P(s))",
+      "answer": "\\displaystyle\\frac{P(s)}{1+G(s)P(s)}"
+    }
+  ]
+}

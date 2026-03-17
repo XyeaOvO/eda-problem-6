@@ -1,0 +1,230 @@
+{
+  "task1": [
+    {
+      "Component": "1/u",
+      "Pos": [
+        210,
+        157,
+        244,
+        192
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Product_540_294"
+        ]
+      }
+    },
+    {
+      "Component": "voltage V",
+      "Pos": [
+        40,
+        6,
+        74,
+        24
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Add"
+        ]
+      }
+    },
+    {
+      "Component": "current I",
+      "Pos": [
+        40,
+        51,
+        74,
+        69
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Product_261_297"
+        ]
+      }
+    },
+    {
+      "Component": "series resistance Rs",
+      "Pos": [
+        40,
+        91,
+        74,
+        108
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Product_261_297"
+        ]
+      }
+    },
+    {
+      "Component": "number of cells in series",
+      "Pos": [
+        40,
+        136,
+        74,
+        154
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Product_261_428",
+          "Product_261_297"
+        ]
+      }
+    },
+    {
+      "Component": "parallel resistance Rp",
+      "Pos": [
+        40,
+        198,
+        74,
+        232
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Product_261_428"
+        ]
+      }
+    },
+    {
+      "Component": "Add",
+      "Pos": [
+        210,
+        20,
+        244,
+        54
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Product_540_294"
+        ]
+      }
+    },
+    {
+      "Component": "Product_261_428",
+      "Pos": [
+        145,
+        155,
+        178,
+        190
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/u"
+        ]
+      }
+    },
+    {
+      "Component": "Product_540_294",
+      "Pos": [
+        300,
+        81,
+        334,
+        115
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Rp current_684_312"
+        ]
+      }
+    },
+    {
+      "Component": "Product_261_297",
+      "Pos": [
+        145,
+        82,
+        178,
+        117
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Add"
+        ]
+      }
+    },
+    {
+      "Component": "Rp current_684_312",
+      "Pos": [
+        380,
+        91,
+        414,
+        108
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "在如图所示的系统中，若串联电阻 $R_s=2\\,\\Omega$，输入电流 $I=3\\,\\mathrm{A}$，输入电压 $V=20\\,\\mathrm{V}$，串联电池数 $N=5$，平行电阻 $R_p=30\\,\\Omega$，则输出 $Rp\\_current$ 的数值为多少？",
+      "options": [
+        "A. $0.0267\\,\\mathrm{A}$",
+        "B. $0.0867\\,\\mathrm{A}$",
+        "C. $0.1733\\,\\mathrm{A}$",
+        "D. $0.5200\\,\\mathrm{A}$"
+      ],
+      "answer": "C"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "若要求 $Rp\\_current=0.1\\,\\mathrm{A}$，当 $V=10\\,\\mathrm{V}$，$I=1\\,\\mathrm{A}$，$R_s=2\\,\\Omega$，$R_p=30\\,\\Omega$ 时，需要串联电池数 $N=\\underline{\\quad}$。(请从以下答案中选择一个：4,20,5,8)",
+      "answer": "4"
+    }
+  ]
+}

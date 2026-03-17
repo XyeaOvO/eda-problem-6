@@ -1,0 +1,142 @@
+{
+  "task1": [
+    {
+      "Component": "Control/Status register",
+      "Pos": [
+        161,
+        24,
+        355,
+        74
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "DMA interface",
+          "AHB interface",
+          "FIFO/ Data formatter",
+          "Data extraction"
+        ]
+      }
+    },
+    {
+      "Component": "Synchronizer",
+      "Pos": [
+        307,
+        149,
+        390,
+        194
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Data extraction"
+        ]
+      }
+    },
+    {
+      "Component": "DMA interface",
+      "Pos": [
+        97,
+        25,
+        157,
+        74
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Control/Status register"
+        ]
+      }
+    },
+    {
+      "Component": "FIFO/ Data formatter",
+      "Pos": [
+        114,
+        144,
+        178,
+        205
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 3
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "AHB interface",
+          "Control/Status register",
+          "Data extraction"
+        ]
+      }
+    },
+    {
+      "Component": "AHB interface",
+      "Pos": [
+        33,
+        70,
+        93,
+        174
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Control/Status register"
+        ]
+      }
+    },
+    {
+      "Component": "Data extraction",
+      "Pos": [
+        214,
+        144,
+        281,
+        205
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 2
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "FIFO/ Data formatter",
+          "Control/Status register"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "假设像素时钟DCMI\\_PIXCLK=36MHz，Data extraction模块输出14位像素数据和HSYNC、VSYNC两个同步信号（共16位）到Synchronizer，则该链路的最低数据吞吐量应为多少？",
+      "options": [
+        "A. 512Mb/s",
+        "B. 576Mb/s",
+        "C. 648Mb/s",
+        "D. 720Mb/s"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "假设图中Data extraction模块输出14位像素数据，通过32位宽FIFO/Data formatter发送到DMA。为了存储一帧640×480像素的数据，所需FIFO的最小深度为_____（32位字）。(请从以下答案中选择一个：614400,32,307,200,153600)",
+      "answer": "153600"
+    }
+  ]
+}
